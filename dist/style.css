@@ -1,3 +1,4 @@
+/* #region  Base */
 html {
     height: 100%;
 }
@@ -79,6 +80,9 @@ h5,
 h6 {
     margin: 0;
 }
+
+/* #endregion */
+/* #region  Font face */
 
 /* cyrillic-ext */
 @font-face {
@@ -260,30 +264,8 @@ h6 {
     unicode-range: U0-0FF, U131, U152-153, U2BB-2BC, U2C 6, U2DA, U2DC, U2000-206F, U2074, U20AC, U2122, U2191, U2193, U2212, U2215, UFEFF, UFFFD;
 }
 
-@font-face {
-    font-family : 'Ubuntu';
-    font-style  : normal;
-    font-weight : 400;
-    font-display: swap;
-    src         : url(https://fonts.gstatic.com/s/ubuntu/v15/4iCs6KVjbNBYlgo6ew.woff) format('woff');
-}
-
-@font-face {
-    font-family : 'Ubuntu';
-    font-style  : normal;
-    font-weight : 500;
-    font-display: swap;
-    src         : url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCjC3TtA.woff) format('woff');
-}
-
-@font-face {
-    font-family : 'Ubuntu';
-    font-style  : normal;
-    font-weight : 700;
-    font-display: swap;
-    src         : url(https://fonts.gstatic.com/s/ubuntu/v15/4iCv6KVjbNBYlgoCxCvTtA.woff) format('woff');
-}
-
+/* #endregion */
+/* #region  Logo */
 .logo {
     display    : none;
     position   : absolute;
@@ -299,6 +281,8 @@ h6 {
     width  : 100%;
 }
 
+/* #endregion */
+/* #region  Container */
 .container {
     position     : fixed;
     top          : 1.25em;
@@ -328,6 +312,9 @@ h6 {
     min-width : 100%;
     background: #a7e6f9;
 }
+
+/* #endregion */
+/* #region  Modal */
 
 .modal {
     opacity   : 0;
@@ -542,6 +529,9 @@ body.girl .modal .modal__character {
     color: #fff;
 }
 
+/* #endregion */
+/* #region  Task */
+
 .task .task__wrapper {
     display: flex;
 }
@@ -652,6 +642,9 @@ html.no-touch .task .task__content a:hover {
 .task #audio-container .label {
     color: #5a617d;
 }
+
+/* #endregion */
+/* #region  Question */
 
 .question .question__header {
     position     : relative;
@@ -796,6 +789,9 @@ body.girl .question .question__char {
     background: url('../../images/Girl.svg') no-repeat center/contain;
 }
 
+/* #endregion */
+/* #region  Character choice */
+
 .character {
     position       : fixed;
     top            : 0;
@@ -886,6 +882,9 @@ html.no-touch .character .card .card__container:hover {
     }
 }
 
+/* #endregion */
+/* #region  Loading */
+
 .loading {
     position       : fixed;
     width          : 100%;
@@ -910,3 +909,6 @@ html.no-touch .character .card .card__container:hover {
     display: block;
     width  : 100%;
 }
+
+/* #endregion */
+
