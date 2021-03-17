@@ -1,0 +1,158 @@
+@import 'helpers/variables';
+
+.logo {
+    display    : none;
+    position   : absolute;
+    top        : 20px;
+    left       : 50%;
+    width      : 60px;
+    margin-left: -30px;
+    z-index    : 1;
+
+    img {
+        display: block;
+        width  : 100%;
+    }
+}
+
+.container {
+    position     : fixed;
+    top          : 1.25em;
+    right        : 1.25em;
+    bottom       : 1.25em;
+    left         : 1.25em;
+    overflow     : hidden;
+    border-radius: 1.25em;
+    opacity      : 0;
+    visibility   : hidden;
+
+    .container__wrapper {
+        width     : 100%;
+        height    : 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+
+.character {
+    position  : fixed;
+    top       : 0;
+    bottom    : 0;
+    left      : 0;
+    right     : 0;
+    z-index   : 99;
+    opacity   : 0;
+    visibility: hidden;
+
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    background     : #fff;
+
+    h2 {
+        position     : absolute;
+        left         : 50%;
+        width        : 280px;
+        margin-left  : -140px;
+        top          : 30px;
+        background   : $light;
+        border-radius: 3rem;
+
+        font-family: $ff-primary;
+        font-size  : 18px;
+        line-height: 1;
+        color      : $text;
+        padding    : 15px;
+        text-align : center;
+    }
+
+    .card {
+        width: 100%;
+        flex : 0 0 auto;
+
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+
+        .card__container {
+            width        : 160px;
+            padding      : 20px 30px;
+            margin       : 20px;
+            background   : $light;
+            display      : inline-block;
+            text-align   : center;
+            border-radius: 30px;
+            cursor       : pointer;
+            transition   : .3s ease;
+
+            &:hover {
+                background: $text;
+            }
+        }
+
+        img {
+            display       : inline-block;
+            width         : 100%;
+            pointer-events: none;
+        }
+
+    }
+
+
+    @media (min-width:768px) {
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .card__container {
+            width: 200px;
+        }
+    }
+
+    @media (min-width:1024px) {
+        flex-direction: row;
+
+        h2 {
+            width    : 320px;
+            font-size: 24px;
+        }
+
+        .card {
+            width: 50%;
+
+            .card__container {
+                width: 300px;
+            }
+        }
+
+    }
+
+}
+
+.loading {
+    position  : fixed;
+    width     : 100%;
+    height    : 100%;
+    left      : 0;
+    top       : 0;
+    overflow  : hidden;
+    background: $light;
+    z-index   : 99;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+    div {
+        width    : 240px;
+        opacity  : 0;
+        transform: translateY(100px);
+    }
+
+    img {
+        display: block;
+        width  : 100%;
+    }
+
+}
