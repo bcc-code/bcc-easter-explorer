@@ -8,8 +8,8 @@ const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 // const autoprefixer = require('autoprefixer');
 // const tailwindcss = require('tailwindcss');
-// const browserSync = require('browser-sync').create();
-
+const browserSync = require('browser-sync');
+const mode = require('gulp-mode')();
 const { src, series, parallel, dest, watch } = require('gulp');
 
 const htmlPath = 'src/*.html';
@@ -35,10 +35,9 @@ function jsTask() {
         .pipe(concat('all.js'))
         .pipe(terser())
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/assets/js'));
-        // .pipe(browserSync.stream());
+        .pipe(dest('dist/assets/js'))
+        .pipe(mode.development(browserSync.stream()));
 }
-
 
 function scssTask() {
 
@@ -53,22 +52,22 @@ function scssTask() {
         .pipe(sass())
         .pipe(postcss(plugin))
         .pipe(sourcemaps.write('.'))
-        .pipe(dest('dist/assets/css'));
-        // .pipe(browserSync.stream());
+        .pipe(dest('dist/assets/css'))
+        .pipe(mode.development(browserSync.stream()));
 }
 
 
 function watchTask() {
-    // browserSync.init({
-    //     server: {
-    //         baseDir: 'dist'
-    //     }
-    // });
+    browserSync.create();
+    browserSync.init({
+        server: {
+            baseDir: 'dist'
+        }
+    });
 
-    watch([htmlPath], { interval: 1000 }, copyHtml);/*.on('change', browserSync.reload)*/
+    watch([htmlPath], { interval: 1000 }, copyHtml).on('change', browserSync.reload);
     watch([cssPath, jsPath], { interval: 1000 }, parallel(scssTask, jsTask));
 }
-
 
 exports.copyHtml = copyHtml;
 exports.imgTask = imgTask;
@@ -76,4 +75,10 @@ exports.audioTask = audioTask;
 exports.jsTask = jsTask;
 exports.scssTask = scssTask;
 
-exports.default = series(parallel(copyHtml, jsTask, scssTask), watchTask);
+var isProduction = mode.production();
+if (isProduction) {
+    exports.default = series(parallel(copyHtml, jsTask, scssTask));
+}
+else {
+    exports.default = series(parallel(copyHtml, jsTask, scssTask), watchTask);
+}

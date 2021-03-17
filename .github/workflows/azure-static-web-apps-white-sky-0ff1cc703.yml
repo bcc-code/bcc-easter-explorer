@@ -23,9 +23,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: gulp imgTask
-      - run: gulp audioTask
-      - run: gulp
+      - run: gulp --production
       
       - name: Build And Deploy
         id: builddeploy
