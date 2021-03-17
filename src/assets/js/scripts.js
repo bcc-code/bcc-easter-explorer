@@ -344,27 +344,19 @@ const map = {
 
     eventListeners: function () {
 
-        const countries = document.getElementById('map-area').contentDocument.querySelectorAll('svg > path');
-        const extras = document.getElementById('map-area').contentDocument.querySelectorAll('svg g');
+        const countries = document.querySelectorAll('#map-area > path');
         const countriesArray = Array.from(countries);
         const activeCountries = ['NO', 'PO', 'US', 'AU', 'PE', 'IS', 'IN', 'CH', 'RU', 'ZA'];
-
-        extras.forEach(el => {
-            el.style.pointerEvents = 'none';
-        });
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
 
         if (!completedTasks) completedTasks = new Array();
         let remainingTasks = activeCountries.filter(x => !completedTasks.includes(x));
 
-
         countriesArray.forEach((element, index) => {
 
             const filterRemainingTasks = remainingTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
             const filterCompletedTasks = completedTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
-
-            element.style.pointerEvents = "all";
 
             if (filterRemainingTasks) {
                 element.style.fill = '#FDE758';
@@ -494,7 +486,6 @@ const loadingScreen = {
 
     }
 }
-
 
 // Helpers
 

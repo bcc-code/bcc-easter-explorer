@@ -6,14 +6,12 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
-// const autoprefixer = require('autoprefixer');
-// const tailwindcss = require('tailwindcss');
+const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync');
 const mode = require('gulp-mode')();
 const { src, series, parallel, dest, watch } = require('gulp');
 
 const htmlPath = 'src/*.html';
-const jsExtras = 'src/assets/js/third-party/*.js';
 const jsPath = 'src/assets/js/*.js';
 const cssPath = 'src/assets/scss/**/*.scss';
 
@@ -30,7 +28,7 @@ function audioTask() {
 }
 
 function jsTask() {
-    return src([jsExtras, jsPath])
+    return src([jsPath])
         .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
         .pipe(terser())
@@ -42,7 +40,7 @@ function jsTask() {
 function scssTask() {
 
     var plugin = [
-        // autoprefixer(),
+        autoprefixer(),
         cssnano()
     ]
 
@@ -77,8 +75,8 @@ exports.scssTask = scssTask;
 
 var isProduction = mode.production();
 if (isProduction) {
-    exports.default = series(parallel(copyHtml, jsTask, scssTask));
+    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsTask, scssTask));
 }
 else {
-    exports.default = series(parallel(copyHtml, jsTask, scssTask), watchTask);
+    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsTask, scssTask), watchTask);
 }

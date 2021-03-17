@@ -1,0 +1,58 @@
+.cls-1 {
+    fill: #fefefe
+}
+
+.cls-2 {
+    fill: #e3b057
+}
+
+.cls-3 {
+    fill: #92bde2
+}
+
+.cls-4 {
+    fill: #80b57b
+}
+
+.cls-5 {
+    fill: #6cb476
+}
+
+.cls-6 {
+    fill: #9ab13b
+}
+
+.cls-7 {
+    fill: #eecb5a
+}
+
+.cls-8 {
+    fill: #f8e581
+}
+
+#map-area {
+    display   : block;
+    height    : 100%;
+    min-width : 100%;
+    padding   : 100px 0 0;
+    overflow  : visible;
+    background: #a7e6f9;
+
+    &::after {
+        content   : '';
+        position  : absolute;
+        top       : 0;
+        left      : 0;
+        right     : 0;
+        bottom    : 0;
+        background: url('../../images/map-items.png') no-repeat center/contain;
+    }
+
+    #world {
+        pointer-events: none;
+    }
+
+    image {
+        pointer-events: none;
+    }
+}
