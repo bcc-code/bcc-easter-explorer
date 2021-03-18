@@ -360,7 +360,7 @@ const map = {
 
         // Open Modal
         countriesArray.forEach((element) => {
-            element.addEventListener('click', e => {
+            element.addEventListener('click touchstart', e => {
                 return map.openModal(e.target.getAttribute('class'));
             });
         });
