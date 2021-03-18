@@ -318,6 +318,8 @@ const task = {
 const map = {
 
     closeModal: function () {
+        document.querySelector('body').classList.remove('overlay');
+
         gsap.to('.modal', {
             autoAlpha: 0,
             onComplete: () => {
@@ -330,6 +332,7 @@ const map = {
     openModal: function (ID) {
         task.init(ID);
         document.querySelector('.modal').classList.add(ID);
+        document.querySelector('body').classList.add('overlay');
         gsap.to('.modal', { autoAlpha: 1 });
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
@@ -344,54 +347,28 @@ const map = {
 
     eventListeners: function () {
 
-        const countries = document.querySelectorAll('#map-area > path');
+        const countries = document.querySelectorAll('#map-area > g:not(#World)');
         const countriesArray = Array.from(countries);
-        const activeCountries = ['NO', 'PO', 'US', 'AU', 'PE', 'IS', 'IN', 'CH', 'RU', 'ZA'];
+
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
 
         if (!completedTasks) completedTasks = new Array();
-        let remainingTasks = activeCountries.filter(x => !completedTasks.includes(x));
 
-        countriesArray.forEach((element, index) => {
+        countriesArray.forEach((element) => {
 
-            const filterRemainingTasks = remainingTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
-            const filterCompletedTasks = completedTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
-
-            if (filterRemainingTasks) {
-                element.style.fill = '#FDE758';
-
-                element.addEventListener('mouseenter', function () {
-                    gsap.to(element, { fill: '#5A617D' });
-                });
-
-                element.addEventListener('mouseleave', function () {
-                    gsap.to(element, { fill: '#FDE758' });
-                });
-            }
-
-            if (filterCompletedTasks) {
-                element.style.fill = '';
-
-                element.addEventListener('mouseenter mouseleave', function () {
-                    gsap.to(element, { fill: '' });
-                });
-            }
-
-            element.style.cursor = 'pointer';
-
-            element.addEventListener('click', (e) => {
-                return map.openModal(e.target.getAttribute('id'));
+            element.addEventListener('click', e => {
+                return map.openModal(e.target.getAttribute('class'));
             });
         });
 
-        document.addEventListener('click', (event) => {
+        document.addEventListener('click', event => {
             if (!event.target.classList.contains('modal__close')) return;
             event.preventDefault();
             map.closeModal();
         }, false);
 
-        document.addEventListener('click', (event) => {
+        document.addEventListener('click', event => {
             if (!event.target.classList.contains('submitBTN')) return;
             event.preventDefault();
 
@@ -405,14 +382,11 @@ const map = {
 
             event.target.closest('.modal').classList.add('completed');
 
-            countries.forEach((element, index) => {
-                const filter = new Array(event.target.getAttribute('id')).some(el => countries[index].getAttribute('id').includes(el));
-                if (filter) {
-                    element.style.fill = '';
-                }
-            });
-
         }, false);
+
+        document.addEventListener('mousemove', event => {
+            document.querySelector('.cursor').setAttribute("style", "top: " + (event.pageY - 60) + "px; left: " + (event.pageX - 50) + "px");
+        });
 
     },
 

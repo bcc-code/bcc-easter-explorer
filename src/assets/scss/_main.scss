@@ -156,3 +156,27 @@
     }
 
 }
+
+.cursor {
+    position      : fixed;
+    width         : 60px;
+    pointer-events: none;
+
+    &::before {
+        content       : '';
+        display       : block;
+        padding-bottom: 172%;
+    }
+
+    body.boy & {
+        background: url('../../images/Boy.svg') no-repeat center/contain;
+    }
+
+    body.girl & {
+        background: url('../../images/Girl.svg') no-repeat center/contain;
+    }
+
+    body.overlay & {
+        display: none;
+    }
+}

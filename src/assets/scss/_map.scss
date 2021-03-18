@@ -1,32 +1,42 @@
-.cls-1 {
+@import 'helpers/variables';
+
+.cls-1,
+.cls-1 path {
     fill: #fefefe
 }
 
-.cls-2 {
+.cls-2,
+.cls-2 path {
     fill: #e3b057
 }
 
-.cls-3 {
+.cls-3,
+.cls-3 path {
     fill: #92bde2
 }
 
-.cls-4 {
+.cls-4,
+.cls-4 path {
     fill: #80b57b
 }
 
-.cls-5 {
+.cls-5,
+.cls-5 path {
     fill: #6cb476
 }
 
-.cls-6 {
+.cls-6,
+.cls-6 path {
     fill: #9ab13b
 }
 
-.cls-7 {
+.cls-7,
+.cls-7 path {
     fill: #eecb5a
 }
 
-.cls-8 {
+.cls-8,
+.cls-8 path {
     fill: #f8e581
 }
 
@@ -48,11 +58,36 @@
         background: url('../../images/map-items.png') no-repeat center/contain;
     }
 
-    #world {
+    #World {
         pointer-events: none;
+        z-index       : 1;
     }
 
     image {
         pointer-events: none;
+    }
+
+    path {
+        transition: .5s ease-in-out;
+    }
+
+    text {
+        font-family: $ff-primary;
+        font-size  : 14px;
+        font-weight: bold;
+        fill       : $text;
+        z-index    : 2;
+    }
+
+    >g:not(#World) {
+        cursor: pointer;
+    }
+
+    >g:not(#World) path {
+        fill: #FDE758;
+    }
+
+    >g:not(#World):hover path {
+        fill: #5A617D;
     }
 }
