@@ -40,13 +40,32 @@
     fill: #f8e581
 }
 
+.container {
+    position     : fixed;
+    width        : 100vw;
+    height       : 100vh;
+    border-radius: 1.25em;
+    opacity      : 0;
+    overflow     : hidden;
+    visibility   : hidden;
+
+    .container__wrapper {
+        position  : absolute;
+        top       : 0;
+        left      : 0;
+        width     : 100vw;
+        height    : 100vh;
+        overflow  : hidden;
+        background: #a7e6f9;
+    }
+}
+
 #map-area {
-    display   : block;
-    height    : 100%;
-    min-width : 100%;
-    padding   : 100px 0 0;
-    overflow  : visible;
-    background: #a7e6f9;
+    position: absolute;
+    display : block;
+    height  : 100vh;
+    padding : 100px 0 0;
+    overflow: visible;
 
     &::after {
         content   : '';

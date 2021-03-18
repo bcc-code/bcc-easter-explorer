@@ -12,7 +12,8 @@ const mode = require('gulp-mode')();
 const { src, series, parallel, dest, watch } = require('gulp');
 
 const htmlPath = 'src/*.html';
-const jsPath = 'src/assets/js/*.js';
+const jsPath = 'src/assets/js/scripts.js';
+const jsPlugins = 'src/assets/js/gsap/**/*.js';
 const cssPath = 'src/assets/scss/**/*.scss';
 
 function copyHtml() {
@@ -28,7 +29,7 @@ function audioTask() {
 }
 
 function jsTask() {
-    return src([jsPath])
+    return src([jsPlugins, jsPath])
         .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
         .pipe(terser())

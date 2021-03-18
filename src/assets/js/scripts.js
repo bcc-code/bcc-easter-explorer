@@ -1,3 +1,6 @@
+// registering plugins for gsap
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Draggable);
+
 document.addEventListener("DOMContentLoaded", function () {
     loadingScreen.init();
 });
@@ -350,24 +353,24 @@ const map = {
         const countries = document.querySelectorAll('#map-area > g:not(#World)');
         const countriesArray = Array.from(countries);
 
-
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
-
         if (!completedTasks) completedTasks = new Array();
 
+        // Open Modal
         countriesArray.forEach((element) => {
-
             element.addEventListener('click', e => {
                 return map.openModal(e.target.getAttribute('class'));
             });
         });
 
+        // Close modal
         document.addEventListener('click', event => {
             if (!event.target.classList.contains('modal__close')) return;
             event.preventDefault();
             map.closeModal();
         }, false);
 
+        // Submit button
         document.addEventListener('click', event => {
             if (!event.target.classList.contains('submitBTN')) return;
             event.preventDefault();
@@ -377,21 +380,137 @@ const map = {
             tasksCompleted.push(event.target.getAttribute('id'));
 
             let uniqueCompletedTasks = tasksCompleted.filter((v, i, a) => a.indexOf(v) === i);
-
             createCookie('tasks_completed', JSON.stringify(uniqueCompletedTasks), 1);
-
             event.target.closest('.modal').classList.add('completed');
 
         }, false);
 
+        // Cursor
         document.addEventListener('mousemove', event => {
             document.querySelector('.cursor').setAttribute("style", "top: " + (event.pageY - 60) + "px; left: " + (event.pageX - 50) + "px");
         });
 
     },
 
+    zoomEffect: function () {
+        const image = document.querySelector('#map-area');
+        const container = image.parentElement;
+
+        const containerWidth = window.innerWidth;
+        const containerHeight = window.innerHeight;
+
+        const imageWidth = window.innerWidth;
+        const imageHeight = window.innerHeight;
+
+        let zoom = {
+            value: 1,
+            min: 1,
+            max: 5,
+            step: 1,
+            factor: 1.1
+        };
+
+        document.addEventListener("wheel", onWheel, { passive: false });
+        gsap.set(image, { scale: zoom.value, transformOrigin: "left top" });
+
+        let draggable = new Draggable(image, {
+            cursor: "inherit",
+            // onClick: onClick,
+            // throwProps: true,
+            onDrag: onDrag,
+            minimumMovement: 10,
+            // allowEventDefault: true,
+            // overshootTolerance: 0
+        });
+
+        setBounds();
+
+        function onClick(event) {
+
+            const oldZoom = zoom.value;
+
+            zoom.value = Math.floor((zoom.value + zoom.step) / zoom.step) * zoom.step;
+
+            if (zoom.value > zoom.max) {
+                zoom.value = zoom.min;
+            }
+
+            changeZoom(zoom.value - oldZoom, event);
+        }
+
+        function onDrag() {
+            gsap.to(document.querySelector('.cursor'), { autoAlpha: 0 });
+        }
+
+        function onWheel(event) {
+
+            event.preventDefault();
+
+            const oldZoom = zoom.value;
+
+            const wheel = event.deltaY / 100;
+
+            if (wheel > 0) {
+                zoom.value /= zoom.factor;
+            } else {
+                zoom.value *= zoom.factor;
+            }
+
+            zoom.value = clamp(zoom.value, zoom.min, zoom.max);
+
+            changeZoom(zoom.value - oldZoom, event);
+        }
+
+        function changeZoom(zoomDelta, event) {
+
+            let scale = gsap.getProperty(image, "scaleX");
+            let x = gsap.getProperty(image, "x");
+            let y = gsap.getProperty(image, "y");
+
+            const rect = container.getBoundingClientRect();
+            const globalX = event.clientX - rect.left;
+            const globalY = event.clientY - rect.top;
+
+            const localX = (globalX - x) / scale;
+            const localY = (globalY - y) / scale;
+
+            x += -(localX * zoomDelta);
+            y += -(localY * zoomDelta);
+
+            gsap.set(image, {
+                scale: zoom.value,
+                x: x,
+                y: y,
+            });
+
+            setBounds();
+        }
+
+        function setBounds() {
+
+            const dx = containerWidth - (imageWidth * zoom.value);
+            const dy = containerHeight - (imageHeight * zoom.value);
+
+            const width = containerWidth - dx * 2;
+            const height = containerHeight - dy * 2;
+
+            draggable.applyBounds({
+                left: dx,
+                top: dy,
+                width: width,
+                height: height
+            });
+        }
+
+        function clamp(value, min, max) {
+            return value < min ? min : (value > max ? max : value);
+        }
+
+    },
+
     init: function () {
         map.eventListeners();
+        map.zoomEffect();
     }
 
 }
