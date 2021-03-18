@@ -164,7 +164,10 @@ const taskJSON = [
             complete: 'Ferdig',
             descHeading: 'Oppgave',
             listHeading: 'Hvordan lage de',
-            questionHeading: 'Spørsmål'
+            questionHeading: 'Spørsmål',
+            completeHeading: 'Spillet fullført',
+            completedText: 'Gå til brunstadTv-appen og last opp bildet ditt',
+            completedButtonSRC: 'https://brunstad.tv/live',
         }
 
     }
@@ -331,6 +334,7 @@ const map = {
                 document.querySelector('.modal').setAttribute('class', 'modal');
             }
         });
+
     },
 
     openModal: function (ID) {
@@ -339,14 +343,14 @@ const map = {
         document.querySelector('body').classList.add('overlay');
 
         task.init(ID);
+        task.audioEvents();
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
         if (completedTasks.includes(ID)) {
+            document.getElementById(ID).classList.add('completed');
             document.querySelector('.modal').classList.add('completed');
         }
-
-        task.audioEvents();
 
     },
 
@@ -357,11 +361,14 @@ const map = {
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
 
-        // Open Modal
+        completedTasks.forEach(el => {
+            document.getElementById(el).classList.add('completed');
+        });
 
+
+        // Open Modal
         countries.forEach(path => {
             path.addEventListener('click', e => {
-                console.log(e.target);
                 map.openModal(e.target.getAttribute('class'));
             }, false);
         });
@@ -384,6 +391,9 @@ const map = {
             let uniqueCompletedTasks = tasksCompleted.filter((v, i, a) => a.indexOf(v) === i);
             createCookie('tasks_completed', JSON.stringify(uniqueCompletedTasks), 1);
             e.target.closest('.modal').classList.add('completed');
+            document.getElementById(e.target.getAttribute('id')).classList.add('completed');
+
+            map.completed();
 
         }, false);
 
@@ -498,9 +508,39 @@ const map = {
 
     },
 
+    completed: function () {
+        const obj = taskJSON.filter(n => n.language === 'no');
+        let thisStrings = obj[0].strings;
+        let tl = gsap.timeline();
+
+        function completedHTML(_globalStrings) {
+            return "<div class='gameCompleted'>" +
+                "<div class='completed__content'>" +
+                "<span></span>" +
+                "<h2>" + _globalStrings.completeHeading + "</h2>" +
+                "<p>" + _globalStrings.completedText + "</p>" +
+                "<a href='" + _globalStrings.completedButtonSRC + "'>Brunstad TV</a>" +
+                "</div>" +
+                "</div>";
+        }
+
+        let completedTasks = JSON.parse(readCookie('tasks_completed'));
+        if (completedTasks.length === taskJSON[0].countries.length) {
+            document.querySelector('body').classList.add('completed');
+            document.querySelector('body').insertAdjacentHTML('beforeend', completedHTML(thisStrings));
+
+            tl
+                .to(document.querySelector('.modal'), { autoAlpha: 0 })
+                .to(document.querySelector('.gameCompleted'), { autoAlpha: 1, delay: 1 })
+
+        }
+    },
+
     init: function () {
         map.eventListeners();
         map.zoomEffect();
+
+        map.completed();
     }
 
 }

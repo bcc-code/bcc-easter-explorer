@@ -170,7 +170,6 @@
         overflow-x: hidden;
     }
 
-
     .submitBTN {
         color         : $text;
         font-family   : $ff-primary;
@@ -258,11 +257,10 @@
 
     &.completed {
 
-        .question__label,
-        .question__content a,
         #audio-container .play,
+        .question__label,
         .task__label,
-        .task__content a {
+        .submitBTN {
             background: $completed;
             color     : #fff;
         }
@@ -510,6 +508,87 @@
             width      : 120px;
             top        : -120px;
             margin-left: -60px;
+        }
+    }
+}
+
+
+.gameCompleted {
+    position  : fixed;
+    top       : 0;
+    right     : 0;
+    left      : 0;
+    bottom    : 0;
+    z-index   : 99;
+    background: rgba($text, .8);
+    visibility: hidden;
+    opacity   : 0;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+    .completed__content {
+        position     : relative;
+        max-width    : 816px;
+        padding      : 30px;
+        border-radius: 1.25em;
+        background   : $light;
+        text-align   : center;
+    }
+
+    span {
+        position   : absolute;
+        top        : -120px;
+        left       : 50%;
+        margin-left: -45px;
+        width      : 90px;
+
+        &::before {
+            content       : '';
+            display       : block;
+            padding-bottom: 172%;
+        }
+
+        body.boy & {
+            background: url('../../images/Boy.svg') no-repeat center/contain;
+        }
+
+        body.girl & {
+            background: url('../../images/Girl.svg') no-repeat center/contain;
+        }
+    }
+
+    h2 {
+        font-family: $ff-primary;
+        font-size  : 2em;
+        font-weight: bold;
+        color      : $text;
+    }
+
+    p {
+        color: $text;
+    }
+
+    a {
+        color         : $text;
+        font-family   : $ff-primary;
+        font-size     : 1em;
+        line-height   : 3em;
+        font-weight   : 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align    : center;
+
+        display         : inline-block;
+        width           : 180px;
+        background-color: $default;
+        border-radius   : 2em;
+        transition      : .3s cubic-bezier(0.23, 1, 0.320, 1);
+
+        &:hover {
+            background: $text;
+            color     : #fff;
         }
     }
 }

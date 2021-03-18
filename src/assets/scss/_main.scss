@@ -161,7 +161,8 @@
             background: url('../../images/Girl.svg') no-repeat center/contain;
         }
 
-        body.overlay & {
+        body.overlay &,
+        body.completed & {
             display: none;
         }
     }

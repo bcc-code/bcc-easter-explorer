@@ -1,43 +1,52 @@
 @import 'helpers/variables';
 
+$southpole   : #fefefe;
+$southafrica : #e3b057;
+$grenland    : #92bde2;
+$america     : #80b57b;
+$europe      : #6cb476;
+$asia        : #9ab13b;
+$southamerica: #eecb5a;
+$australia   : #f8e581;
+
 .cls-1,
 .cls-1 path {
-    fill: #fefefe
+    fill: $southpole
 }
 
 .cls-2,
 .cls-2 path {
-    fill: #e3b057
+    fill: $southafrica
 }
 
 .cls-3,
 .cls-3 path {
-    fill: #92bde2
+    fill: $grenland
 }
 
 .cls-4,
 .cls-4 path {
-    fill: #80b57b
+    fill: $america
 }
 
 .cls-5,
 .cls-5 path {
-    fill: #6cb476
+    fill: $europe
 }
 
 .cls-6,
 .cls-6 path {
-    fill: #9ab13b
+    fill: $asia
 }
 
 .cls-7,
 .cls-7 path {
-    fill: #eecb5a
+    fill: $southamerica
 }
 
 .cls-8,
 .cls-8 path {
-    fill: #f8e581
+    fill: $australia
 }
 
 .container {
@@ -110,4 +119,37 @@
     >g:not(#World):hover path {
         fill: #5A617D;
     }
+
+    >g:not(#World).completed {
+        pointer-events: none;
+    }
+
+    >g:not(#World).completed text {
+        display: none;
+    }
+
+    >g:not(#World).completed.cls-2 path {
+        fill: $southafrica
+    }
+
+    >g:not(#World).completed.cls-4 path {
+        fill: $america
+    }
+
+    >g:not(#World).completed.cls-5 path {
+        fill: $europe
+    }
+
+    >g:not(#World).completed.cls-6 path {
+        fill: $asia
+    }
+
+    >g:not(#World).completed.cls-7 path {
+        fill: $southamerica
+    }
+
+    >g:not(#World).completed.cls-8 path {
+        fill: $australia
+    }
+
 }
