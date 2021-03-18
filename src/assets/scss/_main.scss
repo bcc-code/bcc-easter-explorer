@@ -139,25 +139,30 @@
 }
 
 .cursor {
-    position      : fixed;
-    width         : 60px;
-    pointer-events: none;
+    display: none;
 
-    &::before {
-        content       : '';
+    @media (min-width: 1024px) {
         display       : block;
-        padding-bottom: 172%;
-    }
+        position      : fixed;
+        width         : 60px;
+        pointer-events: none;
 
-    body.boy & {
-        background: url('../../images/Boy.svg') no-repeat center/contain;
-    }
+        &::before {
+            content       : '';
+            display       : block;
+            padding-bottom: 172%;
+        }
 
-    body.girl & {
-        background: url('../../images/Girl.svg') no-repeat center/contain;
-    }
+        body.boy & {
+            background: url('../../images/Boy.svg') no-repeat center/contain;
+        }
 
-    body.overlay & {
-        display: none;
+        body.girl & {
+            background: url('../../images/Girl.svg') no-repeat center/contain;
+        }
+
+        body.overlay & {
+            display: none;
+        }
     }
 }

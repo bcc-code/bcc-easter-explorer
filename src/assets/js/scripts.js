@@ -325,6 +325,7 @@ const map = {
 
         gsap.to('.modal', {
             autoAlpha: 0,
+            display: 'none',
             onComplete: () => {
                 document.querySelector('.modal__content').innerHTML = '';
                 document.querySelector('.modal').setAttribute('class', 'modal');
@@ -333,11 +334,12 @@ const map = {
     },
 
     openModal: function (ID) {
-        task.init(ID);
+        gsap.to('.modal', { autoAlpha: 1, display: 'block' });
         document.querySelector('.modal').classList.add(ID);
         document.querySelector('body').classList.add('overlay');
-        gsap.to('.modal', { autoAlpha: 1 });
 
+        task.init(ID);
+        
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
         if (completedTasks.includes(ID)) {
@@ -409,6 +411,8 @@ const map = {
             step: 1,
             factor: 1.1
         };
+
+        if (document.querySelector('.modal').offsetWidth > 0 && document.querySelector('.modal').offsetHeight > 0) return;
 
         document.addEventListener("wheel", onWheel, { passive: false });
         gsap.set(image, { scale: zoom.value, transformOrigin: "left top" });
