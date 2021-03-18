@@ -221,8 +221,8 @@ const task = {
             "<span>" + _globalStrings.questionHeading + "</span>" +
             "<p>" + _this.listLabel + "</p>" +
             "<ol>" + list() + "</ol>" +
-            "<a href='javascript:void(0)' class='submitBTN'  id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
             "</div>" +
+            "<a href='javascript:void(0)' class='submitBTN'  id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
             "</div>";
     },
 
@@ -339,7 +339,7 @@ const map = {
         document.querySelector('body').classList.add('overlay');
 
         task.init(ID);
-        
+
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
         if (completedTasks.includes(ID)) {
@@ -353,43 +353,43 @@ const map = {
     eventListeners: function () {
 
         const countries = document.querySelectorAll('#map-area > g:not(#World)');
-        const countriesArray = Array.from(countries);
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
 
         // Open Modal
-        countriesArray.forEach((element) => {
-            element.addEventListener('click touchstart', e => {
-                return map.openModal(e.target.getAttribute('class'));
-            });
+
+        countries.forEach(path => {
+            path.addEventListener('click', e => {
+                console.log(e.target);
+                map.openModal(e.target.getAttribute('class'));
+            }, false);
         });
 
         // Close modal
-        document.addEventListener('click', event => {
-            if (!event.target.classList.contains('modal__close')) return;
-            event.preventDefault();
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('modal__close')) return;
             map.closeModal();
         }, false);
 
         // Submit button
-        document.addEventListener('click', event => {
-            if (!event.target.classList.contains('submitBTN')) return;
-            event.preventDefault();
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('submitBTN')) return;
+            e.preventDefault();
 
             let tasksCompleted = JSON.parse(readCookie('tasks_completed'));
             if (!tasksCompleted) tasksCompleted = new Array();
-            tasksCompleted.push(event.target.getAttribute('id'));
+            tasksCompleted.push(e.target.getAttribute('id'));
 
             let uniqueCompletedTasks = tasksCompleted.filter((v, i, a) => a.indexOf(v) === i);
             createCookie('tasks_completed', JSON.stringify(uniqueCompletedTasks), 1);
-            event.target.closest('.modal').classList.add('completed');
+            e.target.closest('.modal').classList.add('completed');
 
         }, false);
 
         // Cursor
-        document.addEventListener('mousemove', event => {
-            document.querySelector('.cursor').setAttribute("style", "top: " + (event.pageY - 60) + "px; left: " + (event.pageX - 50) + "px");
+        document.addEventListener('mousemove', e => {
+            document.querySelector('.cursor').setAttribute("style", "top: " + (e.pageY - 60) + "px; left: " + (e.pageX - 50) + "px");
         });
 
     },
@@ -585,6 +585,16 @@ const loadingScreen = {
 }
 
 // Helpers
+
+// function listen(type, selector, callback) {
+//     document.addEventListener(type, event => {
+//         const target = event.target.closest(selector);
+
+//         if (target) {
+//             callback(event, target);
+//         }
+//     });
+// }
 
 function appendHTML(container, content) {
     const el = document.querySelector(container);

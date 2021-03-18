@@ -63,10 +63,7 @@
     }
 
     .modal__content {
-        height    : 100%;
-        padding   : 120px 20px 50px;
-        overflow-y: auto;
-        overflow-x: hidden;
+        height: 100%;
     }
 
     .modal__character {
@@ -138,6 +135,7 @@
         }
 
         .label {
+            display       : none;
             color         : #fff;
             font-family   : $ff-primary;
             font-weight   : 400;
@@ -157,10 +155,61 @@
                 display: inline-block;
             }
         }
+
+        @media (min-width: 1024px) {
+            .label {
+                display: inline-block;
+            }
+        }
+    }
+
+    .task {
+        padding   : 100px 20px 20px;
+        height    : 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+
+    .submitBTN {
+        color         : $text;
+        font-family   : $ff-primary;
+        font-size     : 1em;
+        line-height   : 3em;
+        font-weight   : 600;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-align    : center;
+
+        display         : inline-block;
+        width           : 180px;
+        background-color: $default;
+        border-radius   : 2em;
+        transition      : .3s cubic-bezier(0.23, 1, 0.320, 1);
+
+        &:hover {
+            background: $text;
+            color     : #fff;
+        }
+    }
+
+    .question {
+        max-width: 816px;
+        position : relative;
+
+        .submitBTN {
+            position   : absolute;
+            bottom     : -20px;
+            left       : 50%;
+            margin-left: -100px;
+            width      : 200px;
+            text-align : center;
+        }
     }
 
 
     &.task {
+
         .modal__close {
             position: absolute;
             top     : 10px;
@@ -175,11 +224,6 @@
     }
 
     &.question {
-
-        .question {
-            max-width: 816px;
-            position : relative;
-        }
 
         .modal__container {
             background     : rgba($text, .8);
@@ -196,6 +240,7 @@
             display        : flex;
             align-items    : center;
             justify-content: center;
+            padding        : 100px 20px 40px;
         }
 
         .modal__close {
@@ -234,6 +279,7 @@
 }
 
 .task {
+
     .task__wrapper {
         display: flex;
     }
@@ -290,28 +336,6 @@
             line-height  : 1.5em;
             font-weight  : 400;
             margin-bottom: 1em;
-        }
-
-        a {
-            color         : $text;
-            font-family   : $ff-primary;
-            font-size     : 1em;
-            line-height   : 3em;
-            font-weight   : 600;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            text-align    : center;
-
-            display         : block;
-            width           : 180px;
-            background-color: $default;
-            border-radius   : 2em;
-            transition      : .3s cubic-bezier(0.23, 1, 0.320, 1);
-
-            &:hover {
-                background: $text;
-                color     : #fff;
-            }
         }
 
         span {
@@ -397,6 +421,9 @@
         border-radius: 0 0 30px 30px;
         position     : relative;
         padding      : 30px 20px 30px;
+        height       : 400px;
+        overflow-y   : auto;
+        overflow-x   : hidden;
 
         h2 {
             color        : $text;
@@ -420,33 +447,6 @@
             font-weight  : 400;
             margin-top   : 0;
             margin-bottom: 1em;
-        }
-
-        a {
-            position   : absolute;
-            bottom     : -20px;
-            left       : 50%;
-            margin-left: -100px;
-            width      : 200px;
-            text-align : center;
-
-            color         : $text;
-            font-family   : $ff-primary;
-            font-size     : 1em;
-            line-height   : 3em;
-            font-weight   : 600;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-
-            display      : inline-block;
-            background   : $default;
-            border-radius: 2em;
-            transition   : .3s cubic-bezier(0.23, 1, 0.320, 1);
-
-            &:hover {
-                background: $text;
-                color     : #fff;
-            }
         }
 
         span {
@@ -481,10 +481,10 @@
 
     .question__char {
         position   : absolute;
-        top        : -120px;
+        top        : -90px;
         left       : 50%;
-        margin-left: -60px;
-        width      : 120px;
+        margin-left: -45px;
+        width      : 90px;
 
         &::before {
             content       : '';
@@ -498,6 +498,18 @@
 
         body.girl & {
             background: url('../../images/Girl.svg') no-repeat center/contain;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .question__content {
+            height: auto;
+        }
+
+        .question__char {
+            width      : 120px;
+            top        : -120px;
+            margin-left: -60px;
         }
     }
 }
