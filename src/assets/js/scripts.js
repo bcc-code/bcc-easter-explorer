@@ -419,27 +419,18 @@ const map = {
 
         let draggable = new Draggable(image, {
             cursor: "inherit",
-            // onClick: onClick,
             // throwProps: true,
+            onClick: handleClick,
             onDrag: onDrag,
             minimumMovement: 10,
-            // allowEventDefault: true,
+            allowEventDefault: true,
             // overshootTolerance: 0
         });
 
         setBounds();
 
-        function onClick(event) {
+        function handleClick() {
 
-            const oldZoom = zoom.value;
-
-            zoom.value = Math.floor((zoom.value + zoom.step) / zoom.step) * zoom.step;
-
-            if (zoom.value > zoom.max) {
-                zoom.value = zoom.min;
-            }
-
-            changeZoom(zoom.value - oldZoom, event);
         }
 
         function onDrag() {
