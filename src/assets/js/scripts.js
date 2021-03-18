@@ -525,6 +525,8 @@ const map = {
         }
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
+        if (!completedTasks) completedTasks = new Array();
+        
         if (completedTasks.length === taskJSON[0].countries.length) {
             document.querySelector('body').classList.add('completed');
             document.querySelector('body').insertAdjacentHTML('beforeend', completedHTML(thisStrings));
