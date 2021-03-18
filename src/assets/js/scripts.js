@@ -414,13 +414,12 @@ const map = {
 
         if (document.querySelector('.modal').offsetWidth > 0 && document.querySelector('.modal').offsetHeight > 0) return;
 
-        document.addEventListener("wheel", onWheel, { passive: false });
+        document.querySelector('#map-area').addEventListener("wheel", onWheel, { passive: false });
         gsap.set(image, { scale: zoom.value, transformOrigin: "left top" });
 
         let draggable = new Draggable(image, {
             cursor: "inherit",
             // throwProps: true,
-            onClick: handleClick,
             onDrag: onDrag,
             minimumMovement: 10,
             allowEventDefault: true,
@@ -428,10 +427,6 @@ const map = {
         });
 
         setBounds();
-
-        function handleClick() {
-
-        }
 
         function onDrag() {
             gsap.to(document.querySelector('.cursor'), { autoAlpha: 0 });
