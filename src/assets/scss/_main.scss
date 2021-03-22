@@ -167,3 +167,28 @@
         }
     }
 }
+
+.resetGame,
+.resetChar {
+    background    : $text;
+    font-family   : $ff-primary;
+    font-size     : 14px;
+    font-weight   : bold;
+    color         : #fff;
+    text-transform: uppercase;
+    justify-self  : 40px;
+    line-height   : 40px;
+    border-radius : 20px;
+    padding       : 0 20px;
+    position      : absolute;
+    z-index       : 100;
+    left          : 40px;
+}
+
+.resetChar {
+    top: 40px;
+}
+
+.resetGame {
+    top: 90px;
+}

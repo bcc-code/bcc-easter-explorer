@@ -379,6 +379,9 @@ const map = {
             map.closeModal();
         }, false);
 
+
+
+
         // Submit button
         document.addEventListener('click', e => {
             if (!e.target.classList.contains('submitBTN')) return;
@@ -393,14 +396,30 @@ const map = {
             e.target.closest('.modal').classList.add('completed');
             document.getElementById(e.target.getAttribute('id')).classList.add('completed');
 
+            map.closeModal();
             map.completed();
-
         }, false);
 
         // Cursor
         document.addEventListener('mousemove', e => {
             document.querySelector('.cursor').setAttribute("style", "top: " + (e.pageY - 60) + "px; left: " + (e.pageX - 50) + "px");
         });
+
+
+        // Reset
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('resetGame')) return;
+            eraseCookie('tasks_completed');
+            location.reload();
+            return false;
+        }, false);
+
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('resetChar')) return;
+            eraseCookie('character');
+            location.reload();
+            return false;
+        }, false);
 
     },
 
@@ -526,7 +545,7 @@ const map = {
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
-        
+
         if (completedTasks.length === taskJSON[0].countries.length) {
             document.querySelector('body').classList.add('completed');
             document.querySelector('body').insertAdjacentHTML('beforeend', completedHTML(thisStrings));

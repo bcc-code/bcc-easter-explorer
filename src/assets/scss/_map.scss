@@ -120,9 +120,9 @@ $australia   : #f8e581;
         fill: #5A617D;
     }
 
-    >g:not(#World).completed {
-        pointer-events: none;
-    }
+    // >g:not(#World).completed {
+    //     pointer-events: none;
+    // }
 
     >g:not(#World).completed text {
         display: none;
