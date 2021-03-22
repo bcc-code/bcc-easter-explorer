@@ -580,7 +580,9 @@ const charScreen = {
 
                 tl
                     .to(document.querySelector('.character'), { autoAlpha: 0 })
-                    .to(document.querySelector('.container'), { autoAlpha: 1 });
+                    .to(document.querySelector('.container'), { autoAlpha: 1 })
+                    .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
+                    .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
             });
         });
 
@@ -601,13 +603,17 @@ const charScreen = {
 
             tl
                 .to(charPage, { autoAlpha: 0 })
-                .to(mapPage, { autoAlpha: 1 });
+                .to(mapPage, { autoAlpha: 1 })
+                .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
+                .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
         } else {
             let tl = gsap.timeline();
 
             tl
                 .to(charPage, { autoAlpha: 1 })
-                .to(mapPage, { autoAlpha: 0 });
+                .to(mapPage, { autoAlpha: 0 })
+                .to(document.querySelector('.resetGame'), { autoAlpha: 0 })
+                .to(document.querySelector('.resetChar'), { autoAlpha: 0 });
         }
     }
 }

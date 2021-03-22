@@ -168,8 +168,7 @@
     }
 }
 
-.resetGame,
-.resetChar {
+.reset {
     background    : $text;
     font-family   : $ff-primary;
     font-size     : 14px;
@@ -183,6 +182,8 @@
     position      : absolute;
     z-index       : 2;
     left          : 40px;
+    opacity       : 0;
+    visibility    : hidden;
 
     body.completed & {
         z-index: 100;
