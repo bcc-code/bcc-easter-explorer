@@ -1,42 +1,81 @@
-.cls-1 {
-    fill: #fefefe
+@import 'helpers/variables';
+
+$southpole   : #fefefe;
+$southafrica : #e3b057;
+$grenland    : #92bde2;
+$america     : #80b57b;
+$europe      : #6cb476;
+$asia        : #9ab13b;
+$southamerica: #eecb5a;
+$australia   : #f8e581;
+
+.cls-1,
+.cls-1 path {
+    fill: $southpole
 }
 
-.cls-2 {
-    fill: #e3b057
+.cls-2,
+.cls-2 path {
+    fill: $southafrica
 }
 
-.cls-3 {
-    fill: #92bde2
+.cls-3,
+.cls-3 path {
+    fill: $grenland
 }
 
-.cls-4 {
-    fill: #80b57b
+.cls-4,
+.cls-4 path {
+    fill: $america
 }
 
-.cls-5 {
-    fill: #6cb476
+.cls-5,
+.cls-5 path {
+    fill: $europe
 }
 
-.cls-6 {
-    fill: #9ab13b
+.cls-6,
+.cls-6 path {
+    fill: $asia
 }
 
-.cls-7 {
-    fill: #eecb5a
+.cls-7,
+.cls-7 path {
+    fill: $southamerica
 }
 
-.cls-8 {
-    fill: #f8e581
+.cls-8,
+.cls-8 path {
+    fill: $australia
+}
+
+.container {
+    position     : fixed;
+    width        : 100vw;
+    height       : 100%;
+    border-radius: 40px;
+    border       : 20px solid #fff;
+    opacity      : 0;
+    overflow     : hidden;
+    visibility   : hidden;
+
+    .container__wrapper {
+        position  : absolute;
+        top       : 0;
+        left      : 0;
+        width     : 100%;
+        height    : 100%;
+        padding   : 0 40px;
+        overflow  : hidden;
+        background: #a7e6f9;
+    }
 }
 
 #map-area {
-    display   : block;
-    height    : 100%;
-    min-width : 100%;
-    padding   : 100px 0 0;
-    overflow  : visible;
-    background: #a7e6f9;
+    position: relative;
+    display : block;
+    height  : 100%;
+    overflow: visible;
 
     &::after {
         content   : '';
@@ -48,11 +87,69 @@
         background: url('../../images/map-items.png') no-repeat center/contain;
     }
 
-    #world {
+    #World {
         pointer-events: none;
+        z-index       : 1;
     }
 
     image {
         pointer-events: none;
     }
+
+    path {
+        transition: .5s ease-in-out;
+    }
+
+    text {
+        font-family: $ff-primary;
+        font-size  : 14px;
+        font-weight: bold;
+        fill       : $text;
+        z-index    : 2;
+    }
+
+    >g:not(#World) {
+        cursor: pointer;
+    }
+
+    >g:not(#World) path {
+        fill: #FDE758;
+    }
+
+    >g:not(#World):hover path {
+        fill: #5A617D;
+    }
+
+    // >g:not(#World).completed {
+    //     pointer-events: none;
+    // }
+
+    >g:not(#World).completed text {
+        display: none;
+    }
+
+    >g:not(#World).completed.cls-2 path {
+        fill: $southafrica
+    }
+
+    >g:not(#World).completed.cls-4 path {
+        fill: $america
+    }
+
+    >g:not(#World).completed.cls-5 path {
+        fill: $europe
+    }
+
+    >g:not(#World).completed.cls-6 path {
+        fill: $asia
+    }
+
+    >g:not(#World).completed.cls-7 path {
+        fill: $southamerica
+    }
+
+    >g:not(#World).completed.cls-8 path {
+        fill: $australia
+    }
+
 }

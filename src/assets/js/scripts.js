@@ -1,3 +1,6 @@
+// registering plugins for gsap
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Draggable);
+
 document.addEventListener("DOMContentLoaded", function () {
     loadingScreen.init();
 });
@@ -161,7 +164,10 @@ const taskJSON = [
             complete: 'Ferdig',
             descHeading: 'Oppgave',
             listHeading: 'Hvordan lage de',
-            questionHeading: 'Spørsmål'
+            questionHeading: 'Spørsmål',
+            completeHeading: 'Spillet fullført',
+            completedText: 'Gå til brunstadTv-appen og last opp bildet ditt',
+            completedButtonSRC: 'https://brunstad.tv/live',
         }
 
     }
@@ -218,8 +224,8 @@ const task = {
             "<span>" + _globalStrings.questionHeading + "</span>" +
             "<p>" + _this.listLabel + "</p>" +
             "<ol>" + list() + "</ol>" +
-            "<a href='javascript:void(0)' class='submitBTN'  id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
             "</div>" +
+            "<a href='javascript:void(0)' class='submitBTN'  id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
             "</div>";
     },
 
@@ -318,106 +324,244 @@ const task = {
 const map = {
 
     closeModal: function () {
+        document.querySelector('body').classList.remove('overlay');
+
         gsap.to('.modal', {
             autoAlpha: 0,
+            display: 'none',
             onComplete: () => {
                 document.querySelector('.modal__content').innerHTML = '';
                 document.querySelector('.modal').setAttribute('class', 'modal');
             }
         });
+
     },
 
     openModal: function (ID) {
-        task.init(ID);
+        gsap.to('.modal', { autoAlpha: 1, display: 'block' });
         document.querySelector('.modal').classList.add(ID);
-        gsap.to('.modal', { autoAlpha: 1 });
+        document.querySelector('body').classList.add('overlay');
+
+        task.init(ID);
+        task.audioEvents();
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
         if (completedTasks.includes(ID)) {
+            document.getElementById(ID).classList.add('completed');
             document.querySelector('.modal').classList.add('completed');
         }
-
-        task.audioEvents();
 
     },
 
     eventListeners: function () {
 
-        const countries = document.querySelectorAll('#map-area > path');
-        const countriesArray = Array.from(countries);
-        const activeCountries = ['NO', 'PO', 'US', 'AU', 'PE', 'IS', 'IN', 'CH', 'RU', 'ZA'];
+        const countries = document.querySelectorAll('#map-area > g:not(#World)');
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
-
         if (!completedTasks) completedTasks = new Array();
-        let remainingTasks = activeCountries.filter(x => !completedTasks.includes(x));
 
-        countriesArray.forEach((element, index) => {
-
-            const filterRemainingTasks = remainingTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
-            const filterCompletedTasks = completedTasks.some(el => countriesArray[index].getAttribute('id').includes(el));
-
-            if (filterRemainingTasks) {
-                element.style.fill = '#FDE758';
-
-                element.addEventListener('mouseenter', function () {
-                    gsap.to(element, { fill: '#5A617D' });
-                });
-
-                element.addEventListener('mouseleave', function () {
-                    gsap.to(element, { fill: '#FDE758' });
-                });
-            }
-
-            if (filterCompletedTasks) {
-                element.style.fill = '';
-
-                element.addEventListener('mouseenter mouseleave', function () {
-                    gsap.to(element, { fill: '' });
-                });
-            }
-
-            element.style.cursor = 'pointer';
-
-            element.addEventListener('click', (e) => {
-                return map.openModal(e.target.getAttribute('id'));
-            });
+        completedTasks.forEach(el => {
+            document.getElementById(el).classList.add('completed');
         });
 
-        document.addEventListener('click', (event) => {
-            if (!event.target.classList.contains('modal__close')) return;
-            event.preventDefault();
+
+        // Open Modal
+        countries.forEach(path => {
+            path.addEventListener('click', e => {
+                map.openModal(e.target.getAttribute('class'));
+            }, false);
+        });
+
+        // Close modal
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('modal__close')) return;
             map.closeModal();
         }, false);
 
-        document.addEventListener('click', (event) => {
-            if (!event.target.classList.contains('submitBTN')) return;
-            event.preventDefault();
+
+
+
+        // Submit button
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('submitBTN')) return;
+            e.preventDefault();
 
             let tasksCompleted = JSON.parse(readCookie('tasks_completed'));
             if (!tasksCompleted) tasksCompleted = new Array();
-            tasksCompleted.push(event.target.getAttribute('id'));
+            tasksCompleted.push(e.target.getAttribute('id'));
 
             let uniqueCompletedTasks = tasksCompleted.filter((v, i, a) => a.indexOf(v) === i);
-
             createCookie('tasks_completed', JSON.stringify(uniqueCompletedTasks), 1);
+            e.target.closest('.modal').classList.add('completed');
+            document.getElementById(e.target.getAttribute('id')).classList.add('completed');
 
-            event.target.closest('.modal').classList.add('completed');
+            map.closeModal();
+            map.completed();
+        }, false);
 
-            countries.forEach((element, index) => {
-                const filter = new Array(event.target.getAttribute('id')).some(el => countries[index].getAttribute('id').includes(el));
-                if (filter) {
-                    element.style.fill = '';
-                }
-            });
+        // Cursor
+        document.addEventListener('mousemove', e => {
+            document.querySelector('.cursor').setAttribute("style", "top: " + (e.pageY - 60) + "px; left: " + (e.pageX - 50) + "px");
+        });
 
+
+        // Reset
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('resetGame')) return;
+            eraseCookie('tasks_completed');
+            location.reload();
+            return false;
+        }, false);
+
+        document.addEventListener('click', e => {
+            if (!e.target.classList.contains('resetChar')) return;
+            eraseCookie('character');
+            location.reload();
+            return false;
         }, false);
 
     },
 
+    zoomEffect: function () {
+        const image = document.querySelector('#map-area');
+        const container = image.parentElement;
+
+        const containerWidth = window.innerWidth;
+        const containerHeight = window.innerHeight;
+
+        const imageWidth = window.innerWidth;
+        const imageHeight = window.innerHeight;
+
+        let zoom = {
+            value: 1,
+            min: 1,
+            max: 5,
+            step: 1,
+            factor: 1.1
+        };
+
+        if (document.querySelector('.modal').offsetWidth > 0 && document.querySelector('.modal').offsetHeight > 0) return;
+
+        document.querySelector('#map-area').addEventListener("wheel", onWheel, { passive: false });
+        gsap.set(image, { scale: zoom.value, transformOrigin: "left top" });
+
+        let draggable = new Draggable(image, {
+            cursor: "inherit",
+            // throwProps: true,
+            onDrag: onDrag,
+            minimumMovement: 10,
+            allowEventDefault: true,
+            // overshootTolerance: 0
+        });
+
+        setBounds();
+
+        function onDrag() {
+            gsap.to(document.querySelector('.cursor'), { autoAlpha: 0 });
+        }
+
+        function onWheel(event) {
+
+            event.preventDefault();
+
+            const oldZoom = zoom.value;
+
+            const wheel = event.deltaY / 100;
+
+            if (wheel > 0) {
+                zoom.value /= zoom.factor;
+            } else {
+                zoom.value *= zoom.factor;
+            }
+
+            zoom.value = clamp(zoom.value, zoom.min, zoom.max);
+
+            changeZoom(zoom.value - oldZoom, event);
+        }
+
+        function changeZoom(zoomDelta, event) {
+
+            let scale = gsap.getProperty(image, "scaleX");
+            let x = gsap.getProperty(image, "x");
+            let y = gsap.getProperty(image, "y");
+
+            const rect = container.getBoundingClientRect();
+            const globalX = event.clientX - rect.left;
+            const globalY = event.clientY - rect.top;
+
+            const localX = (globalX - x) / scale;
+            const localY = (globalY - y) / scale;
+
+            x += -(localX * zoomDelta);
+            y += -(localY * zoomDelta);
+
+            gsap.set(image, {
+                scale: zoom.value,
+                x: x,
+                y: y,
+            });
+
+            setBounds();
+        }
+
+        function setBounds() {
+
+            const dx = containerWidth - (imageWidth * zoom.value);
+            const dy = containerHeight - (imageHeight * zoom.value);
+
+            const width = containerWidth - dx * 2;
+            const height = containerHeight - dy * 2;
+
+            draggable.applyBounds({
+                left: dx,
+                top: dy,
+                width: width,
+                height: height
+            });
+        }
+
+        function clamp(value, min, max) {
+            return value < min ? min : (value > max ? max : value);
+        }
+
+    },
+
+    completed: function () {
+        const obj = taskJSON.filter(n => n.language === 'no');
+        let thisStrings = obj[0].strings;
+        let tl = gsap.timeline();
+
+        function completedHTML(_globalStrings) {
+            return "<div class='gameCompleted'>" +
+                "<div class='completed__content'>" +
+                "<span></span>" +
+                "<h2>" + _globalStrings.completeHeading + "</h2>" +
+                "<p>" + _globalStrings.completedText + "</p>" +
+                "<a href='" + _globalStrings.completedButtonSRC + "'>Brunstad TV</a>" +
+                "</div>" +
+                "</div>";
+        }
+
+        let completedTasks = JSON.parse(readCookie('tasks_completed'));
+        if (!completedTasks) completedTasks = new Array();
+
+        if (completedTasks.length === taskJSON[0].countries.length) {
+            document.querySelector('body').classList.add('completed');
+            document.querySelector('body').insertAdjacentHTML('beforeend', completedHTML(thisStrings));
+
+            tl
+                .to(document.querySelector('.modal'), { autoAlpha: 0 })
+                .to(document.querySelector('.gameCompleted'), { autoAlpha: 1, delay: 1 })
+
+        }
+    },
+
     init: function () {
         map.eventListeners();
+        map.zoomEffect();
+
+        map.completed();
     }
 
 }
@@ -436,7 +580,9 @@ const charScreen = {
 
                 tl
                     .to(document.querySelector('.character'), { autoAlpha: 0 })
-                    .to(document.querySelector('.container'), { autoAlpha: 1 });
+                    .to(document.querySelector('.container'), { autoAlpha: 1 })
+                    .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
+                    .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
             });
         });
 
@@ -457,13 +603,17 @@ const charScreen = {
 
             tl
                 .to(charPage, { autoAlpha: 0 })
-                .to(mapPage, { autoAlpha: 1 });
+                .to(mapPage, { autoAlpha: 1 })
+                .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
+                .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
         } else {
             let tl = gsap.timeline();
 
             tl
                 .to(charPage, { autoAlpha: 1 })
-                .to(mapPage, { autoAlpha: 0 });
+                .to(mapPage, { autoAlpha: 0 })
+                .to(document.querySelector('.resetGame'), { autoAlpha: 0 })
+                .to(document.querySelector('.resetChar'), { autoAlpha: 0 });
         }
     }
 }
@@ -488,6 +638,16 @@ const loadingScreen = {
 }
 
 // Helpers
+
+// function listen(type, selector, callback) {
+//     document.addEventListener(type, event => {
+//         const target = event.target.closest(selector);
+
+//         if (target) {
+//             callback(event, target);
+//         }
+//     });
+// }
 
 function appendHTML(container, content) {
     const el = document.querySelector(container);
