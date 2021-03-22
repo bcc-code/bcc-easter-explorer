@@ -51,7 +51,7 @@ $australia   : #f8e581;
 
 .container {
     position     : fixed;
-    width        : 100vw;
+    width        : 100%;
     height       : 100%;
     border-radius: 40px;
     border       : 20px solid #fff;
@@ -65,9 +65,13 @@ $australia   : #f8e581;
         left      : 0;
         width     : 100%;
         height    : 100%;
-        padding   : 0 40px;
+        padding   : 100px 0 0;
         overflow  : hidden;
         background: #a7e6f9;
+
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
     }
 }
 

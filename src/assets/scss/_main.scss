@@ -47,6 +47,16 @@
         text-align : center;
     }
 
+    span {
+        display    : inline-block;
+        font-family: $ff-primary;
+        font-size  : 20px;
+        font-weight: bold;
+        color      : $text;
+        margin-top : 1em;
+        transition : .3s ease;
+    }
+
     .card {
         width: 100%;
         flex : 0 0 auto;
@@ -68,6 +78,10 @@
 
             &:hover {
                 background: $text;
+
+                span {
+                    color: #fff;
+                }
             }
         }
 

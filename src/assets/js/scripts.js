@@ -17,9 +17,15 @@ const taskJSON = [
                 ID: 'AU',
                 country: 'Australia',
                 type: 'question',
-                text: 'I Australia feires påsken om høsten, i motsetning til andre land på den nordlige halvkule, hvor påsken er om våren. Påsken er en av de viktigste markeringene i den kristne kalender, som markerer Jesu oppstandelse fra de døde. Det er en tid for å samle familien. På påskedag begynner dagen med en stor påskeeggjakt for alle barna og avsluttes med et påskemåltid som vanligvis består av stekt lam og stekte grønnsaker. Det er mange aktiviteter for barna i påsketiden, som for eksempel fargelegging og maling av påskeegg. En annen tradisjon er hot cross boller som du kan kjøpe i god tid før påske. Det er søte boller, fylt med krydder og tørket frukt og dekorert med et hvitt kors som representerer Jesu kors.',
-                listLabel: 'Hvilken årstid er det i Australia når de feirer påske?',
-                listItems: [
+                text: [
+                    'I Australia feires påsken om høsten, i motsetning til andre land på den nordlige halvkule, hvor påsken er om våren.',
+                    'Påsken er en av de viktigste markeringene i den kristne kalender, som markerer Jesu oppstandelse fra de døde.',
+                    'Det er en tid for å samle familien. På påskedag begynner dagen med en stor påskeeggjakt for alle barna og avsluttes med et påskemåltid som vanligvis består av stekt lam og stekte grønnsaker.',
+                    'Det er mange aktiviteter for barna i påsketiden, som for eksempel fargelegging og maling av påskeegg.',
+                    'En annen tradisjon er hot cross boller som du kan kjøpe i god tid før påske. Det er søte boller, fylt med krydder og tørket frukt og dekorert med et hvitt kors som representerer Jesu kors.'],
+                questionHeading: 'Spørsmål',
+                question: 'Hvilken årstid er det i Australia når de feirer påske?',
+                questionOptions: [
                     'Sommer',
                     'Vinter',
                     'Høst',
@@ -34,17 +40,20 @@ const taskJSON = [
                     'Påsken er den viktigste høytiden for de kristne etter julen. Det er mange påsketradisjoner og -ritualer. Feiringen foregår fra mars til mai, avhengig av hvilke datoer ferien faller på. Påsken er en familieferie. I påskehelgen drar man til kirken, for bønn og for å bli velsignet. Påsken er også en feiring med god mat og tradisjonelle retter. Som i mange andre land, er det også en tradisjon i Russland å male egg og dekorere dem. Det er forskjellige leker knyttet til dekorerte egg. Det er for eksempel en lek hvor barna tar et egg hver og slår sitt egg mot en annens egg, det egg som sprekker sist vinner.',
                     'Dekorerte egg blir også vanligvis gitt til venner og familie som et symbol på takknemlighet. Til påske baker man en spesiell kake som heter Kulich. Kaken Kulich er et symbol på at Jesus er med oss.'
                 ],
-                listLabel: 'Hva heter den spesielle kaken som man baker i Russland?',
+                questionHeading: 'Spørsmål',
+                question: 'Hva heter den spesielle kaken som man baker i Russland?'
             },
 
             {
                 ID: 'IN',
                 country: 'India',
                 type: 'task',
-                text: 'I India feires ikke påske som en nasjonal feiring, men for kristne er det en hellig begivenhet. I BCC Bangalore feires påsken med en fest. Historien om Jesu oppstandelse fortelles, og barna får sjokolade eller marsipanegg. I det siste har vi vært med på de aktivitetene som BCC har organisert, og fulgt med på sendingene for barn.',
-                description: 'Lag din egen sjokolade',
-                listLabel: 'Du trenger: hvit, lys eller mørk sjokolade, noe godt du vil ha på din sjokolade f.eks. dryss, sjokoladeegg – eller kanin, godteri mm.',
-                listItems: [
+                text: ['I India feires ikke påske som en nasjonal feiring, men for kristne er det en hellig begivenhet. I BCC Bangalore feires påsken med en fest. Historien om Jesu oppstandelse fortelles, og barna får sjokolade eller marsipanegg. I det siste har vi vært med på de aktivitetene som BCC har organisert, og fulgt med på sendingene for barn.'],
+                taskHeading: 'Oppgave',
+                taskDescription: 'Lag din egen sjokolade',
+                taskDescriptionInfo: 'Du trenger: hvit, lys eller mørk sjokolade, noe godt du vil ha på din sjokolade f.eks. dryss, sjokoladeegg – eller kanin, godteri mm.',
+                taskHowToLabel: 'Hvordan lage de',
+                taskItems: [
                     'Få hjelp fra en voksen som kan smelte sjokoladen for deg og legg det på en plate med bakepapir.',
                     'Legg hva du liker på den smeltet sjokoladen.',
                     'Legg den ferdige sjokoladen i fryseren og la den avkjøle.'
@@ -56,8 +65,11 @@ const taskJSON = [
                 ID: 'ZA',
                 country: 'Sør-Afrika',
                 type: 'task',
-                text: 'Påsken i Sør-Afrika foregår i vakkert høstvær som ikke er for varmt eller kaldt. Vi har også tradisjonen med å lage påske-egg-jakt, som i mange andre land. Påskeharen gjemmer eggene overalt, både inne i våre hus og ute i hagen. Det mest populære godteriet i påsken er et marshmallow-påskeegg og hot cross-boller. I kristne familier forteller man også historien om påsken og hvordan Jesu ble korsfestet og stod opp igjen for oss. Det er mange som tar ferie i påsken og er samlet med hele familien. Om søndagen lager vi en stor, nydelig påskemorgen-frokost med familiene våre. Noen familier leker også noe vi kaller "boeresport", det er blant annet «egg på en skje»-løp, sekkeløp etc',
-                description: 'Lag en stafett hvor du skal løpe med ett egg på en skje',
+                text: [
+                    'Påsken i Sør-Afrika foregår i vakkert høstvær som ikke er for varmt eller kaldt. Vi har også tradisjonen med å lage påske-egg-jakt, som i mange andre land. Påskeharen gjemmer eggene overalt, både inne i våre hus og ute i hagen. Det mest populære godteriet i påsken er et marshmallow-påskeegg og hot cross-boller. I kristne familier forteller man også historien om påsken og hvordan Jesu ble korsfestet og stod opp igjen for oss.',
+                    ' Det er mange som tar ferie i påsken og er samlet med hele familien. Om søndagen lager vi en stor, nydelig påskemorgen-frokost med familiene våre. Noen familier leker også noe vi kaller "boeresport", det er blant annet «egg på en skje»-løp, sekkeløp etc'],
+                taskHeading: 'Oppgave',
+                taskDescription: 'Lag en stafett hvor du skal løpe med ett egg på en skje',
             },
 
             {
@@ -66,10 +78,12 @@ const taskJSON = [
                 audio: './audio/test.mp3',
                 type: 'task',
                 image: './images/usa.png',
-                text: 'I Amerika har vi mange morsomme måter å feire påsken på. Blant annet fyller vi mange fargerike plastegg med alle slags godterier og da er det noen som kler seg ut som den søte påskeharen og gjemmer disse eggene på alle mulige steder, for eksempel i trærne, i gresset, ja overalt. Etter at haren har gjemt eggene går vi på påskeeggjakt for å finne de. Etter at vi har funnet dem, spiser vi alt det deilige godteriet. Vi feirer også påsken med påskekurver, hvor vi fyller en kurv med leker og store sjokoladekaniner, sjokoladekyllinger og sjokoladeegg. Når vi har fylt disse kurvene, møter vi våre venner og gir kurvene til hverandre. Vi bruker også kurvene til alle eggene vi fant på påskeeggjakten. Men det viktigste vi gjør for å feire denne dagen, er å komme sammen og lese påskehistorien om Jesus, og spise sammen. Det er en morsom og festlig høytid.',
-                description: 'Lag din egen mini-påskeeggkurv.',
-                listLabel: 'Du trenger: toalettpapirruller, maling eller fargerikt papir, saks og lim.',
-                listItems: [
+                text: ['I Amerika har vi mange morsomme måter å feire påsken på. Blant annet fyller vi mange fargerike plastegg med alle slags godterier og da er det noen som kler seg ut som den søte påskeharen og gjemmer disse eggene på alle mulige steder, for eksempel i trærne, i gresset, ja overalt. Etter at haren har gjemt eggene går vi på påskeeggjakt for å finne de. Etter at vi har funnet dem, spiser vi alt det deilige godteriet. Vi feirer også påsken med påskekurver, hvor vi fyller en kurv med leker og store sjokoladekaniner, sjokoladekyllinger og sjokoladeegg. Når vi har fylt disse kurvene, møter vi våre venner og gir kurvene til hverandre. Vi bruker også kurvene til alle eggene vi fant på påskeeggjakten. Men det viktigste vi gjør for å feire denne dagen, er å komme sammen og lese påskehistorien om Jesus, og spise sammen. Det er en morsom og festlig høytid.'],
+                taskHeading: 'Oppgave',
+                taskDescription: 'Lag din egen mini-påskeeggkurv.',
+                taskDescriptionInfo: 'Du trenger: toalettpapirruller, maling eller fargerikt papir, saks og lim.',
+                taskHowToLabel: 'Hvordan lage de',
+                taskItems: [
                     'Først fargelegger du papirrullene eller limer litt fargerikt papir på dem.',
                     'Når de er tørre, skjærer du dem i to, eller i et sikksakk-mønster hvis du vil lage en gresskurv som på bildet.',
                     'Klipp en lang papirstrimmel og lim den på innsiden av toalettpapir-rullen slik at den blir en bue. Dette blir et håndtak.',
@@ -81,11 +95,15 @@ const taskJSON = [
                 ID: 'IS',
                 country: 'Israel',
                 type: 'task',
-                image: './images/usa.png',
-                text: 'I Israel feirer man ikke påske, men noe som heter Pesach. Jødene feirer at de ble frie fra livet som slaver i Egypt, for mange, -mange hundre år siden. Familiene kommer sammen, spiser god mat, synger og ber. Det er også tradisjon å fortelle historier til barna fra den gangen jødene var slaver. En annen tradisjon under Pesach, er at man ikke skal spise brød som er hevet. Denne tradisjonen kommer fra den dagen jødene ble fridd ut, da hadde de ikke tid til å vente på at brødet skulle heve, fordi de måtte skynde seg ut av husene sine og følge Moses. Butikkene i Israel slutter å selge brød i hele 8 dager under denne høytiden. Istedenfor brød er det vanlig å spise et slags knekkebrød som heter “Matzah”.',
-                description: 'Lage “Matzah” knekkebrød. Det kan være lurt å spørre foreldrene dine om hjelp.',
-                listLabel: 'Dette trenger du for å lage “Matzah”:',
-                listItems: [
+                text: [
+                    'I Israel feirer man ikke påske, men noe som heter Pesach. Jødene feirer at de ble frie fra livet som slaver i Egypt, for mange, -mange hundre år siden. Familiene kommer sammen, spiser god mat, synger og ber. Det er også tradisjon å fortelle historier til barna fra den gangen jødene var slaver.',
+                    'En annen tradisjon under Pesach, er at man ikke skal spise brød som er hevet. Denne tradisjonen kommer fra den dagen jødene ble fridd ut, da hadde de ikke tid til å vente på at brødet skulle heve, fordi de måtte skynde seg ut av husene sine og følge Moses.',
+                    'Butikkene i Israel slutter å selge brød i hele 8 dager under denne høytiden. Istedenfor brød er det vanlig å spise et slags knekkebrød som heter “Matzah”.'],
+                taskHeading: 'Oppgave',
+                taskDescription: 'Lage “Matzah” knekkebrød. Det kan være lurt å spørre foreldrene dine om hjelp.',
+                taskDescriptionInfo: 'Dette trenger du for å lage “Matzah”:',
+                taskHowToLabel: 'Hvordan lage de',
+                taskItems: [
                     '1 dl hvetemel',
                     '1 te skje salt',
                     '2 spiseskjeer med oliven olje',
@@ -101,8 +119,11 @@ const taskJSON = [
                 country: 'Norge',
                 type: 'question',
                 audio: './audio/test.mp3',
-                text: 'Påsken er en høytid som feires av både kristne og jøder i Norge. Jødene minnes at de ble frie etter langvarig fangenskap i Egypt, mens kristne markerer at Jesus døde på korset og stod opp igjen den tredje dag. I norske kirker er det tradisjon for å synge salmen; "Påskemorgen slukker sorgen"- (skrevet av Nikolai Frederik Grundtvig i 1843), som vi også synger under påskestevnet på Brunstad. I barnehager og skoler feirer en med påskefrokost og påskeverksted, hvor barn maler og dekorerer egg og lager påskepynt med fjær osv. Noen har også opplevd at påskeharen har vært og gjemt påskeegg med godteri i huset eller ute i hagen. Mange norske familier tilbringer påskeferien på hytter i fjellet, hvor en gjerne går på skiturer og spiser kvikklunsj, sjokolade og appelsiner',
-                listItems: [
+                text: [
+                    'Påsken er en høytid som feires av både kristne og jøder i Norge. Jødene minnes at de ble frie etter langvarig fangenskap i Egypt, mens kristne markerer at Jesus døde på korset og stod opp igjen den tredje dag. ',
+                    'I norske kirker er det tradisjon for å synge salmen; "Påskemorgen slukker sorgen"- (skrevet av Nikolai Frederik Grundtvig i 1843), som vi også synger under påskestevnet på Brunstad. I barnehager og skoler feirer en med påskefrokost og påskeverksted, hvor barn maler og dekorerer egg og lager påskepynt med fjær osv. Noen har også opplevd at påskeharen har vært og gjemt påskeegg med godteri i huset eller ute i hagen. Mange norske familier tilbringer påskeferien på hytter i fjellet, hvor en gjerne går på skiturer og spiser kvikklunsj, sjokolade og appelsiner'],
+                questionHeading: 'Spørsmål',
+                questions: [
                     'Hvem har skrevet salmen; "Påskemorgen slukker sorgen"?',
                     'Hva gjør påskeharen?',
                     'Hva pleier nordmenn å ha med som pausemat når de er på skitur i påsken?']
@@ -119,9 +140,11 @@ const taskJSON = [
                     'På markedet kan en finne fisk og sjømat, fordi det er en tradisjon at på «lang-fredag» skal en kun spise fisk og ikke noe annet kjøtt.',
                     'Til dessert er det vanlig å lage forskjellige, gode desserter i mange farger. Barna elsker det! Spesielt «Lilla Mazamorra ,  arroz con leche». Det er en rosa dessert - nam nam !',
                     'I menigheten lager vi alltid påskeeggjakt for barna og barna kler seg ut som små kaniner! Det er veldig koselig!'],
-                description: 'Lage en kaninørehatt',
-                listLabel: 'Du trenger: Hvit og rosa papp, saks, lim og stiftemaskin.',
-                listItems: [
+                taskHeading: 'Oppgave',
+                taskDescription: 'Lage en kaninørehatt',
+                taskDescriptionInfo: 'Du trenger: Hvit og rosa papp, saks, lim og stiftemaskin.',
+                taskHowToLabel: 'Hvordan lage de',
+                taskItems: [
                     'Bruk hvit og rosa papp til å kutte ut kaninøreformene: to hvite og to rosa, den rosa skal være litt mindre.',
                     'Lim de rosa ørene på de hvite ørene.',
                     'Lim ørene på en lang, hvit papp-stripe, mål slik at den passer til ditt hode, og stift endene sammen for å danne et hodebånd.'
@@ -133,15 +156,17 @@ const taskJSON = [
                 ID: 'CH',
                 country: 'Kina',
                 type: 'task',
-                text: 'I Hong Kong er det vanlig å gå på påskeeggjakt i påsken. Vi lager panda-egg og gjemmer de i bambus-skogen. Vi leker at vi er veldig gode venner med pandaene i Kina, så vi går på påskeeggjakt sammen med pandaene, som ofte hjelper til med å finne mange egg.',
-                description: 'Mal eller tegn et panda-egg.',
-                listLabel: 'Du trenger: et kokt, avkjølt egg, svart og hvit tusj eller maling, malerpensel og vann til å rense penselen',
-                extraText: 'Tegne en panda på egget: se eksempel',
+                text: ['I Hong Kong er det vanlig å gå på påskeeggjakt i påsken. Vi lager panda-egg og gjemmer de i bambus-skogen. Vi leker at vi er veldig gode venner med pandaene i Kina, så vi går på påskeeggjakt sammen med pandaene, som ofte hjelper til med å finne mange egg.'],
+                taskHeading: 'Oppgave',
+                taskDescription: 'Mal eller tegn et panda-egg.',
+                taskDescriptionInfo: 'Du trenger: et kokt, avkjølt egg, svart og hvit tusj eller maling, malerpensel og vann til å rense penselen',
+                taskHowToLabel: 'Hvordan lage de',
                 taskImages: [
                     './images/china.jpg',
                     './images/china2.jpg',
                     './images/china3.jpg'
-                ]
+                ],
+                extraText: 'Tegne en panda på egget: se eksempel',
             },
 
             {
@@ -149,10 +174,10 @@ const taskJSON = [
                 country: 'Polen',
                 audio: './audio/test.mp3',
                 type: 'question',
-                text:
-                    'Påskedag i Polen er en skikkelig vanndag og i noen familier, vekker foreldrene barna sine med å sprute vann på dem. Hele dagen leker barna med vann og bruker vanngevær og plast-egg full av vann. Sist på dagen er det en vannkamp, hvor folk sprøyter med vann på hverandre. Kanskje det er bedre å være inne denne dagen',
-                listLabel: 'Hvordan vekker foreldrene sine barn på morgenen?',
-                listItems: [
+                text: ['Påskedag i Polen er en skikkelig vanndag og i noen familier, vekker foreldrene barna sine med å sprute vann på dem. Hele dagen leker barna med vann og bruker vanngevær og plast-egg full av vann. Sist på dagen er det en vannkamp, hvor folk sprøyter med vann på hverandre. Kanskje det er bedre å være inne denne dagen'],
+                questionHeading: 'Spørsmål',
+                question: 'Hvordan vekker foreldrene sine barn på morgenen?',
+                questionOptions: [
                     'Hiver av dem dyna',
                     'Spruter vann på dem',
                     'Med kyss'
@@ -162,11 +187,10 @@ const taskJSON = [
         ],
         strings: {
             complete: 'Ferdig',
-            descHeading: 'Oppgave',
-            listHeading: 'Hvordan lage de',
-            questionHeading: 'Spørsmål',
             completeHeading: 'Spillet fullført',
             completedText: 'Gå til brunstadTv-appen og last opp bildet ditt',
+            completeFeedbackText: 'Hva syntes du om denne aktiviteten? Klikk her',
+            completeFeedbackLink: '',
             completedButtonSRC: 'https://brunstad.tv/live',
         }
 
@@ -181,74 +205,113 @@ const task = {
         audio: '',
         image: '',
         text: '',
-        description: '',
-        listLabel: '',
-        listItems: [],
+        taskHeading: '',
+        taskDescription: '',
+        taskDescriptionInfo: '',
+        taskHowToLabel: '',
+        taskItems: [],
         taskImages: [],
+        questionHeading: '',
+        question: '',
+        questions: [],
+        questionOptions: [],
         extraText: ''
     },
 
-    questionHTML: function (_this, _globalStrings, _totalTask) {
+    generateHTML: function (ID) {
+
+        const obj = taskJSON.filter(n => n.language === 'no');
+        let total = obj[0].countries.length;
+        let thisStrings = obj[0].strings;
+        let thisCountry = obj[0].countries.find(obj => {
+            return obj.ID === ID;
+        });
+
+        thisCountry = Object.assign({}, task.template, thisCountry);
 
         const tasksCompleted = JSON.parse(readCookie('tasks_completed'));
         const currentIndex = tasksCompleted ? tasksCompleted.length + 1 : 1;
 
-        function list() {
-            return _this.listItems.map(function (item) {
-                return "<li>" + item + "</li>";
+        if (thisCountry.type === "question") {
+            return "<div class='box " + thisCountry.type + "'>" +
+                "<div class='box__char'></div>" +
+                "<div class='box__header'>" +
+                "<div class='box__label'><span>" + thisCountry.country + "</span><span>" + currentIndex + "/" + total + "</span></div>" +
+                audio() +
+                "<div class='box__close'></div>" +
+                "</div>" +
+                "<div class='box__container'>" +
+                "<div class='box__content'>" +
+                "<h2>" + thisCountry.country + "</h2>" +
+                "<img src='" + thisCountry.image + "' alt=''/>" +
+                text() +
+                "<span class='box__heading'>" + thisCountry.questionHeading + "</span>" +
+                "<p>" + thisCountry.question + "<input type='text'/></p>" +
+                "<ul class='box__options'>" + options() + "</ul>" +
+                "<ul class='box__questions'>" + questions() + "</ul>" +
+                "</div>" +
+                "<a href='javascript: void (0)' class='box__submit' id='" + thisCountry.ID + "'>" + thisStrings.complete + "</a>" +
+                "</div>" +
+                "</div>";
+        } else {
+            return "<div class='box " + thisCountry.type + "'>" +
+                "<div class='box__char'></div>" +
+                "<div class='box__header'>" +
+                "<div class='box__label'><span>" + thisCountry.country + "</span><span>" + currentIndex + "/" + total + "</span></div>" +
+                audio() +
+                "<div class='box__close'></div>" +
+                "</div>" +
+                "<div class='box__container'>" +
+                "<div class='box__content'>" +
+                "<h2>" + thisCountry.country + "</h2>" +
+                "<img src='" + thisCountry.image + "' alt=''/>" +
+                text() +
+                "<span class='box__heading'>" + thisCountry.taskHeading + "</span>" +
+                "<p>" + thisCountry.taskDescription + "</p>" +
+                "<p>" + thisCountry.taskDescriptionInfo + "</p>" +
+                "<span class='box__heading'>" + thisCountry.taskHowToLabel + "</span>" +
+                "<ul class='box__list'>" + list() + "</ul>" +
+                "<p>" + thisCountry.extraText + "</p>" +
+                "<div class='box__images'>" + images() + "</div>" +
+                "</div>" +
+                "<a href='javascript: void (0)' class='box__submit' id='" + thisCountry.ID + "'>" + thisStrings.complete + "</a>" +
+                "</div>" +
+                "</div>";
+        }
+
+        function text() {
+            return thisCountry.text.map(function (item) {
+                return "<p>" + item + "</p>";
             }).join("");
         }
 
-        function audio() {
-            return "<div id='audio-container'>" +
-                "<audio controls src='" + _this.audio + "'>" +
-                "Your browser does not support the audio element." +
-                "</audio>" +
-                "<div class='play'>" +
-                "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 25'><path d='M19.875 10.078L3.375.328C2.015-.469 0 .328 0 2.25v19.5c0 1.781 1.875 2.86 3.375 1.969l16.5-9.75c1.453-.89 1.453-3 0-3.89z' /></svg>" +
-                "</div>" +
-                "<span class='label'>play audio</span>" +
-                "</div > ";
+        function options() {
+            return thisCountry.questionOptions.map(function (item) {
+                return "<li><label><input type='checkbox'/><div class='checkbox'></div>" + item + "</label></li>";
+            }).join("");
         }
 
-        return "<div class='question'>" +
-            "<div class='question__char'></div>" +
-            "<div class='question__header'>" +
-            "<div class='question__label'><span>" + _this.country + "</span><span>" + currentIndex + "/" + _totalTask + "</span></div>" +
-            audio() +
-            "<div class='modal__close'></div>" +
-            "</div>" +
-            "<div class='question__content'>" +
-            "<h2>" + _this.country + "</h2>" +
-            "<p>" + _this.text + "</p>" +
-            "<span>" + _globalStrings.questionHeading + "</span>" +
-            "<p>" + _this.listLabel + "</p>" +
-            "<ol>" + list() + "</ol>" +
-            "</div>" +
-            "<a href='javascript:void(0)' class='submitBTN'  id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
-            "</div>";
-    },
-
-    taskHTML: function (_this, _globalStrings, _totalTask) {
-
-        const tasksCompleted = JSON.parse(readCookie('tasks_completed'));
-        const currentIndex = tasksCompleted ? tasksCompleted.length + 1 : 1;
+        function questions() {
+            return thisCountry.questions.map(function (item) {
+                return "<li>" + item + "<input type='text'/></li>";
+            }).join("");
+        }
 
         function list() {
-            return _this.listItems.map(function (item) {
+            return thisCountry.taskItems.map(function (item) {
                 return "<li>" + item + "</li>";
             }).join("");
         }
 
         function images() {
-            return _this.taskImages.map(function (item) {
+            return thisCountry.taskImages.map(function (item) {
                 return "<img src='" + item + "' alt=''/>";
             }).join("");
         }
 
         function audio() {
-            return "<div id='audio-container'>" +
-                "<audio controls src='" + _this.audio + "'>" +
+            return "<div id='audio-container' class='box__audio'>" +
+                "<audio controls src='" + thisCountry.audio + "'>" +
                 "Your browser does not support the audio element." +
                 "</audio>" +
                 "<div class='play'>" +
@@ -258,24 +321,6 @@ const task = {
                 "</div > ";
         }
 
-        return "<div class='task'>" +
-            "<div class='modal__close'></div>" +
-            "<div class='task__label'><span>" + currentIndex + "/" + _totalTask + "</span></div>" +
-            audio() +
-            "<div class='task__content'>" +
-            "<h2>" + _this.country + "</h2>" +
-            "<img src='" + _this.image + "' alt=''/>" +
-            "<p>" + _this.text + "</p>" +
-            "<span>" + _globalStrings.descHeading + "</span>" +
-            "<p>" + _this.description + "</p>" +
-            "<span>" + _globalStrings.listHeading + "</span>" +
-            "<p>" + _this.listLabel + "</p>" +
-            "<ol>" + list() + "</ol>" +
-            "<p>" + _this.extraText + "</p>" +
-            "<div class='task__images'>" + images() + "</div>" +
-            "<a href='javascript:void(0)' class='submitBTN' id='" + _this.ID + "'>" + _globalStrings.complete + "</a>" +
-            "</div>" +
-            "</div>";
     },
 
     audioEvents: function () {
@@ -298,26 +343,6 @@ const task = {
                 audioLabel.innerHTML = 'Play audio'
             }
         });
-    },
-
-    init: function (ID) {
-        const obj = taskJSON.filter(n => n.language === 'no');
-        let total = obj[0].countries.length;
-        let thisStrings = obj[0].strings;
-        let thisCountry = obj[0].countries.find(obj => {
-            return obj.ID === ID;
-        });
-
-        thisCountry = Object.assign({}, task.template, thisCountry);
-
-        if (thisCountry.type === "question") {
-            document.querySelector('.modal__content').innerHTML = task.questionHTML(thisCountry, thisStrings, total);
-            document.querySelector('.modal').classList.add('question');
-        } else {
-            document.querySelector('.modal__content').innerHTML = task.taskHTML(thisCountry, thisStrings, total);
-            document.querySelector('.modal').classList.add('task')
-        }
-
     }
 }
 
@@ -330,7 +355,7 @@ const map = {
             autoAlpha: 0,
             display: 'none',
             onComplete: () => {
-                document.querySelector('.modal__content').innerHTML = '';
+                document.querySelector('.modal__container').innerHTML = '';
                 document.querySelector('.modal').setAttribute('class', 'modal');
             }
         });
@@ -342,8 +367,12 @@ const map = {
         document.querySelector('.modal').classList.add(ID);
         document.querySelector('body').classList.add('overlay');
 
-        task.init(ID);
+        document.querySelector('.modal__container').innerHTML = task.generateHTML(ID);
         task.audioEvents();
+
+        document.querySelectorAll('.box__content > *:not(img)').forEach(el => {
+            if (el.innerHTML === "") return el.remove();
+        });
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
@@ -365,7 +394,6 @@ const map = {
             document.getElementById(el).classList.add('completed');
         });
 
-
         // Open Modal
         countries.forEach(path => {
             path.addEventListener('click', e => {
@@ -375,16 +403,13 @@ const map = {
 
         // Close modal
         document.addEventListener('click', e => {
-            if (!e.target.classList.contains('modal__close')) return;
+            if (!e.target.classList.contains('box__close')) return;
             map.closeModal();
         }, false);
 
-
-
-
         // Submit button
         document.addEventListener('click', e => {
-            if (!e.target.classList.contains('submitBTN')) return;
+            if (!e.target.classList.contains('box__submit')) return;
             e.preventDefault();
 
             let tasksCompleted = JSON.parse(readCookie('tasks_completed'));
@@ -405,7 +430,6 @@ const map = {
             document.querySelector('.cursor').setAttribute("style", "top: " + (e.pageY - 60) + "px; left: " + (e.pageX - 50) + "px");
         });
 
-
         // Reset
         document.addEventListener('click', e => {
             if (!e.target.classList.contains('resetGame')) return;
@@ -420,6 +444,14 @@ const map = {
             location.reload();
             return false;
         }, false);
+
+        // Checkboxes
+
+        document.addEventListener('click', e => {
+            if (e.target.tagName.toLowerCase() !== 'input') return;
+            const siblings = getSiblings(e.target.closest('li'));
+            siblings.map(e => e.querySelector('input').checked = false);
+        });
 
     },
 
@@ -525,6 +557,13 @@ const map = {
             return value < min ? min : (value > max ? max : value);
         }
 
+        // Mobile
+
+        let hammertime = new Hammer(image);
+
+        hammertime.on("touch", function (ev) {
+        });
+
     },
 
     completed: function () {
@@ -534,11 +573,12 @@ const map = {
 
         function completedHTML(_globalStrings) {
             return "<div class='gameCompleted'>" +
-                "<div class='completed__content'>" +
+                "<div class='gameCompleted__content'>" +
                 "<span></span>" +
                 "<h2>" + _globalStrings.completeHeading + "</h2>" +
                 "<p>" + _globalStrings.completedText + "</p>" +
                 "<a href='" + _globalStrings.completedButtonSRC + "'>Brunstad TV</a>" +
+                "<p><a href='" + _globalStrings.completeFeedbackLink + "' class='feedback'>" + _globalStrings.completeFeedbackText + "</a></p>" +
                 "</div>" +
                 "</div>";
         }
@@ -639,20 +679,30 @@ const loadingScreen = {
 
 // Helpers
 
-// function listen(type, selector, callback) {
-//     document.addEventListener(type, event => {
-//         const target = event.target.closest(selector);
-
-//         if (target) {
-//             callback(event, target);
-//         }
-//     });
-// }
-
 function appendHTML(container, content) {
     const el = document.querySelector(container);
     el.innerHTML = content;
     return el;
+};
+
+let getSiblings = function (e) {
+    // for collecting siblings
+    let siblings = [];
+    // if no parent, return no sibling
+    if (!e.parentNode) {
+        return siblings;
+    }
+    // first child of the parent node
+    let sibling = e.parentNode.firstChild;
+
+    // collecting siblings
+    while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== e) {
+            siblings.push(sibling);
+        }
+        sibling = sibling.nextSibling;
+    }
+    return siblings;
 };
 
 function createCookie(name, value, days) {
