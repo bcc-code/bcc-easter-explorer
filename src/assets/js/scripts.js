@@ -431,16 +431,11 @@ const map = {
         });
 
         // Reset
-        document.addEventListener('click', e => {
-            if (!e.target.classList.contains('resetGame')) return;
-            eraseCookie('tasks_completed');
-            location.reload();
-            return false;
-        }, false);
 
         document.addEventListener('click', e => {
-            if (!e.target.classList.contains('resetChar')) return;
+            if (!e.target.classList.contains('reset')) return;
             eraseCookie('character');
+            eraseCookie('tasks_completed');
             location.reload();
             return false;
         }, false);
@@ -600,7 +595,6 @@ const map = {
     init: function () {
         map.eventListeners();
         map.zoomEffect();
-
         map.completed();
     }
 
@@ -621,8 +615,7 @@ const charScreen = {
                 tl
                     .to(document.querySelector('.character'), { autoAlpha: 0 })
                     .to(document.querySelector('.container'), { autoAlpha: 1 })
-                    .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
-                    .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
+                    .to(document.querySelector('.reset'), { autoAlpha: 1 })
             });
         });
 
@@ -644,16 +637,14 @@ const charScreen = {
             tl
                 .to(charPage, { autoAlpha: 0 })
                 .to(mapPage, { autoAlpha: 1 })
-                .to(document.querySelector('.resetGame'), { autoAlpha: 1 })
-                .to(document.querySelector('.resetChar'), { autoAlpha: 1 });
+                .to(document.querySelector('.reset'), { autoAlpha: 1 })
         } else {
             let tl = gsap.timeline();
 
             tl
                 .to(charPage, { autoAlpha: 1 })
                 .to(mapPage, { autoAlpha: 0 })
-                .to(document.querySelector('.resetGame'), { autoAlpha: 0 })
-                .to(document.querySelector('.resetChar'), { autoAlpha: 0 });
+                .to(document.querySelector('.reset'), { autoAlpha: 0 })
         }
     }
 }

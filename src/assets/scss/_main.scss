@@ -198,16 +198,9 @@
     left          : 40px;
     opacity       : 0;
     visibility    : hidden;
+    top           : 40px;
 
     body.completed & {
         z-index: 100;
     }
-}
-
-.resetChar {
-    top: 40px;
-}
-
-.resetGame {
-    top: 90px;
 }
