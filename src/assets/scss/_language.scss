@@ -1,0 +1,33 @@
+@import 'helpers/variables';
+
+.language-picker {
+    margin    : 30px 0;
+    opacity   : 0;
+    transform : translateY(30px);
+    text-align: center;
+
+    #language-picker-select {
+        display    : block;
+        border     : 1px solid $text;
+        padding    : 0 1em 0 0;
+        font-family: $ff-primary;
+        font-size  : 16px;
+        height     : 30px;
+        line-height: 28px;
+        cursor     : inherit;
+        outline    : none;
+        margin-bottom: 1em;
+    }
+
+    .language-picker-confirm {
+        width         : 140px;
+        font-family   : $ff-primary;
+        font-size     : 16px;
+        font-weight   : bold;
+        color         : $text;
+        height        : 40px;
+        text-transform: capitalize;
+        border-radius : 20px;
+        border        : 1px solid $text;
+    }
+}

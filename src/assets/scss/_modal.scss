@@ -2,10 +2,10 @@
     opacity   : 0;
     visibility: hidden;
     position  : fixed;
-    top       : 1.25em;
-    right     : 1.25em;
-    bottom    : 1.25em;
-    left      : 1.25em;
+    top       : 10px;
+    right     : 10px;
+    bottom    : 10px;
+    left      : 10px;
     z-index   : 99;
     display   : none;
 
@@ -99,12 +99,12 @@
     }
 
     a.feedback {
-        display    : inline-block;
-        margin-top : 10px;
-        color      : $text;
-        font-family: $ff-primary;
-        font-size  : 1em;
-        font-weight: 600;
+        display        : inline-block;
+        margin-top     : 10px;
+        color          : $text;
+        font-family    : $ff-primary;
+        font-size      : 1em;
+        font-weight    : 600;
         text-decoration: underline;
     }
 
