@@ -31,6 +31,7 @@ const firstScreen = {
         if (!langCookie) {
             gsap.to('.logo', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.language-picker', { y: 0, opacity: 1, duration: 1 });
+            gsap.to('.promo', { y: 0, opacity: 1, duration: 1 });
 
             _languageSelect.addEventListener('change', () => language(_languageSelect.value));
 
@@ -48,7 +49,7 @@ const firstScreen = {
             const data = await results.json();
 
             taskJSON = data;
-            
+
             gameCompleted.init();
         }
     },
@@ -105,7 +106,7 @@ const task = {
         question: '',
         questions: [],
         questionOptions: [],
-        extraText: ''
+        extraText: '',
     },
 
     generateHTML: function (ID) {
@@ -134,7 +135,7 @@ const task = {
                 "<img src='" + thisCountry.image + "' alt=''/>" +
                 text() +
                 "<span class='box__heading'>" + thisCountry.questionHeading + "</span>" +
-                "<p>" + thisCountry.question + "<input type='text'/></p>" +
+                "<p>" + thisCountry.question + "</p>" +
                 "<ul class='box__options'>" + options() + "</ul>" +
                 "<ul class='box__questions'>" + questions() + "</ul>" +
                 "</div>" +
@@ -249,6 +250,7 @@ const map = {
 
     openModal: function (ID) {
         _modal.classList.add(ID);
+        _modal.setAttribute('data-id', ID);
         _body.classList.add('overlay');
 
         _modalContainer.innerHTML = task.generateHTML(ID);
@@ -306,8 +308,31 @@ const map = {
             event.target.closest('.modal').classList.add('completed');
             document.getElementById(event.target.getAttribute('id')).classList.add('completed');
 
+            // let answers = JSON.parse(readCookie('answers'));
+            // if (!answers) answers = new Array();
+
+
+
+            const inputs = document.querySelector('.box').querySelectorAll('input');
+            const countryId = _modal.getAttribute("data-id");
+            let answers = [];
+            let arr = [];
+
+            if (inputs.length > 0) {
+                inputs.forEach((el, index) => answers.push(el.value));
+
+                cookie.set('answers', JSON.stringify(answers));
+
+                arr[countryId] = JSON.parse(cookie.get('answers'));
+
+                cookie.set('answers', JSON.stringify(arr[countryId]));
+            }
+
+
+
             map.closeModal();
             gameCompleted.init();
+
         }, false);
 
         // Checkboxes
@@ -435,7 +460,6 @@ const gameCompleted = {
             "<h2>" + _this.completeHeading + "</h2>" +
             "<p>" + _this.completedText + "</p>" +
             "<a href='https://brunstad.tv/'>Brunstad TV</a>" +
-            "<p><a href='" + _this.completeFeedbackLink + "' class='feedback'>" + _this.completeFeedbackText + "</a></p>" +
             "</div>" +
             "</div>";
 
@@ -468,6 +492,7 @@ document.addEventListener("DOMContentLoaded", () => {
     _gameResetBTN.addEventListener('click', () => {
         eraseCookie('character');
         eraseCookie('tasks_completed');
+        eraseCookie('language');
         location.reload();
         return false;
     }, false);

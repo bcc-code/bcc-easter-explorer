@@ -1,0 +1,196 @@
+{
+    "language": "pl",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/pl/australia.mp3",
+            "text": [
+                "W Australii Wielkanoc obchodzona jest jesienią, w przeciwieństwie do krajów na półkuli północnej, gdzie przypada na wiosnę.",
+                "Wielkanoc to jedno z najważniejszych świąt w kalendarzu chrześcijańskim i oznacza ono zmartwychwstanie Jezusa.",
+                "Jest to święto, które spędza się w rodzinnym gronie. Dzień Wielkanocy rozpoczyna się wielkim poszukiwaniem jajek wielkanocnych dla wszystkich dzieci, a kończy posiłkiem wielkanocnym, który zwykle składa się z pieczonej baraniny i pieczonych warzyw.",
+                "W okresie wielkanocnym jest wiele zajęć dla dzieci, takich jak na przykład malowanie pisanek.",
+                "Inną tradycją jest jedzenie ciepłych bułeczek, które można kupić już na kilka dni przed Wielkanocą. Są to słodkie bułeczki wypełnione przyprawami i suszonymi owocami, ozdobione białym krzyżem na znak krzyża Jezusa."
+            ],
+            "questionHeading": "Pytanie:",
+            "question": "Jaka jest pora roku w Australii w Wielkanoc?",
+            "questionOptions": [
+                "Lato",
+                "Zima",
+                "Jesień",
+                "Wiosna"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rosja",
+            "type": "question",
+            "audio": "./audio/pl/russia.mp3",
+            "text": [
+                "Wielkanoc to po Bożym Narodzeniu najważniejsze święto dla chrześcijan. Jest wiele tradycji i zwyczajów wielkanocnych. Obchodzi się je od marca do maja, w zależności od tego, kiedy przypadają święta. Wielkanoc to święta rodzinne. W weekend wielkanocny w Rosji chodzi się do kościoła na modlitwę i błogosławieństwo. Wielkanoc to też święto z dobrym jedzeniem i tradycyjnymi potrawami. Podobnie jak w wielu innych krajach, również w Rosji maluje się i dekoruje jajka. Jest wiele zabaw związanych z udekorowanymi jajkami - na przykład taka gra, w której dzieci biorą po jednym jajku i stukają nim o jajko innej osoby i to, które pęknie jako ostatnie, wygrywa.",
+                "Zdobione jajka zwykle daje się przyjaciołom i rodzinie jako symbol wdzięczności. Na Wielkanoc piecze się specjalne ciasto o nazwie Kulich. Ciasto Kulich to symbol, że Jezus jest z nami."
+            ],
+            "questionHeading": "Pytanie:",
+            "question": "Jak nazywa się specjalne ciasto pieczone w Rosji na Wielkanoc?"
+        },
+        {
+            "ID": "IN",
+            "country": "Indie",
+            "type": "task",
+            "audio": "./audio/pl/india.mp3",
+            "text": [
+                "W Indiach Wielkanoc nie jest obchodzona jako święto narodowe, ale chrześcijanie ją obchodzą. W zborze w Bengaluru Wielkanoc jest uroczystością. Opowiadana jest historia o zmartwychwstaniu Jezusa, a dzieci dostają czekoladowe lub marcepanowe jajka. W ostatnim czasie dzieci brały też udział w aktywnościach organizowanych przez Brunstad i oglądały przekazy dla dzieci."
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Zrób własną czekoladę.",
+            "taskDescriptionInfo": "Potrzebujesz: białą, mleczną lub gorzką czekoladę i coś dobrego, czym będziesz chciał ją udekorować, np. posypkę, czekoladowe jajka, zajączki wielkanocne albo cukierki itp.",
+            "taskHowToLabel": "Jak to zrobić:",
+            "taskItems": [
+                "Poproś o pomoc osobę dorosłą, która rozpuści dla ciebie czekoladę i wylej ją na blachę wyłożoną papierem do pieczenia.",
+                "Ozdób czekoladę przygotowanymi dodatkami.",
+                "Włóż gotową czekoladę do zamrażarki, żeby ostygła."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Afryka Południowa",
+            "type": "task",
+            "audio": "./audio/pl/sa.mp3",
+            "text": [
+                "Wielkanoc w Afryce Południowej odbywa się przy pięknej jesiennej pogodzie, kiedy nie jest ani za gorąco, ani za zimno. Jest tu też tradycja szukania jajek wielkanocnych, podobnie jak w wielu innych krajach. Zajączek chowa jajka w przeróżnych miejscach, zarówno w domach, jak i na zewnątrz w ogrodzie. Najpopularniejsze słodycze na Wielkanoc to czekoladowe jajka wypełnione pianką marshmallow i ciepłe bułeczki. W chrześcijańskich rodzinach opowiada się historię Wielkanocy oraz tego, jak Jezus został ukrzyżowany i zmartwychwstał dla nas.",
+                "Wiele osób bierze wtedy wolne od pracy i spotyka się z całą rodziną. W niedzielę robimy z naszymi rodzinami duże, uroczyste śniadanie wielkanocne. Niektóre rodziny grają również w coś, co nazywamy „buresport”, są to między innymi wyścigi z „jajkiem na łyżce”, wyścig w workach itp."
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Zróbcie sztafetę, w której będziecie ścigali się trzymając jajko na łyżce."
+        },
+        {
+            "ID": "US",
+            "country": "USA",
+            "audio": "./audio/pl/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "W Ameryce mamy wiele fajnych sposobów świętowania Wielkanocy. Między innymi wypełniamy wiele kolorowych plastikowych jaj różnymi słodyczami, a potem ktoś przebiera się za słodkiego zająca wielkanocnego i chowa te jajka w różnych miejscach, na przykład na drzewach albo w trawie i wszędzie, gdzie się da. Kiedy zając ukryje jajka, zaczyna się ich poszukiwanie. Po odnalezieniu wszystkich, jemy pyszne słodycze, które były w środku. Mamy też taką tradycję na Wielkanoc, że wypełniamy wielkanocne koszyczki zabawkami i dużymi czekoladowymi zajączkami, kurczaczkami i jajkami. Kiedy już napełnimy te koszyki, spotykamy się z naszymi przyjaciółmi i dajemy je sobie nawzajem. Koszyków używamy też przy szukaniu wielkanocnych jajek. Oprócz tego, co najważniejsze w obchodach tego dnia, spotykamy się i czytamy wielkanocną opowieść o Jezusie i jemy wspólny posiłek. Jest to bardzo przyjemny i uroczysty czas."
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Stwórz swój własny mini-koszyk wielkanocny.",
+            "taskDescriptionInfo": "Potrzebne będą: rolki po papierze toaletowym, farby lub kolorowy papier, nożyczki i klej.",
+            "taskHowToLabel": "Jak je wykonać:",
+            "taskItems": [
+                "Najpierw pomaluj rolki papieru lub oklej je kolorowym papierem.",
+                "Gdy wyschną, przetnij je w linii prostej albo w zygzak, jeśli chcesz zrobić koszyk wyglądający jak trawa - tak jak na zdjęciu.",
+                "Wytnij długi, cienki pasek papieru i przyklej go do wewnętrznej strony rolki, żeby stworzyć łuk. To będzie uchwyt.",
+                "Żeby ozdobić swoje małe koszyki na jajka, możesz też wyciąć skrzydełka i dziób dla kurczaczków, długie uszy dla zajączków i kwiaty na trawę."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Izrael",
+            "type": "task",
+            "audio": "./audio/pl/israel.mp3",
+            "text": [
+                "W Izraelu nie obchodzi się Wielkanocy, tylko święto, które nazywa się Pascha. Żydzi świętują, że zostali uwolnieni z niewoli w Egipcie wiele, wiele setek lat temu. Rodziny spotykają się, jedzą dobre jedzenie, śpiewają i się modlą. Opowiadają też dzieciom historie z czasów, gdy Żydzi byli niewolnikami.",
+                "Inną tradycją podczas Paschy jest niejedzenie wyrośniętego chleba. Ta tradycja pochodzi z dnia, kiedy Żydzi zostali uwolnieni. Nie mieli wtedy czasu czekać aż chleb urośnie, bo musieli szybko opuścić swoje domy i iść za Mojżeszem.",
+                "Sklepy w Izraelu nie sprzedają takiego chleba przez całe 8 dni świąt. Zamiast chleba często je się chrupkie pieczywo, zwane „Matzah”."
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Zrób swój własny „Matzah”. Możesz poprosić o pomoc rodziców.",
+            "taskHowToLabel": "Żeby zrobić „Matzah” potrzebujesz: ",
+            "taskItems": [
+                "100 ml mąki pszennej ",
+                "1 łyżeczkę soli",
+                "2 łyżki oliwy z oliwek",
+                "150 ml ciepłej wody"
+            ],
+            "extraText": [
+                "Skorzystaj z pomocy kogoś dorosłego, żeby rozwałkował dla ciebie kawałki ciasta i je upiekł."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norwegia",
+            "type": "question",
+            "audio": "./audio/pl/norway.mp3",
+            "text": [
+                "Wielkanoc to święto obchodzone w Norwegii zarówno przez chrześcijan, jak i Żydów. Żydzi świętują to, że zostali uwolnieni po długiej niewoli w Egipcie, a chrześcijanie świętują, że Jezus umarł na krzyżu i trzeciego dnia zmartwychwstał.",
+                "W kościołach norweskich tradycją jest śpiewanie hymnu; „Wielkanocny poranek gasi smutek” - (napisany przez Nikolaja Frederika Grundtviga w 1843 r.), który śpiewamy też podczas konferencji wielkanocnych w Brunstad. W przedszkolach i szkołach dzieci jedzą śniadanie wielkanocne i mają zajęcia artystyczne, podczas których malują i dekorują jajka, wykonują ozdoby wielkanocne z piór itp. U niektórych rodzin zając wielkanocny ukrywa pisanki z cukierkami w domu lub w ogrodzie. Wiele norweskich rodzin spędza święta wielkanocne w domkach w górach, gdzie lubią jeździć na nartach i jeść norweskie batoniki, czekoladę i pomarańcze."
+            ],
+            "questionHeading": "Pytania:",
+            "questions": [
+                "Kto napisał hymn; „Poranek wielkanocny gasi smutek”?",
+                "Co robi Zajączek Wielkanocny?",
+                "Co Norwedzy zwykle biorą ze sobą do jedzenia, kiedy wybierają się na narty w Wielkanoc?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/pl/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru jest podzielone na 3 duże obszary; wybrzeża, góry i dżungle. Jednak mimo to, w całym Peru mamy te same tradycje wielkanocne. Przygotowujemy Wielkanocną uroczystość, szczególnie dla dzieci.",
+                "W okresie Wielkanocy wszystkie kanały telewizyjne z Peru nadają tylko historie z Biblii i o Jezusie, zarówno dla dzieci, jak i dorosłych, przez wszystkie dni świąt.",
+                "Na targu można znaleźć ryby i owoce morza, bo to tradycja, że ​​w „Wielki Piątek” powinno się jeść tylko ryby, żadnego mięsa.",
+                "Na deser często robi się różne, dobre desery w wielu kolorach. Dzieci to uwielbiają! Szczególnie „Lilla Mazamorra, arroz con leche”. To różowy deser – pycha!",
+                "W zborze zawsze organizujemy poszukiwanie jajek wielkanocnych dla dzieci, które przebierają się za małe króliki! To jest bardzo fajne!"
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Zrób opaskę z uszami zająca.",
+            "taskDescriptionInfo": "Potrzebne będą: biały i różowy papier, nożyczki, klej i zszywacz.",
+            "taskHowToLabel": "Jak je wykonać:",
+            "taskItems": [
+                "Użyj białego i różowego papieru, żeby wyciąć uszy królika: dwa białe i dwa różowe. Różowe muszą być trochę mniejsze.",
+                "Przyklej różowe uszy na białe uszy.",
+                "Wymierz długi biały pasek tak, żeby pasował do twojej głowy i zszyj końce razem, tworząc opaskę. Do opaski przyklej uszy."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "Chiny",
+            "type": "task",
+            "audio": "./audio/pl/china.mp3",
+            "text": [
+                "W Hongkongu w Wielkanoc szukamy jajek wielkanocnych. Robimy jajka-pandy i chowamy je w bambusowym lesie. Bawimy się, że jesteśmy bardzo dobrymi przyjaciółmi innych pand z Chin, więc często chodzimy na poszukiwanie jajek razem z nimi."
+            ],
+            "taskHeading": "Zadanie:",
+            "taskDescription": "Narysuj pandę na jajku.",
+            "taskDescriptionInfo": "Potrzebne będą: ugotowane, ostudzone jajko, czarny i biały marker lub farby, pędzel i woda (do umycia pędzla).",
+            "taskHowToLabel": "Jak zrobić jajko:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Narysuj pandę na jajku tak jak na przykładach."
+        },
+        {
+            "ID": "PO",
+            "country": "Polska",
+            "audio": "./audio/pl/poland.mp3",
+            "type": "question",
+            "text": [
+                "Poniedziałek wielkanocny w Polsce to Lany Poniedziałek i w niektórych rodzinach rodzice budzą swoje dzieci spryskując je wodą. Przez cały dzień dzieci bawią się wodą i używają pistoletów na wodę, plastikowych jaj i różnych innych zabawek wypełnionych wodą. Pod koniec dnia mamy wielką bitwę na wodę, w której wszyscy się nawzajem oblewają. Może lepiej tego dnia zostać w środku?"
+            ],
+            "questionHeading": "Pytanie:",
+            "question": "Jak rodzice budzą rano swoje dzieci?",
+            "questionOptions": [
+                "Ściągają im kołdrę",
+                "Spryskują je wodą",
+                "Dają im buziaka"
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Wybierz swoją postać",
+        "complete": "Skończone",
+        "completeHeading": "Gra zakończona",
+        "completedText": "Przejdź do aplikacji brunstadTv i prześlij swoje zdjęcie."
+    }
+}

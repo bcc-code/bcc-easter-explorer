@@ -5,47 +5,53 @@
             "ID": "AU",
             "country": "Australia",
             "type": "question",
+            "audio": "./audio/en/australia.mp3",
             "text": [
-                "Påsken er en av de viktigste markeringene i den kristne kalender, som markerer Jesu oppstandelse fra de døde.",
-                "Det er en tid for å samle familien. På påskedag begynner dagen med en stor påskeeggjakt for alle barna og avsluttes med et påskemåltid som vanligvis består av stekt lam og stekte grønnsaker.",
-                "Det er mange aktiviteter for barna i påsketiden, som for eksempel fargelegging og maling av påskeegg.",
-                "En annen tradisjon er hot cross boller som du kan kjøpe i god tid før påske. Det er søte boller, fylt med krydder og tørket frukt og dekorert med et hvitt kors som representerer Jesu kors."
+                "In Australia, Easter is celebrated in the autumn, unlike other countries in the Northern Hemisphere, where Easter is in the spring.",
+                "Easter is one of the most important commemorations in the Christian calendar, which marks Jesus' resurrection from the dead.",
+                "It's a time to get together with the family. On Easter Sunday, the day begins with a large Easter egg treasure hunt for all the children and ends with an Easter meal usually consisting of roast lamb and vegetables.",
+                "There are many activities for the children during Easter, such as coloring and painting easter eggs.",
+                "Another tradition is hot cross buns that you can buy well before Easter. These are sweet buns, filled with spices and dried fruit and decorated with a white cross representing Jesus' cross."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvilken årstid er det i Australia når de feirer påske?",
+            "questionHeading": "Question:",
+            "question": "What season is it in Australia when they celebrate Easter?",
             "questionOptions": [
-                "Sommer",
-                "Vinter",
-                "Høst",
-                "Vår"
+                "Summer",
+                "Winter",
+                "Autumn",
+                "Spring"
             ]
         },
         {
             "ID": "RU",
-            "country": "Russland",
+            "country": "Rusia",
             "type": "question",
+            "audio": "./audio/en/russia.mp3",
             "text": [
-                "Påsken er den viktigste høytiden for de kristne etter julen. Det er mange påsketradisjoner og -ritualer. Feiringen foregår fra mars til mai, avhengig av hvilke datoer ferien faller på. Påsken er en familieferie. I påskehelgen drar man til kirken, for bønn og for å bli velsignet. Påsken er også en feiring med god mat og tradisjonelle retter. Som i mange andre land, er det også en tradisjon i Russland å male egg og dekorere dem. Det er forskjellige leker knyttet til dekorerte egg. Det er for eksempel en lek hvor barna tar et egg hver og slår sitt egg mot en annens egg, det egg som sprekker sist vinner.",
-                "Dekorerte egg blir også vanligvis gitt til venner og familie som et symbol på takknemlighet. Til påske baker man en spesiell kake som heter Kulich. Kaken Kulich er et symbol på at Jesus er med oss."
+                "Easter is the most important festival for Christians after Christmas. There are many Easter traditions and rituals. The celebration takes place from March to May, depending on the dates on which the holiday falls. Easter is a family holiday. Over the Easter weekend, you go to church, for prayer, and to be blessed. Easter is also a celebrated with good food and traditional dishes. As in many other countries, there is also a tradition in Russia to paint eggs and decorate them. There are different games involving the decorated eggs. One game, for example, is where the children take an egg each and hit their egg against another's egg, the egg that cracks last is the winner. ",
+                "Decorated eggs are also usually given to friends and family as a symbol of thankfulness. A special cake called Kulich is also baked at Easter. The cake “Kulich” is a symbol that Jesus is with us."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hva heter den spesielle kaken som man baker i Russland?"
+            "questionHeading": "Question:",
+            "questions": [
+                "What's the name of the special cake that is baked in Russia?"
+            ]
         },
         {
             "ID": "IN",
             "country": "India",
             "type": "task",
+            "audio": "./audio/en/india.mp3",
             "text": [
-                "I India feires ikke påske som en nasjonal feiring, men for kristne er det en hellig begivenhet. I BCC Bangalore feires påsken med en fest. Historien om Jesu oppstandelse fortelles, og barna får sjokolade eller marsipanegg. I det siste har vi vært med på de aktivitetene som BCC har organisert, og fulgt med på sendingene for barn."
+                "In India, Easter is not celebrated as a national celebration, but for Christians it is a holy festival. In BCC Bangalore, Easter is celebrated with a feast. The story of Jesus' resurrection is told, and the children receive chocolate or marzipan eggs. Lately we have been involved in the activities that BCC has organized and followed along with the broadcasts for children."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen sjokolade",
-            "taskDescriptionInfo": "Du trenger: hvit, lys eller mørk sjokolade, noe godt du vil ha på din sjokolade f.eks. dryss, sjokoladeegg – eller kanin, godteri mm.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Task:",
+            "taskDescription": "Make your own chocolate:",
+            "taskDescriptionInfo": "You will need: white, light or dark chocolate, something good you want on your chocolate e.g. sprinkle, chocolate egg – or rabbit, candy etc.",
+            "taskHowToLabel": "How to make it:",
             "taskItems": [
-                "Få hjelp fra en voksen som kan smelte sjokoladen for deg og legg det på en plate med bakepapir.",
-                "Legg hva du liker på den smeltet sjokoladen.",
-                "Legg den ferdige sjokoladen i fryseren og la den avkjøle."
+                "Get help from an adult who can melt the chocolate for you and place it on a sheet of baking paper.",
+                "Put what you like on the melted chocolate.",
+                "Put the finished chocolate in the freezer and let it cool."
             ],
             "taskImages": [
                 "./images/india.png"
@@ -53,95 +59,95 @@
         },
         {
             "ID": "ZA",
-            "country": "Sør-Afrika",
+            "country": "South Africa",
             "type": "task",
+            "audio": "./audio/en/sa.mp3",
             "text": [
-                "Påsken i Sør-Afrika foregår i vakkert høstvær som ikke er for varmt eller kaldt. Vi har også tradisjonen med å lage påske-egg-jakt, som i mange andre land. Påskeharen gjemmer eggene overalt, både inne i våre hus og ute i hagen. Det mest populære godteriet i påsken er et marshmallow-påskeegg og hot cross-boller. I kristne familier forteller man også historien om påsken og hvordan Jesu ble korsfestet og stod opp igjen for oss.",
-                "Det er mange som tar ferie i påsken og er samlet med hele familien. Om søndagen lager vi en stor, nydelig påskemorgen-frokost med familiene våre. Noen familier leker også noe vi kaller boeresport, det er blant annet «egg på en skje»-løp, sekkeløp etc"
+                "Easter in South Africa takes place in beautiful autumn weather that is not too hot or cold. We also have the tradition of making an Easter egg treasure hunt, as in many other countries. The Easter hare hides the eggs everywhere, both inside our houses and out in the garden. The most popular candy at Easter is a marshmallow Easter egg and hot cross buns. In Christian families, we also tell the story of Easter and how Jesus was crucified and stood up again for us.",
+                "There are many who take holidays at Easter and are together with the whole family. On Sunday, we make a big, lovely Easter morning breakfast with our families. Some families also play something we call 'Boer sport', which includes 'the egg and spoon' race, sack races etc."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag en stafett hvor du skal løpe med ett egg på en skje"
+            "taskHeading": "Task:",
+            "taskDescription": "Make a relay race where each person has to run with an egg on a spoon."
         },
         {
             "ID": "US",
-            "country": "USA",
-            "audio": "./audio/test.mp3",
+            "country": "United States",
+            "audio": "./audio/en/usa.mp3",
             "type": "task",
             "image": "./images/usa.png",
             "text": [
-                "I Amerika har vi mange morsomme måter å feire påsken på. Blant annet fyller vi mange fargerike plastegg med alle slags godterier og da er det noen som kler seg ut som den søte påskeharen og gjemmer disse eggene på alle mulige steder, for eksempel i trærne, i gresset, ja overalt. Etter at haren har gjemt eggene går vi på påskeeggjakt for å finne de. Etter at vi har funnet dem, spiser vi alt det deilige godteriet. Vi feirer også påsken med påskekurver, hvor vi fyller en kurv med leker og store sjokoladekaniner, sjokoladekyllinger og sjokoladeegg. Når vi har fylt disse kurvene, møter vi våre venner og gir kurvene til hverandre. Vi bruker også kurvene til alle eggene vi fant på påskeeggjakten. Men det viktigste vi gjør for å feire denne dagen, er å komme sammen og lese påskehistorien om Jesus, og spise sammen. Det er en morsom og festlig høytid."
+                "In America, we have many fun ways to celebrate Easter. Among other things, we fill many colorful plastic eggs with all kinds of candy and then someone dresses up as the cute Easter hare and hides these eggs in all possible places, for example in the trees, in the grass, yes everywhere. After the hare has hidden the eggs we go on easter egg hunt to find them. After we find them, we eat all the delicious candy. We also celebrate Easter with Easter baskets, where we fill a basket with toys and large chocolate bunnies, chocolate chickens and chocolate eggs. Once we have filled these baskets, we meet our friends and give the baskets to each other. We also use the baskets for all the eggs we found on the Easter egg treasure hunt. But the most important thing we do to celebrate this day is to come together and read the Easter story about Jesus and eat together. It's a fun and festive holiday."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen mini-påskeeggkurv.",
-            "taskDescriptionInfo": "Du trenger: toalettpapirruller, maling eller fargerikt papir, saks og lim.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Task:",
+            "taskDescription": "Create your own mini-Easter egg basket.",
+            "taskDescriptionInfo": "You will need: toilet paper rolls, paint or colorful paper, scissors and glue.",
+            "taskHowToLabel": "How to make them:",
             "taskItems": [
-                "Først fargelegger du papirrullene eller limer litt fargerikt papir på dem.",
-                "Når de er tørre, skjærer du dem i to, eller i et sikksakk-mønster hvis du vil lage en gresskurv som på bildet.",
-                "Klipp en lang papirstrimmel og lim den på innsiden av toalettpapir-rullen slik at den blir en bue. Dette blir et håndtak.",
-                "For å dekorere de små påskeeggkurvene dine, kan du også klippe vinger og et nebb for kyllingene, lange ører for kaninene og blomster til gresset."
+                "First, color the paper rolls or glue some colorful paper on them.",
+                "When they are dry, cut them in half, or in a zigzag pattern if you want to make a grass basket like the picture.",
+                "Cut a long paper strip and glue it inside the toilet paper roll so that it becomes an arc. This is going to be a handle.",
+                "To decorate your small Easter egg baskets, you can also cut wings and a beak for the chickens, long ears for the rabbits and flowers for the grass."
             ]
         },
         {
             "ID": "IS",
             "country": "Israel",
+            "audio": "./audio/en/israel.mp3",
             "type": "task",
             "text": [
-                "I Israel feirer man ikke påske, men noe som heter Pesach. Jødene feirer at de ble frie fra livet som slaver i Egypt, for mange, -mange hundre år siden. Familiene kommer sammen, spiser god mat, synger og ber. Det er også tradisjon å fortelle historier til barna fra den gangen jødene var slaver.",
-                "En annen tradisjon under Pesach, er at man ikke skal spise brød som er hevet. Denne tradisjonen kommer fra den dagen jødene ble fridd ut, da hadde de ikke tid til å vente på at brødet skulle heve, fordi de måtte skynde seg ut av husene sine og følge Moses.",
-                "Butikkene i Israel slutter å selge brød i hele 8 dager under denne høytiden. Istedenfor brød er det vanlig å spise et slags knekkebrød som heter “Matzah”."
+                "In Israel, they do not celebrate Easter, but something called Pesach. The Jews celebrate that they were freed from a life of slavery in Egypt, many, many centuries ago. The families come together, eat good food, sing and pray. It is also tradition to tell stories to the children from the time when the Jews were slaves.",
+                "Another tradition during Pesach is that one should not eat bread that rises. This tradition comes from the day the Jews were freed out from Egypt. They did not have time to wait for the bread to rise, because they had to hurry out of their houses and follow Moses.",
+                "The shops in Israel stop selling bread for a full 8 days during this holiday season. Instead of bread, it is common to eat a kind of cracker called 'Matzah'."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage 'Matzah' knekkebrød. Det kan være lurt å spørre foreldrene dine om hjelp.",
-            "taskDescriptionInfo": "Dette trenger du for å lage “Matzah”:",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Task:",
+            "taskDescription": "Making 'Matzah' crackers. You may want to ask your parents for help.",
+            "taskHowToLabel": "Here's what you need to make 'Matzah':",
             "taskItems": [
-                "1 dl hvetemel",
-                "1 te skje salt",
-                "2 spiseskjeer med oliven olje",
-                "1",
-                "5 dl varmt vann"
+                "1 dl plain flour",
+                "1 teaspoon salt",
+                "2 tablespoons of olive oil",
+                "1.5 dl hot water"
             ],
             "extraText": [
-                "Få hjelp av en voksen til å kjevle dem ut og steke dem"
+                "Get the help of an adult to roll this out and fry it."
             ]
         },
         {
             "ID": "NO",
-            "country": "Norge",
+            "country": "Norway",
             "type": "question",
-            "audio": "./audio/test.mp3",
+            "audio": "./audio/en/norway.mp3",
             "text": [
-                "Påsken er en høytid som feires av både kristne og jøder i Norge. Jødene minnes at de ble frie etter langvarig fangenskap i Egypt, mens kristne markerer at Jesus døde på korset og stod opp igjen den tredje dag. ",
-                "I norske kirker er det tradisjon for å synge salmen; Påskemorgen slukker sorgen- (skrevet av Nikolai Frederik Grundtvig i 1843), som vi også synger under påskestevnet på Brunstad. I barnehager og skoler feirer en med påskefrokost og påskeverksted, hvor barn maler og dekorerer egg og lager påskepynt med fjær osv. Noen har også opplevd at påskeharen har vært og gjemt påskeegg med godteri i huset eller ute i hagen. Mange norske familier tilbringer påskeferien på hytter i fjellet, hvor en gjerne går på skiturer og spiser kvikklunsj, sjokolade og appelsiner"
+                "Easter is a holiday celebrated by both Christians and Jews in Norway. The Jews recall being freed after prolonged captivity in Egypt, while Christians mark the death of Jesus on the cross and how he rose up on the third day.",
+                "In Norwegian churches there is a tradition of singing the hymn; 'Easter morning quenches sorrow'- (written by Nikolai Frederik Grundtvig in 1843), which we also sing at the Easter conference at Brunstad. In kindergartens and schools, we celebrate with an Easter breakfast and Easter workshop, where children paint and decorate eggs and make Easter decorations with feathers etc. Some have also experienced that the Easter hare has been out and about and hidden Easter eggs with candy in the house or out in the garden. Many Norwegian families spend their Easter holidays in cabins in the mountains, where they love to go skiing and eat chocolate cookies, chocolate and oranges."
             ],
-            "questionHeading": "Spørsmål",
+            "questionHeading": "Questions:",
             "questions": [
-                "Hvem har skrevet salmen; Påskemorgen slukker sorgen?",
-                "Hva gjør påskeharen?",
-                "Hva pleier nordmenn å ha med som pausemat når de er på skitur i påsken?"
+                "Who has written the hymn; 'Easter morning quenches sorrow'?",
+                "What does the Easter hare do?",
+                "What do Norwegians usually take along to eat on ski trips at Easter?"
             ]
         },
         {
             "ID": "PE",
             "country": "Peru",
-            "audio": "./audio/test.mp3",
+            "audio": "./audio/en/peru.mp3",
             "type": "task",
             "text": [
-                "Peru er delt i 3 store områder, med kyst, fjell og jungel. Allikevel har vi i hele Peru de samme påsketradisjonene. Vi lager i stand en festlig påsketid, spesielt for barna.",
-                "I påsken sender alle TV-kanaler fra Peru kun historier fra Bibelen og om Jesus, både til barna og voksne, alle dager i påsken.",
-                "På markedet kan en finne fisk og sjømat, fordi det er en tradisjon at på «lang-fredag» skal en kun spise fisk og ikke noe annet kjøtt.",
-                "Til dessert er det vanlig å lage forskjellige, gode desserter i mange farger. Barna elsker det! Spesielt «Lilla Mazamorra ,  arroz con leche». Det er en rosa dessert - nam nam !",
-                "I menigheten lager vi alltid påskeeggjakt for barna og barna kler seg ut som små kaniner! Det er veldig koselig!"
+                "Peru is divided into 3 large areas, with coast, mountains and jungle. Yet all of Peru has the same Easter traditions. We make a festive Easter time, especially for the kids.",
+                "At Easter, all TV channels from Peru only broadcast stories from the Bible and stories about Jesus, both to the children and adults, every day during Easter.",
+                "At the market one can find fish and seafood, because it is a tradition that on 'Good Friday' one should only eat fish and no meat.",
+                "For dessert, it is common to make different, good desserts in many colors. The kids love it! Especially «Lilla Mazamorra, arroz con leche». It's a pink dessert - yum yum!",
+                "In the church we always make an Easter egg treasure hunt for the children and the children dress up as little rabbits! It's very cozy!"
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage en kaninørehatt",
-            "taskDescriptionInfo": "Du trenger: Hvit og rosa papp, saks, lim og stiftemaskin.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Task:",
+            "taskDescription": "Make a rabbit ear hat.",
+            "taskDescriptionInfo": "You will need: White and pink cardboard, scissors, glue and a stapler.",
+            "taskHowToLabel": "How to make them:",
             "taskItems": [
-                "Bruk hvit og rosa papp til å kutte ut kaninøreformene: to hvite og to rosa, den rosa skal være litt mindre.",
-                "Lim de rosa ørene på de hvite ørene.",
-                "Lim ørene på en lang, hvit papp-stripe, mål slik at den passer til ditt hode, og stift endene sammen for å danne et hodebånd."
+                "Use white and pink cardboard to cut out the rabbit ear shapes: two white and two pink, the pink should be slightly smaller.",
+                "Glue the pink ears onto the white ears.",
+                "Glue the ears on a long white cardboard strip, measure it so that it fits your head, and staple the ends together to form a headband."
             ],
             "taskImages": [
                 "./images/peru.png"
@@ -149,46 +155,44 @@
         },
         {
             "ID": "CH",
-            "country": "Kina",
+            "country": "China",
             "type": "task",
+            "audio": "./audio/en/china.mp3",
             "text": [
-                "I Hong Kong er det vanlig å gå på påskeeggjakt i påsken. Vi lager panda-egg og gjemmer de i bambus-skogen. Vi leker at vi er veldig gode venner med pandaene i Kina, så vi går på påskeeggjakt sammen med pandaene, som ofte hjelper til med å finne mange egg."
+                "In Hong Kong, it is common to go on an Easter egg treasure hunt during Easter. We make panda eggs and hide them in the bamboo forest. We play that we are very good friends with the pandas in China, so we go on Easter egg treasure hunts with the pandas, who often help find many eggs."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Mal eller tegn et panda-egg.",
-            "taskDescriptionInfo": "Du trenger: et kokt, avkjølt egg, svart og hvit tusj eller maling, malerpensel og vann til å rense penselen",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Task:",
+            "taskDescription": "Paint or draw a panda egg.",
+            "taskDescriptionInfo": "You will need: a boiled, cooled egg, black and white marker or paint, paintbrush and water to clean the brush.",
+            "taskHowToLabel": "How to make the egg:",
             "taskImages": [
                 "./images/china.jpg",
                 "./images/china2.jpg",
                 "./images/china3.jpg"
             ],
-            "extratext": "Tegne en panda på egget: se eksempel"
+            "extratext": "Draw a panda on the egg: see example."
         },
         {
             "ID": "PO",
             "country": "Polen",
-            "audio": "./audio/test.mp3",
+            "audio": "./audio/en/poland.mp3",
             "type": "question",
             "text": [
-                "Påskedag i Polen er en skikkelig vanndag og i noen familier, vekker foreldrene barna sine med å sprute vann på dem. Hele dagen leker barna med vann og bruker vanngevær og plast-egg full av vann. Sist på dagen er det en vannkamp, hvor folk sprøyter med vann på hverandre. Kanskje det er bedre å være inne denne dagen"
+                "The 2nd day of Easter in Poland is a real “water day” and in some families, parents wake up their children by splashing water on them. All day, the children play with water and use water pistols and plastic eggs full of water. At the end of the day there is a water fight, where people spray each other with water. Maybe it's better to stay inside that day."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvordan vekker foreldrene sine barn på morgenen?",
+            "questionHeading": "Question:",
+            "question": "How do parents wake up their children in the morning?",
             "questionOptions": [
-                "Hiver av dem dyna",
-                "Spruter vann på dem",
-                "Med kyss"
+                "Pull the bed quilt off them",
+                "Spray water on them",
+                "With kisses"
             ]
         }
     ],
     "strings": {
-        "strings": {
-            "complete": "Ferdig",
-            "completeHeading": "Spillet fullført",
-            "completedtext": "Gå til brunstadTv-appen og last opp bildet ditt",
-            "completeFeedbacktext": "Hva syntes du om denne aktiviteten? Klikk her",
-            "completeFeedbackLink": ""
-        }
+        "characterChoiceHeading": "Choose your character",
+        "complete": "Complete",
+        "completeHeading": "Game completed",
+        "completedText": "Go to BrunstadTv app and upload your image."
     }
 }

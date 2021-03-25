@@ -1,0 +1,196 @@
+{
+    "language": "es",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/es/australia.mp3",
+            "text": [
+                "En Australia la pascua se celebra en otoño, a diferencia de los otros países del hemisferio norte, en donde pascua es en primavera.",
+                "Pascua es una de las celebraciones más importantes en el calendario cristiano, que conmemora la resurrección de Jesús de entre los muertos.",
+                "Es un tiempo para reunir a la familia,  pues el día de pascua comienza con una gran búsqueda de huevos de pascua para todos los niños y termina con una comida de pascua que a menudo consiste en cordero y verduras asadas.",
+                "Hay muchas actividades para los niños en pascua como por ejemplo pintar y decorar huevos de pascua.",
+                "Otra tradición es comer “hot cross boller” (pan dulce) que se pueden comprar con antelación a pascua. Son panes dulces hechos con especias y frutos secos y decorados con una cruz blanca que representa la cruz de Jesús."
+            ],
+            "questionHeading": "Pregunta",
+            "question": "¿En cuál estación del año se celebra Pascua en Australia?",
+            "questionOptions": [
+                "Verano",
+                "Invierno",
+                "Otoño",
+                "Primavera"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rusia",
+            "type": "question",
+            "audio": "./audio/es/russia.mp3",
+            "text": [
+                "Pascua es la celebración más importante para los cristianos después de navidad. Hay muchas tradiciones y ceremonias de pascua. La celebración tiene lugar desde marzo a mayo, dependiendo de la fecha en la que se calendarice la celebración. Pascua es una celebración familiar. Durante el fin de semana de pascua se asiste a la iglesia para orar y ser bendecido. Pascua es también una celebración con buena comida y platos tradicionales. Como en muchos otros países, en Rusia es también costumbre pintar y decorar huevos. Hay diferentes juegos relacionados a la decoración de los huevos. Por ejemplo, hay un juego donde cada niño toma un huevo y arroja su huevo contra el huevo de otro niño, gana el último huevo en romperse.",
+                "Los huevos decorados también suelen regalarse a los amigos y familia como un símbolo de agradecimiento. En pascua se hornea un pastel especial llamado Kulich y es un símbolo de que Jesús está con nosotros."
+            ],
+            "questionHeading": "Pregunta",
+            "question": "¿Cómo se llama el pastel tradicional que se hornea en Rusia?"
+        },
+        {
+            "ID": "IN",
+            "country": "India",
+            "type": "task",
+            "audio": "./audio/es/india.mp3",
+            "text": [
+                "En India no se celebra Pascua como una celebración nacional, pero para los cristianos es una fiesta sagrada. En BCC Bangalore se celebra Pascua con una fiesta, donde se cuenta la historia sobre la resurrección de Jesús y los niños reciben chocolate o huevos de mazapán. Últimamente hemos participado de las actividades que BCC ha organizado y vemos las transmisiones para los niños."
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Haz tu propio chocolate:",
+            "taskDescriptionInfo": "Necesitas: chocolates blanco o negro, algo delicioso que quieras agregar en tu chocolate, por ejemplo: algo para espolvorear, huevos de chocolate o figuras de conejo, golosinas, etc.",
+            "taskHowToLabel": "Cómo prepararlo:",
+            "taskItems": [
+                "Recibe ayuda de un adulto para derretir el chocolate y viértelo sobre una plataforma con papel para hornear.",
+                "Agrega lo que quieras sobre el chocolate derretido.",
+                "Deja el chocolate listo en el refrigerador y déjalo enfriar."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Sudáfrica",
+            "type": "task",
+            "audio": "./audio/es/sa.mp3",
+            "text": [
+                "La pascua en Sudáfrica sucede en un hermoso clima otoñal que no es demasiado caluroso ni demasiado frío. También tenemos la tradición de realizar la búsqueda de los huevos de pascua como en muchos otros países. El conejo de pascua esconde los huevos por todas partes, tanto dentro de nuestras casas como afuera en el jardín. La golosina más popular en pascua es un huevo de pascua de malvavisco y “hot cross-boller” (pan dulce). En las familias cristianas se cuenta la historia de pascua y cómo Jesús fue crucificado y resucitó por nosotros.",
+                "Muchos se toman vacaciones en pascua y están junto con toda la familia. Durante el domingo hacemos un gran y delicioso desayuno de pascua con nuestras familias. Algunas familias juegan algo que llamamos “boeresport” que entre otras cosas es una carrera de huevos en la cuchara, carrera de sacos, etc."
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Crea un relevo en la que vas a correr con un huevo en una cuchara."
+        },
+        {
+            "ID": "US",
+            "country": "USA",
+            "audio": "./audio/es/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "En América tenemos muchas maneras divertidas de celebrar Pascua. Entre otras cosas, llenamos muchos huevos de plástico de colores con todo tipo de golosinas y entonces algunos que se disfrazan del dulce conejo de pascua esconden estos huevos en todo tipo de lugares diferentes, por ejemplo: en un árbol, en el césped ¡Si, en todas partes! Luego que el conejo ha escondido los huevos vamos en la búsqueda para encontrarlos y comer todas las deliciosas golosinas. También celebramos pascua con canastas típicas llenas con juegos y grandes conejos de chocolate, gallinas de chocolates y huevos de chocolate. Luego de llenar estas canastas, nos encontramos con nuestros amigos y damos las canastas los unos a los otros. También utilizamos las canastas para guardar todos los huevos que encontramos en la búsqueda de huevos de pascua. Pero lo más importante que hacemos para celebrar este día es reunirnos y leer la historia de pascua sobre Jesús y comemos juntos. Es una celebración divertida y muy importante. "
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Haz tu propia mini canasta de huevos de pascua.",
+            "taskDescriptionInfo": "Necesitas: cilindros de papel higiénico, pintura o papeles de colores, tijeras y pegamento.",
+            "taskHowToLabel": "Como hacerlo:",
+            "taskItems": [
+                "Primero debes pintar los cilindros de papel higiénico o pega papeles de colores sobre ellos.",
+                "Cuando estén secos, córtalos por la mitad o en zig-zag en caso de que quieras hacer una canasta con diseños de césped como se muestra en la imagen.",
+                "Corta una tira larga de papel y pega las puntas por el interior del cilindro de papel para que se convierta en un arco. Esta será una manija.",
+                "Para decorar las pequeñas canastas de pascua también puedes cortar alas y un pico para las gallinas, orejas largas para los conejos y flores para la hierba."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "type": "task",
+            "audio": "./audio/es/israel.mp3",
+            "text": [
+                "En Israel no se celebra pascua, sino algo llamado Pesach. Los judíos celebran que fueron liberados de la vida como esclavos en Egipto, por muchos, muchos cientos de años atrás. Las familias se reúnen, comen buena comida, cantan y oran. También es tradición contar historias a niños del tiempo en que los judíos eran esclavos.",
+                "Otra tradición durante Pesach es que uno no debe comer pan con levadura. Esta tradición proviene de aquel día en que los judíos fueron liberados, y no tenían tiempo para esperar a que el pan leudara, pues debían salir rápidamente de sus casas y seguir a Moisés.",
+                "Las tiendas en Israel dejan de vender pan durante 8 días en que se celebra esta festividad. En lugar de pan es común comer un tipo de pan crujiente llamado 'Matzah'."
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Prepara el pan crujiente 'Matzah'. Es bueno que pidas ayuda a tus padres.",
+            "taskHowToLabel": "Esto necesitarás para cocinar 'Matzah'",
+            "taskItems": [
+                "1dl harina",
+                "1 cdta. Sal",
+                "2 cda. De aceite de oliva",
+                "1,5 agua tibia"
+            ],
+            "extraText": [
+                "Recibe ayuda de un adulto para amasarlos y hornearlos."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Noruega",
+            "type": "question",
+            "audio": "./audio/es/norway.mp3",
+            "text": [
+                "Pascua es una festividad celebrada tanto por cristianos como por judíos en noruega. Los judíos conmemoran el día en que fueron liberados después de un largo tiempo de esclavitud en Egipto, mientras que los cristianos conmemoran la muerte de Jesús en la cruz y su resurrección al tercer día.",
+                "En las iglesias noruegas existe la tradición de cantar el salmo 'la mañana de pascua termina con la trizteza' (escrita por Nikolai Frederik Grundtvig en 1843) y que nosotros también cantamos durante la conferencia de pascua en Brunstad. En los jardines infantiles y escuelas se celebra con un desayuno de pascua y un taller de pascua, donde los niños pintan y decoran huevos y hacen adornos de pascua con plumas, etc. Algunos también experimentan que el conejo de pascua esconde huevos de pascua con golosinas tanto dentro de la casa como fuera de esta. Muchas familias noruegas disfrutan las vacaciones de pascua en cabañas en la montaña donde realizan actividades como esquiar, y en las pausas disfrutan de 'kvikklunsj' (galletas bañadas en chocolate típico noruego), chocolate y mandarinas."
+            ],
+            "questionHeading": "Preguntas:",
+            "Question": [
+                "¿Quién ha escrito el salmo “La mañana de pascua termina con la tristeza”?",
+                "¿Qué hace el conejo de Pascua?",
+                "¿Qué acostumbran los noruegos a comer en las pausas cuando esquían durante Semana Santa?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Perú",
+            "audio": "./audio/es/peru.mp3",
+            "type": "task",
+            "text": [
+                "Perú se divide en 3 grandes áreas: costa, sierra y selva, sin embargo en todo el país se celebran las mismas tradiciones en Semana Santa. Preparamos un tiempo de pascua muy alegre, especialmente para los niños.",
+                "Durante semana santa todos los canales de televisión del Perú transmiten historias de la Biblia y sobre Jesús, tanto como para niños como para adultos.",
+                "En las tiendas se puede encontrar pescado y mariscos, porque es tradición que durante el Viernes Santo solo se debe comer pescado y no otro tipo de carnes.",
+                "Para el postre es común preparar diferentes y buenos postres con muchos colores. ¡A los niños les encanta! Especialmente “lilla mazamorra, arroz con leche” porque es un postre rosado, ¡ñam, ñam!",
+                "En la iglesia siempre realizamos la búsqueda de los huevos de pascua para los niños y ¡ellos mismos se disfrazan como conejitos! ¡Es muy adorable!"
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Crea tu propio sombrero de orejas de conejo.",
+            "taskDescriptionInfo": "Necesitas: Papel blanco y rosado, tijeras, pegamento y una corchetera.",
+            "taskHowToLabel": "Cómo hacerlo:",
+            "taskItems": [
+                "Usa el papel blanco y rosado para recortar las formas de las orejas de conejo: dos blancas y dos rosadas, y esta ultima debe ser un poco más pequeña.",
+                "Pega las orejas rosadas sobre las orejas blancas.",
+                "Pega las orejas en una tira larga de cartón blanco. Ajusta la tira a la medida de tu cabeza y pega los extremos con corchetera, para formar una corona."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "China",
+            "type": "task",
+            "audio": "./audio/es/china.mp3",
+            "text": [
+                "En Hong Kong es común realizar la búsqueda de huevos de pascua durante semana Santa. Hacemos huevos de panda y los escondemos en el bosque de Bambú. En China jugamos a que somos muy buenos amigos con los pandas entonces vamos en la búsqueda de huevos junto con los pandas, que a menudo ayudan a encontrar muchos huevos."
+            ],
+            "taskHeading": "Actividad:",
+            "taskDescription": "Pinta o dibuja un huevo de panda.",
+            "taskDescriptionInfo": "Necesitas: un huevo cocido, pintura o plumón blanco y negro, un pincel y agua para limpiar el pincel.",
+            "taskHowToLabel": "Cómo hacerlo:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Dibuja un panda en el huevo, mira el ejemplo."
+        },
+        {
+            "ID": "PO",
+            "country": "Polonia",
+            "audio": "./audio/es/poland.mp3",
+            "type": "question",
+            "text": [
+                "En Polonia el segundo día de pascua es un verdadero día de agua y en algunas familias, los padres despiertan a sus hijos rociándoles agua. Durante todo el día los niños juegan con agua, usan pistolas de agua y huevos de plástico llenos de agua. Al final del día hay una pelea de agua, donde las personas se tiran agua entre sí. Quizás es mejor quedarse dentro de casa este día."
+            ],
+            "questionHeading": "Preguntas:",
+            "question": "¿Cómo despiertan los padres a sus niños en la mañana?",
+            "questionOptions": [
+                "Sacan el cojín.",
+                "Le rocían agua.",
+                "Con un beso."
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Elige a tu personaje",
+        "complete": "Completa",
+        "completeHeading": "Juego completado",
+        "completedText": "Vaya a la aplicación BrunstadTv y cargue su imagen."
+    }
+}

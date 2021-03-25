@@ -116,12 +116,18 @@ $australia   : #f8e581;
         cursor: pointer;
     }
 
-    >g:not(#World) path {
+    >g:not(#World) path:not(.completed) {
         fill: #FDE758;
     }
 
-    >g:not(#World):hover path {
+    >g:not(#World):hover path:not(.completed) {
         fill: #5A617D;
+    }
+
+    >g:not(#World) path.completed {
+        fill          : $text;
+        display       : none;
+        pointer-events: none;
     }
 
     // >g:not(#World).completed {
@@ -129,30 +135,35 @@ $australia   : #f8e581;
     // }
 
     >g:not(#World).completed text {
-        display: none;
+        text-decoration: underline;
     }
 
-    >g:not(#World).completed.cls-2 path {
+    >g:not(#World).completed path.completed {
+        display: block;
+    }
+
+
+    >g:not(#World).completed.cls-2 path:not(.completed) {
         fill: $southafrica
     }
 
-    >g:not(#World).completed.cls-4 path {
+    >g:not(#World).completed.cls-4 path:not(.completed) {
         fill: $america
     }
 
-    >g:not(#World).completed.cls-5 path {
+    >g:not(#World).completed.cls-5 path:not(.completed) {
         fill: $europe
     }
 
-    >g:not(#World).completed.cls-6 path {
+    >g:not(#World).completed.cls-6 path:not(.completed) {
         fill: $asia
     }
 
-    >g:not(#World).completed.cls-7 path {
+    >g:not(#World).completed.cls-7 path:not(.completed) {
         fill: $southamerica
     }
 
-    >g:not(#World).completed.cls-8 path {
+    >g:not(#World).completed.cls-8 path:not(.completed) {
         fill: $australia
     }
 

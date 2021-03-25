@@ -30,7 +30,7 @@ function jsonTask() {
 }
 
 function audioTask() {
-    return src('src/audio/*').pipe(gulp.dest('dist/audio'));
+    return src('src/audio/**/*').pipe(gulp.dest('dist/audio'));
 }
 
 function jsTask() {

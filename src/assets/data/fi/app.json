@@ -1,0 +1,192 @@
+{
+    "language": "fi",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/fi/australia.mp3",
+            "text": [
+                "Australiassa pääsiäistä vietetään syksyllä, toisin kuin täällä pohjoisella pallonpuoliskolla, jossa pääsiäinen on keväinen juhla.",
+                "Pääsiäinen on yksi tärkeimpiä juhlia kristillisessä kalenterissa. Pääsiäistä vietetään Jeesuksen kuolleista nousemisen kunniaksi.",
+                "Australiassa pääsiäinen on perhejuhla. Päivä alkaa lasten jännittävällä pääsiäismunajahdilla ja päättyy pääsiäisateriaan, joka koostuu yleensä paistetusta lampaasta sekä vihanneksista.",
+                "Pääisiäisenä on lapsille paljon tekemistä, kuten piirtämistä sekä pääsiäismunien maalaamista.",
+                "Lisäksi perinteisiin kuuluu hot cross- pullat, joita saa kaupoista hyvissä ajoin ennen juhlapyhiä. Hot cross pullat ovat makeita, mausteisia pullia, joiden sisällä on kuivattuja hedelmiä ja päällä valkoinen risti, joka symboloi Jeesuksen ristiä."
+            ],
+            "questionHeading": "Kysymys:",
+            "question": "Minä vuodenaikana Australiassa vietetään pääisiäistä?",
+            "questionOptions": [
+                "Kesällä",
+                "Talvella",
+                "Syksyllä",
+                "Keväällä"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Venäjä",
+            "type": "question",
+            "audio": "./audio/fi/russia.mp3",
+            "text": [
+                "Pääsiäinen on kristityille joulun jälkeen tärkein juhlapyhä. Pääsiäiseen liittyy paljon perinteitä ja rituaaleja.Venäjällä pääsiäinen on perhejuhla. Pääsiäisenä mennään kirkkoon rukoilemaan ja saamaan siunausta. Pääsiäisenä valmistetaan hyvää ruokaa ja perinteisiä ruokalajeja. Kuten monissa muissakin maissa myös Venäjällä pääsiäismunien maalaus ja koristelu kuuluu perinteisiin. Pääisiäimuniin liittyy myös useampi leikki. Esimerkiksi leikki, jossa lapset ottavat kukin oman munan ja kopauttavat sitä toisen munaan. Lapsi, jonka pääsiäismuna rikkoontuu viimeiseksi, voittaa.",
+                "Koristeltuja munia annetaan usein myös vieraille ja perheelle, kiitollisuuden osoituksena. Pääsiäisenä leivotaan myös erityistä kulitsa-kakkua. Kakku symboloi sitä, että Jeesus on kanssamme."
+            ],
+            "questionHeading": "Kysymys:",
+            "question": "Minkä nimistä kakkua Venäjällä valmistetaan pääsiäisenä?"
+        },
+        {
+            "ID": "IN",
+            "country": "Intia",
+            "type": "task",
+            "audio": "./audio/fi/india.mp3",
+            "text": [
+                "Pääsiäinen ei ole Intiassa kansallinen juhla, mutta kristityille se on pyhä tapahtuma. BCC Bangaloressa pääsiäistä juhlitaan yhteisellä juhlalla. Lapsille kerrotaan Jeesuksen kuolleista noususta, ja he saavat suklaata tai marsipaanimunia. Viime aikoina myös Intian ystävät ovat seuranneet BrunstadTV:stä lähetyksiä ja osallistuneet BCC järjestämiin aktiviteetteihin."
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Tee omia suklaakarkkeja.",
+            "taskDescriptionInfo": "Tarvitset valko-, maito- tai tummaa suklaata. Lisäksi oman makusi mukaan esim. strösseliä, pieniä suklaamunia, karkkia tai muuta suklaan päälle pantavaksi.",
+            "taskItems": [
+                "Pyydä aikuiselta apua sulattamaan suklaa. Levittäkää sulatettu suklaa leivinpaperille levyksi.",
+                "Sirottele haluamasi päälliset suklaan päälle.",
+                "Nosta valmis suklaa pakastimeen, ja anna jähmettyä."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Etelä-Afrikka",
+            "type": "task",
+            "audio": "./audio/fi/sa.mp3",
+            "text": [
+                "Pääsiäistä vietetään Etelä-Afrikassa kauniissa ja sopivan lämpimässä syyssäässä. Monien muiden maiden tavoin myös etelä-afrikkalaiset lapset pääsevät etsimään pääsiäismunia, jotka pääsiäipupun on piilottanut sisälle tai ulos. Suosituimpia pääsiäisherkkuja ovat vaahtokarkki-pääsiäismunat sekä hot cross pullat. Kristityissä perheissä kerrotaan pääsiäisen kertomus siitä, kuinka Jeesus kuoli ristillä, mutta nousi kuolleista meidän vuoksemme.",
+                "Monet lomailevat pääsiäisen aikaan ja perheet kokoontuvat. Pääsiäissunnuntaina valmistetaan herkullinen pääsiäisaamun aamiainen. Jotkut perheet pelaavat erilaisia pihapelejä, kuten pussijuoksua sekä köydenvetoa."
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Järjestäkää viestijuoksu, jossa kukin osallistuja vuorollaan kantaa kananmunaa lusikassa."
+        },
+        {
+            "ID": "US",
+            "country": "Amerikka",
+            "audio": "./audio/fi/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "Amerikassa on monta hauskaa pääsiäsperinnettä. Esimerkiksi lapset saavat täyttää värikkäitä muovimunia erilaisilla karkeilla, jonka jälkeen joku pukeutuu söpöksi pääsiäispupuksi ja piilottaa munat esimerkiksi puihin, pensaisiin, oikeastaan minne vain! Pupun piilotettua munat, lapset pääsevät etsimään niitä. Kaikkien munien löydyttyä herkutellaan yhdessä. Pääsiäiseen kuuluu myös pääsiäiskorit, jotka täytetään leluilla ja suurilla suklaapupuilla ja -kanoilla, sekä suklaamunilla. Yleensä sen jälkeen tavataan ystäviä, ja samalla vaihdetaan pääsiäiskoreja. Tärkeintä on yhdessäolo, hyvä ruoka sekä pääsiäiskertomuksen lukeminen. Pääsiäinen on hauska ja juhlava pyhä."
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Tee oma mini-pääsiäismunakori.",
+            "taskDescriptionInfo": "Tarvitset vessapaperirullia, maalia tai värikästä paperia, sakset ja liimaa.",
+            "taskItems": [
+                "Maalaa tai liimaa värikkäät paperit vessapaperirullien ympärille.",
+                "Kun rullat ovat kuivuneet, leikkaa ne kahtia, halutessasi tee sahalaitakuviota mallikuvan tavoin.",
+                "Leikkaa paperista pitkä suikale, ja liimaa se päädyistä vessapaperirullan sisäreunoihin, niin että siitä tulee sanka.",
+                "Koristele korit halutessasi esim. liimaamalla tipulle siivet, kanille pitkät korvat tai kukkia nurmikolle. (kts. mallikuva)."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "type": "task",
+            "audio": "./audio/fi/israel.mp3",
+            "text": [
+                "Israelissa ei vietetä pääsiäistä, vaan Pesah- nimistä juhlaa. Juutalaiset juhlivat vapautumista Egyptin orjuudesta monta tuhatta vuotta sitten. Perheet kokoontuvat juhlimaan, syömään hyvää ruokaa, laulamaan sekä rukoilemaan. Perinteisesti lapsille kerrotaan myös kertomuksia ajalta, jolloin juutalaiset olivat orjia.",
+                "Lisäksi Pesah- juhlaan liittyy myös perinne, jossa leipä syödään happamattomana, eli sitä ei ole kohotettu. Perinne juontaa juurensaa päiviin, jolloin juutalaiset vapautuivat orjuudesta, eikä heillä ollut aikaa odottaa leivän kohoamista, sillä heidän täytyi lähteä Egyptistä Mooseksen johdolla.",
+                "Israelissa kaupat eivät myy tavallista leipää enää 8 päivää ennen juhlapyhiä. Tavallisen leivän sijaan syödään yleensä matsa-leipää, joka muistuttaa näkkileipää."
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Valmista Matsa-leipää. Pyydä apua vanhemmilta.",
+            "taskHowToLabel": "Tarvitset:",
+            "taskItems": [
+                "1 dl vehnäjauhoja",
+                "1 tl suolaa",
+                "2 rkl oliiviöljyä",
+                "1,5dl lämmintä vettä "
+            ],
+            "extraText": [
+                "Pyydä aikuiselta apua kaulimaan taikina tasaiseksi, jonka jälkeen leipä paistetaan uunissa."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norja",
+            "type": "question",
+            "audio": "./audio/fi/norway.mp3",
+            "text": [
+                "Pääsiäinen on Norjassa niin kristittyjen kuin juutalaistenkin juhla. Juutalaiset muistavat vapautumistaan pitkään kestäneestä orjuudesta Egyptissä ja kristityt muistavat Jeesuksen kuolemaa ristillä ja kuolleista nousua kolmantena päivänä.",
+                "Norjalaisissa kirkoissa lauletaan perinteisesti virsi  ”Pääisiäinen poistaa murheen” (”Påskemorgen slukker sorgen”), jonka kirjoitti Nikolai Fredrik Grundtvig vuonna 1843. Tämän laulun laulamme myös pääsiäiskonferenssissa Brunstadilla. Norjalaisissa kouluissa ja päiväkodeissa syödään pääsiäisaamiainen, sekä järjestetään pääsiäispaja, jossa lapset maalaavat ja koristelevat pääsiäismunia, ja tekevät pääsiäiskoristeita käyttäen höyheniä jne. Pääsiäispupu vierailee myös joidenkin kotona tai pihalla piilottaen pääsiäismunia hauskoihin piiloihin. Monet norjalaiset perheet lähtevät pääsiäisenviettoon vuorilla sijaitseville mökeille. Hiihtäminen pääsiäislomalla kuuluu monien perinteisiin, samoin kuin hiihtoretkellä syötävät suklaat ja appelsiinit."
+            ],
+            "questionHeading": "Kysymyksiä:",
+            "questions": [
+                "Kuka kirjoitti virren ”Pääsiäinen poistaa murheen”?",
+                "Mitä pääsiäispupu tekee?",
+                "Mitä norjalaiset syövät yleensä ollessaan hiihtoretkellä pääsiäisenä?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/fi/peru.mp3",
+            "type": "task",
+            "text": [
+                "Perussa on kolme erilaista aluetta, rannikko, vuoret sekä viidakko. Kaikilla alueilla pääsiäistä vietetään samalla tavalla. Pääsiäinen on juhla-aika, erityisesti lapsille.",
+                "Pääsiäisenä kaikki perulaiset tv-kanavat näyttävät ainoastaan kertomuksia Raamatusta ja Jeesuksesta, pääisiäisen jokaisena päivänä.",
+                "Kaupat myyvät kalaa ja äyriäisiä, sillä perinteisesti pitkäperjantaina syödään vain kalaa, eikä muuta lihaa.",
+                "Jälkiruoaksi valmistetaan erilaisia herkullisia ja värikkäitä jälkiruokia. Niitä lapset rakastavat! Erityisesti jälkiruoka nimeltään ”Lilla Mazamorra – arroz con leche” on monien herkku.",
+                "Seurakunnan ystävien kesken järjestetään pääsiäismunien etsintää, ja lapset pukeutuvat pupuiksi.  "
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Askartele itsellesi pupun korvat.",
+            "taskDescriptionInfo": "Tarvitset valkoista ja vaaleanpunaista kartonkia, sakset, liimaa sekä nitojan.",
+            "taskItems": [
+                "Leikkaa valkoisesta sekä vaaleanpunaisesta kartongista pupunkorvien muotoiset palat, vaaleanpunaisten palojen tulee olla vähän valkoisia pienempiä.",
+                "Liimaa vaaleanpunaiset palat valkoisten korvien keskelle.",
+                "Liimaa korvat kartonkisuikaleelle. Mittaa ja leikkaa suikale omaan päähäsi sopivaksi. Nido suikaleen päät yhteen."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "Kiina",
+            "type": "task",
+            "audio": "./audio/fi/china.mp3",
+            "text": [
+                "Hong Kongissa pääsiäiseen viettoon kuuluu pääsiäismunien etsintä. Munat maalataan pandoiksi, ja ne piilotetaan bambumetsään. Kuvittelemme, että pandat ovat hyviä ystäviämme ja menemme pääsiäismunajahtiin pandojen kanssa. Pandat ovat taitavia munien etsinnässä."
+            ],
+            "taskHeading": "Tehtävä:",
+            "taskDescription": "Maalaa tai piirrä pääsiäismunasta pandan näköinen.",
+            "taskDescriptionInfo": "Tarviset keitetyn, jäähtyneen kananmuna, valkoista ja mustaa tussia tai maalia, maalipensselin ja vettä pensselin huuhteluun.",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Maalaa pandamuna mallin mukaan."
+        },
+        {
+            "ID": "PO",
+            "country": "Puola",
+            "audio": "./audio/fi/poland.mp3",
+            "type": "question",
+            "text": [
+                "Toista pääsiäispäivää vietetään Puolassa vesisodan merkeissä. Joissakin perheissä vanhemmat jopa herättävät lapsensa roiskuttamalla vettä heidän päälleen. Lapset saavat leikkiä vesileikkejä ja -sotaa halutessaan koko päivän. Päivä päättyy suureen vesisotaan, johon kaikki osallistuvat ja kaatavat vettä toistensa päälle. Voikin olla mukavampaa viettää ilta sisällä."
+            ],
+            "questionHeading": "Kysymyksiä:",
+            "question": "Miten vanhemmat herättävät lapsensa pääsiäispäivänä?",
+            "questionOptions": [
+                "Ottavat lapsilta peitot pois.",
+                "Roiskivat vettä lasten päälle.",
+                "Antamalla suukon."
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Valitse hahmosi",
+        "complete": "Valmis",
+        "completeHeading": "Peli valmistunut",
+        "completedText": "Siirry brunstadTv-sovellukseen ja lataa kuva."
+    }
+}
