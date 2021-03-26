@@ -621,6 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
         eraseCookie('character');
         eraseCookie('tasks_completed');
         eraseCookie('language');
+        eraseCookie('answers');
         location.reload();
         return false;
     }, false);
