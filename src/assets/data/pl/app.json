@@ -32,7 +32,7 @@
                 "Zdobione jajka zwykle daje się przyjaciołom i rodzinie jako symbol wdzięczności. Na Wielkanoc piecze się specjalne ciasto o nazwie Kulich. Ciasto Kulich to symbol, że Jezus jest z nami."
             ],
             "questionHeading": "Pytanie:",
-            "question": "Jak nazywa się specjalne ciasto pieczone w Rosji na Wielkanoc?"
+            "questions": ["Jak nazywa się specjalne ciasto pieczone w Rosji na Wielkanoc?"]
         },
         {
             "ID": "IN",
@@ -189,6 +189,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Wybierz swoją postać",
+        "startGameBTN": "uruchomić grę",
         "complete": "Skończone",
         "completeHeading": "Gra zakończona",
         "completedText": "Przejdź do aplikacji brunstadTv i prześlij swoje zdjęcie."

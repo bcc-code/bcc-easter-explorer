@@ -32,7 +32,7 @@
                 "Koristeltuja munia annetaan usein myös vieraille ja perheelle, kiitollisuuden osoituksena. Pääsiäisenä leivotaan myös erityistä kulitsa-kakkua. Kakku symboloi sitä, että Jeesus on kanssamme."
             ],
             "questionHeading": "Kysymys:",
-            "question": "Minkä nimistä kakkua Venäjällä valmistetaan pääsiäisenä?"
+            "questions": ["Minkä nimistä kakkua Venäjällä valmistetaan pääsiäisenä?"]
         },
         {
             "ID": "IN",
@@ -185,6 +185,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Valitse hahmosi",
+        "startGameBTN": "Aloita peli",
         "complete": "Valmis",
         "completeHeading": "Peli valmistunut",
         "completedText": "Siirry brunstadTv-sovellukseen ja lataa kuva."

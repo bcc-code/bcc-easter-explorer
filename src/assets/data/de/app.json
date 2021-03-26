@@ -32,7 +32,7 @@
                 "Dekorierte Eier werden normalerweise an Familien und Freunde als Symbol der Dankbarkeit gegeben. Für Ostern backt man einen speziellen Kuchen der Kulich heißt. Der Kuchen Kulich ist ein Symbol, dass Jesus mit uns ist."
             ],
             "questionHeading": "Frage",
-            "question": "Wie heißt der spezielle Kuchen, den man in Russland bäckt?"
+            "questions": ["Wie heißt der spezielle Kuchen, den man in Russland bäckt?"]
         },
         {
             "ID": "IN",
@@ -189,6 +189,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Wähle deinen Charakter",
+        "startGameBTN": "Spiel beginnen",
         "complete": "Fertig",
         "completeHeading": "Spiel abgeschlossen",
         "completedText": "Gehen Sie zur BrunstadTV-App und laden Sie Ihr Bild hoch"

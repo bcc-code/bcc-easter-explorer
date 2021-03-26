@@ -32,7 +32,7 @@
                 "Dekorerte egg blir også vanligvis gitt til venner og familie som et symbol på takknemlighet. Til påske baker man en spesiell kake som heter Kulich. Kaken Kulich er et symbol på at Jesus er med oss."
             ],
             "questionHeading": "Spørsmål",
-            "question": "Hva heter den spesielle kaken som man baker i Russland?"
+            "questions": ["Hva heter den spesielle kaken som man baker i Russland?"]
         },
         {
             "ID": "IN",
@@ -190,6 +190,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Válassza ki a karakterét",
+        "startGameBTN": "játék kezdése",
         "complete": "Befejezett",
         "completeHeading": "A játék befejeződött",
         "completedText": "Menj a brunstadTv alkalmazásba, és töltsd fel a képet."

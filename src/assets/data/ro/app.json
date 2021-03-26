@@ -32,7 +32,7 @@
                 "Ouăle decorate sunt, de asemenea, date prietenilor și familiei ca simbol al recunoștinței. De Paște, se pregătește o prăjitură specială numită Kulich. Prăjitura Kulich este un simbol al faptului că Isus este cu noi."
             ],
             "questionHeading": "Întrebare:",
-            "question": "Cum se numește prăjitura specială care se pregătește în Rusia?"
+            "questions": ["Cum se numește prăjitura specială care se pregătește în Rusia?"]
         },
         {
             "ID": "IN",
@@ -189,6 +189,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Alege-ți personajul",
+        "startGameBTN": "incepe jocul",
         "complete": "Am terminat",
         "completeHeading": "Ai terminat jocul",
         "completedText": "Accesați aplicația brunstadTv și încărcați fotografia."

@@ -31,9 +31,28 @@
             color     : #fff;
         }
 
-        .box__audio svg path {
-            fill: #fff;
+        .box__audio {
+            input[type="range"]::-webkit-slider-thumb {
+                background: $completed;
+            }
+
+            input[type="range"]::before {
+                background: $completed;
+            }
+
+            input[type="range"]::-moz-range-progress {
+                background: $completed;
+            }
+
+            input[type="range"]::-moz-range-thumb {
+                background: $completed;
+            }
+
+            input[type="range"]::-ms-thumb {
+                background: $completed;
+            }
         }
+
 
         .box__label span {
             color: #fff;
@@ -170,76 +189,197 @@
     .box__audio {
         display    : flex;
         align-items: center;
+        width      : 100%;
+
+        --seek-before-width  : 0%;
+        --volume-before-width: 100%;
+        --buffered-width     : 0%;
+
+        /* #region  Input */
+        input[type="range"] {
+            position          : relative;
+            -webkit-appearance: none;
+            width             : 100%;
+            margin            : 0;
+            padding           : 0;
+            height            : 20px;
+            float             : left;
+            outline           : none;
+            background        : transparent;
+        }
+
+        input[type="range"]::-webkit-slider-runnable-track {
+            width     : 100%;
+            height    : 3px;
+            cursor    : pointer;
+            background: $contrast;
+        }
+
+        input[type="range"]::before {
+            position        : absolute;
+            content         : "";
+            top             : 8px;
+            left            : 0;
+            width           : var(--seek-before-width);
+            height          : 2px;
+            background-color: $default;
+            cursor          : pointer;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            position          : relative;
+            -webkit-appearance: none;
+            box-sizing        : content-box;
+            height            : 15px;
+            width             : 15px;
+            border-radius     : 50%;
+            background-color  : $default;
+            cursor            : pointer;
+            margin            : -7px 0 0 0;
+        }
+
+        input[type="range"]:active::-webkit-slider-thumb {
+            transform: scale(1.2);
+        }
+
+        input[type="range"]::-moz-range-track {
+            width     : 100%;
+            height    : 3px;
+            cursor    : pointer;
+            background: $contrast;
+        }
+
+        input[type="range"]::-moz-range-progress {
+            background-color: $default;
+        }
+
+        input[type="range"]::-moz-focus-outer {
+            border: 0;
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            box-sizing      : content-box;
+            height          : 15px;
+            width           : 15px;
+            border-radius   : 50%;
+            background-color: $default;
+            cursor          : pointer;
+        }
+
+        input[type="range"]:active::-moz-range-thumb {
+            transform: scale(1.2);
+        }
+
+        input[type="range"]::-ms-track {
+            width     : 100%;
+            height    : 3px;
+            cursor    : pointer;
+            background: transparent;
+            border    : solid transparent;
+            color     : transparent;
+        }
+
+        input[type="range"]::-ms-fill-lower {
+            background-color: $contrast;
+        }
+
+        input[type="range"]::-ms-fill-upper {
+            background: $default;
+        }
+
+        input[type="range"]::-ms-thumb {
+            box-sizing      : content-box;
+            height          : 15px;
+            width           : 15px;
+            border-radius   : 50%;
+            background-color: $default;
+            cursor          : pointer;
+        }
+
+        input[type="range"]:active::-ms-thumb {
+            transform: scale(1.2);
+        }
+
+        /* #endregion */
 
         audio {
             display: none;
-
-            font-family: $ff-primary;
-            font-size  : 16px;
-            font-weight: normal;
-            color      : $text;
         }
 
-        .play {
+        button {
+            padding      : 0;
+            border       : 0;
+            border-radius: 50%;
+            cursor       : pointer;
+            outline      : none;
+            width        : 40px;
+            height       : 40px;
+            flex         : 0 0 auto;
+        }
+
+        .time {
+            font-family: $ff-primary;
+            font-size  : 14px;
+            color      : #fff;
+            margin     : 0 10px;
+        }
+
+
+        button.play {
+            position       : relative;
+            background     : $default;
             display        : flex;
             align-items    : center;
             justify-content: center;
-            width          : 40px;
-            height         : 40px;
-            border-radius  : 50%;
-            background     : $default;
-            cursor         : pointer;
+
+            i {
+                display    : inline-block;
+                margin-left: 2px;
+                width      : 16px;
+                height     : 17px;
+                background : url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 25'%3E%3Cdefs/%3E%3Cpath fill='%235A617D' d='M19.875 10.078L3.375.328C2.015-.469 0 .328 0 2.25v19.5c0 1.781 1.875 2.86 3.375 1.969l16.5-9.75c1.453-.89 1.453-3 0-3.89z'/%3E%3C/svg%3E") no-repeat center/contain;
+            }
 
             &::after,
             &::before {
                 content      : '';
-                display      : none;
+                display      : block;
+                position     : absolute;
                 width        : 3px;
-                height       : 14px;
+                height       : 16px;
                 border-radius: 3px;
+                left         : 50%;
+                top          : 50%;
+                margin-top   : -8px;
+                margin-left  : -1.5px;
                 background   : $text;
-                margin       : 0 2px;
+                opacity      : 0;
             }
 
-            svg {
-                display       : block;
-                width         : 14px;
-                margin-left   : 0.25em;
-                pointer-events: none;
+            &::before {
+                transform: translateX(-3px);
             }
 
-            svg path {
-                fill: $text;
+            &::after {
+                transform: translateX(3px);
             }
         }
 
-        .label {
-            display       : none;
-            color         : #fff;
-            font-family   : $ff-primary;
-            font-weight   : 400;
-            font-size     : 1em;
-            line-height   : 1em;
-            text-transform: capitalize;
-            margin-left   : .5em;
-        }
 
         &.playing {
-            .play svg {
+
+
+            button.play i {
                 display: none;
             }
 
-            .play::after,
-            .play::before {
-                display: inline-block;
+            button.play::after,
+            button.play::before {
+                opacity: 1;
             }
         }
 
-        @media (min-width: 1024px) {
-            .label {
-                display: inline-block;
-            }
-        }
+        @media (min-width: 1024px) {}
     }
 
     .box__header {
@@ -256,17 +396,18 @@
         position     : absolute;
         top          : -1.5em;
         left         : 50%;
-        margin-left  : -100px;
-        width        : 200px;
+        min-width    : 200px;
+        transform    : translateX(-50%);
         background   : $default;
         border-radius: 1.5em;
+        padding      : 0 20px;
         text-align   : center;
 
         span {
             font-family   : $ff-primary;
             font-size     : 14px;
             font-weight   : 600;
-            line-height   : 3em;
+            line-height   : 2em;
             text-transform: uppercase;
             display       : inline-block;
             color         : $text;
@@ -342,7 +483,7 @@
             input {
                 display      : none;
                 margin-top   : 8px;
-                max-width    : 480px;
+                max-width    : 1000px;
                 line-height  : 1.5em;
                 font-size    : 1em;
                 color        : $text;
@@ -442,7 +583,7 @@
         input {
             display      : block;
             margin-top   : 8px;
-            max-width    : 480px;
+            max-width    : 1000px;
             line-height  : 1.5em;
             font-size    : 1em;
             color        : $text;
@@ -458,7 +599,7 @@
 
     .box__char {
         position   : absolute;
-        top        : -90px;
+        top        : -110px;
         left       : 50%;
         margin-left: -45px;
         width      : 90px;
@@ -485,19 +626,17 @@
         line-height   : 3em;
         font-weight   : 600;
         text-transform: uppercase;
-        letter-spacing: 0.2em;
         text-align    : center;
 
         display         : inline-block;
-        width           : 180px;
+        min-width       : 180px;
         background-color: $default;
         border-radius   : 2em;
         transition      : .3s cubic-bezier(0.23, 1, 0.320, 1);
         position        : absolute;
         bottom          : -20px;
         left            : 50%;
-        margin-left     : -100px;
-        width           : 200px;
+        transform       : translateX(-50%);
         text-align      : center;
         z-index         : 3;
 
@@ -520,6 +659,9 @@
     }
 
     @media (min-width: 1024px) {
+        .box__label span {
+            line-height: 2.5em;
+        }
 
         .box__char {
             width      : 120px;

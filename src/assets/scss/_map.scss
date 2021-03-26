@@ -144,27 +144,27 @@ $australia   : #f8e581;
 
 
     >g:not(#World).completed.cls-2 path:not(.completed) {
-        fill: $southafrica
+        fill: lighten($color: $southafrica, $amount: 10%)
     }
 
     >g:not(#World).completed.cls-4 path:not(.completed) {
-        fill: $america
+        fill: lighten($color: $america, $amount: 10%)
     }
 
     >g:not(#World).completed.cls-5 path:not(.completed) {
-        fill: $europe
+        fill: lighten($color: $europe, $amount: 10%)
     }
 
     >g:not(#World).completed.cls-6 path:not(.completed) {
-        fill: $asia
+        fill: lighten($color: $asia, $amount: 10%)
     }
 
     >g:not(#World).completed.cls-7 path:not(.completed) {
-        fill: $southamerica
+        fill: lighten($color: $southamerica, $amount: 10%)
     }
 
     >g:not(#World).completed.cls-8 path:not(.completed) {
-        fill: $australia
+        fill: lighten($color: $australia, $amount: 10%)
     }
 
 }

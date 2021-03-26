@@ -1,17 +1,22 @@
 // registering plugins for gsap
 gsap.registerPlugin(Draggable);
 
+gsap.config({
+    nullTargetWarn: false,
+});
+
 // Global Variables
 const _body = document.querySelector('body');
 const _firstScreen = document.querySelector('.firstScreen');
 const _secondScreen = document.querySelector('.secondScreen');
 const _mapContainer = document.querySelector('.map');
-const _gameResetBTN = document.querySelector('.reset');
 const _cursor = document.querySelector('.cursor');
 const _modal = document.querySelector('.modal');
 const _modalContainer = document.querySelector('.modal__container');
 const _languageSelect = document.getElementById('language-picker-select');
-
+const _gameResetBTN = document.querySelector('.reset');
+const _startGameBTN = document.querySelector('.language-picker-confirm');
+const _secondScreenHeading = document.querySelector('.secondScreen h2');
 
 let taskJSON;
 
@@ -33,7 +38,14 @@ const firstScreen = {
             gsap.to('.language-picker', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.promo', { y: 0, opacity: 1, duration: 1 });
 
-            _languageSelect.addEventListener('change', () => language(_languageSelect.value));
+            _languageSelect.addEventListener('change', () => {
+                language(_languageSelect.value);
+
+                setTimeout(function () {
+                    _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
+                    _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
+                }, 10)
+            });
 
             document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
                 createCookie('language', taskJSON.language, 1);
@@ -76,8 +88,8 @@ const secondScreen = {
         const button = document.querySelectorAll('.card__container');
 
         button.forEach(el => {
-            el.addEventListener('click', e => {
-                const character = e.target.closest('.card').classList.contains('boy') ? 'boy' : 'girl';
+            el.addEventListener('click', (event) => {
+                const character = event.target.closest('.card').classList.contains('boy') ? 'boy' : 'girl';
                 _body.classList.add(character);
                 createCookie('character', character, 1);
 
@@ -169,44 +181,44 @@ const task = {
         }
 
         function text() {
-            return thisCountry.text.map(function (item) {
+            return thisCountry.text.map(item => {
                 return "<p>" + item + "</p>";
             }).join("");
         }
 
         function options() {
-            return thisCountry.questionOptions.map(function (item) {
-                return "<li><label><input type='checkbox'/><div class='checkbox'></div>" + item + "</label></li>";
+            return thisCountry.questionOptions.map((item, index) => {
+                return "<li><label><input type='checkbox' value='" + index + "'/><div class='checkbox'></div>" + item + "</label></li>";
             }).join("");
         }
 
         function questions() {
-            return thisCountry.questions.map(function (item) {
+            return thisCountry.questions.map(item => {
                 return "<li>" + item + "<input type='text'/></li>";
             }).join("");
         }
 
         function list() {
-            return thisCountry.taskItems.map(function (item) {
+            return thisCountry.taskItems.map(item => {
                 return "<li>" + item + "</li>";
             }).join("");
         }
 
         function images() {
-            return thisCountry.taskImages.map(function (item) {
+            return thisCountry.taskImages.map(item => {
                 return "<img src='" + item + "' alt=''/>";
             }).join("");
         }
 
         function audio() {
             return "<div id='audio-container' class='box__audio'>" +
-                "<audio controls src='" + thisCountry.audio + "'>" +
+                "<audio src='" + thisCountry.audio + "' preload=”metadata”>" +
                 "Your browser does not support the audio element." +
                 "</audio>" +
-                "<div class='play'>" +
-                "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 25'><path d='M19.875 10.078L3.375.328C2.015-.469 0 .328 0 2.25v19.5c0 1.781 1.875 2.86 3.375 1.969l16.5-9.75c1.453-.89 1.453-3 0-3.89z' /></svg>" +
-                "</div>" +
-                "<span class='label'>play audio</span>" +
+                "<button class='play' id='play-icon'><i></i></button>" +
+                "<span id='current-time' class='time'>0:00</span>" +
+                "<input type='range' id='seek-slider' max='100' value='0'></input>" +
+                "<span id='duration' class='time'>0:00</span>" +
                 "</div > ";
         }
 
@@ -214,22 +226,90 @@ const task = {
 
     audioEvents: function () {
 
-        const audioContainer = document.getElementById('audio-container');
-        const audio = audioContainer.querySelector('audio');
-        const audioBtn = audioContainer.querySelector('.play');
-        const audioLabel = audioContainer.querySelector('.label');
+        const playIconContainer = document.getElementById('play-icon');
+        const audioPlayerContainer = document.getElementById('audio-container');
+        const seekSlider = document.getElementById('seek-slider');
+        const durationContainer = document.getElementById('duration');
+        const currentTimeContainer = document.getElementById('current-time');
+        const audio = document.querySelector('audio');
+        let playState = 'play';
 
-        if (!audio.getAttribute('src').length > 0) return audioContainer.remove();
+        // Duration
+        const calculateTime = (secs) => {
+            const minutes = Math.floor(secs / 60);
+            const seconds = Math.floor(secs % 60);
+            const returnedSeconds = seconds < 10 ? `0${seconds}` : `${seconds}`;
+            return `${minutes}:${returnedSeconds}`;
+        }
 
-        audioBtn.addEventListener('click', () => {
-            if (audio.paused) {
+        const displayDuration = () => {
+            durationContainer.textContent = calculateTime(audio.duration);
+        }
+
+        if (audio.readyState > 0) {
+            displayDuration();
+        } else {
+            audio.addEventListener('loadedmetadata', () => {
+                displayDuration();
+            });
+        }
+
+        // Seek slider
+
+        const setSliderMax = () => {
+            seekSlider.max = Math.floor(audio.duration);
+        }
+
+        if (audio.readyState > 0) {
+            displayDuration();
+            setSliderMax();
+        } else {
+            audio.addEventListener('loadedmetadata', () => {
+                displayDuration();
+                setSliderMax();
+            });
+        }
+
+        seekSlider.addEventListener('input', () => {
+            currentTimeContainer.textContent = calculateTime(seekSlider.value);
+            if (!audio.paused) {
+                cancelAnimationFrame(raf);
+            }
+        });
+
+        seekSlider.addEventListener('change', () => {
+            audio.currentTime = seekSlider.value;
+            if (!audio.paused) {
+                requestAnimationFrame(whilePlaying);
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            seekSlider.value = Math.floor(audio.currentTime);
+        });
+
+        // Click
+
+        let rAF = null;
+
+        const whilePlaying = () => {
+            seekSlider.value = Math.floor(audio.currentTime);
+            currentTimeContainer.textContent = calculateTime(seekSlider.value);
+            audioPlayerContainer.style.setProperty('--seek-before-width', `${seekSlider.value / seekSlider.max * 100}%`);
+            rAF = requestAnimationFrame(whilePlaying);
+        }
+
+        playIconContainer.addEventListener('click', () => {
+            if (playState === 'play') {
                 audio.play();
-                audioContainer.classList.add('playing');
-                audioLabel.innerHTML = 'Pause audio'
+                audioPlayerContainer.classList.add('playing');
+                requestAnimationFrame(whilePlaying);
+                playState = 'pause';
             } else {
                 audio.pause();
-                audioContainer.classList.remove('playing');
-                audioLabel.innerHTML = 'Play audio'
+                audioPlayerContainer.classList.remove('playing');
+                requestAnimationFrame(whilePlaying);
+                playState = 'play';
             }
         });
     },
@@ -274,6 +354,7 @@ const map = {
     clickEvents: function () {
         const countries = document.querySelectorAll('#map-area > g:not(#World)');
 
+
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
 
@@ -285,6 +366,35 @@ const map = {
         countries.forEach(path => {
             path.addEventListener('click', (event) => {
                 map.openModal(event.target.getAttribute('class'));
+
+                let textInput = document.querySelector('.box__container').querySelectorAll('input[type=text]');
+                let radioInput = document.querySelector('.box__container').querySelectorAll('input[type=checkbox]');
+                const countryId = _modal.getAttribute("data-id");
+
+                let answers = JSON.parse(readCookie('answers'));
+                if (!answers) answers = new Array();
+
+
+                if (textInput.length > 0) {
+                    answers.forEach(item => {
+                        item = JSON.parse(item);
+                        item.values = JSON.parse(item.values);
+
+                        if (item.country === countryId) {
+                            item.values.forEach((value, index) => {
+                                textInput[index].value = value;
+                            })
+                        };
+                    })
+                } else if (radioInput.length > 0) {
+                    answers.forEach(item => {
+                        item = JSON.parse(item);
+                        if (item.country === countryId) {
+                            radioInput[item.values].checked = true;
+                        };
+                    })
+                }
+
             }, false);
         });
 
@@ -308,27 +418,41 @@ const map = {
             event.target.closest('.modal').classList.add('completed');
             document.getElementById(event.target.getAttribute('id')).classList.add('completed');
 
-            // let answers = JSON.parse(readCookie('answers'));
-            // if (!answers) answers = new Array();
 
-
-
-            const inputs = document.querySelector('.box').querySelectorAll('input');
+            let textInput = document.querySelector('.box__container').querySelectorAll('input[type=text]');
+            let radioInput = document.querySelector('.box__container').querySelectorAll('input[type=checkbox]');
             const countryId = _modal.getAttribute("data-id");
-            let answers = [];
+
+            let answers = JSON.parse(readCookie('answers'));
+            if (!answers) answers = new Array();
+
             let arr = [];
 
-            if (inputs.length > 0) {
-                inputs.forEach((el, index) => answers.push(el.value));
+            answers = answers.filter(answer => JSON.parse(answer).country !== countryId);
 
-                cookie.set('answers', JSON.stringify(answers));
+            if (textInput.length > 0) {
 
-                arr[countryId] = JSON.parse(cookie.get('answers'));
+                textInput.forEach(el => arr.push(el.value));
+                answers.push(
+                    JSON.stringify({
+                        "country": countryId,
+                        "values": JSON.stringify(arr)
+                    })
+                )
+                createCookie('answers', JSON.stringify(answers), 1);
 
-                cookie.set('answers', JSON.stringify(arr[countryId]));
+            } else if (radioInput.length > 0) {
+
+                let selectedValue;
+                radioInput.forEach(el => { if (el.checked) selectedValue = el.value });
+                answers.push(
+                    JSON.stringify({
+                        "country": countryId,
+                        "values": selectedValue
+                    })
+                )
+                createCookie('answers', JSON.stringify(answers), 1);
             }
-
-
 
             map.closeModal();
             gameCompleted.init();
@@ -337,7 +461,7 @@ const map = {
 
         // Checkboxes
         document.addEventListener('click', (event) => {
-            if (event.target.tagName.toLowerCase() !== 'input') return;
+            if (event.target.tagName.toLowerCase() !== 'input[type=text]') return;
             const siblings = getSiblings(event.target.closest('li'));
             siblings.map(el => el.querySelector('input').checked = false);
         });

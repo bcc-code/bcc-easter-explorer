@@ -32,7 +32,7 @@
                 "Le uova decorate sono anche solitamente date ad amici e familiari come simbolo di gratitudine. Per Pasqua, si prepara una torta speciale chiamata Kulich. La torta Kulich è un simbolo che Gesù è con noi."
             ],
             "questionHeading": "Domanda:",
-            "question": "Come si chiama la torta speciale che si prepara in Russia?"
+            "questions": ["Come si chiama la torta speciale che si prepara in Russia?"]
         },
         {
             "ID": "IN",
@@ -189,6 +189,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Scegli il tuo personaggio",
+        "startGameBTN": "inizia il gioco",
         "complete": "Finito",
         "completeHeading": "Gioco completato",
         "completedText": "Vai all'app brunstadTv e carica la tua foto."

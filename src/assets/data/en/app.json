@@ -191,6 +191,7 @@
     ],
     "strings": {
         "characterChoiceHeading": "Choose your character",
+        "startGameBTN": "Start game",
         "complete": "Complete",
         "completeHeading": "Game completed",
         "completedText": "Go to BrunstadTv app and upload your image."
