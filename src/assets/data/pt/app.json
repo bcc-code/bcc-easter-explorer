@@ -7,49 +7,49 @@
             "type": "question",
             "audio": "./audio/pt/australia.mp3",
             "text": [
-                "I Australia feires påsken om høsten, i motsetning til andre land på den nordlige halvkule, hvor påsken er om våren.",
-                "Påsken er en av de viktigste markeringene i den kristne kalender, som markerer Jesu oppstandelse fra de døde.",
-                "Det er en tid for å samle familien. På påskedag begynner dagen med en stor påskeeggjakt for alle barna og avsluttes med et påskemåltid som vanligvis består av stekt lam og stekte grønnsaker.",
-                "Det er mange aktiviteter for barna i påsketiden, som for eksempel fargelegging og maling av påskeegg.",
-                "En annen tradisjon er hot cross boller som du kan kjøpe i god tid før påske. Det er søte boller, fylt med krydder og tørket frukt og dekorert med et hvitt kors som representerer Jesu kors."
+                "Na Australia celebram a páscoa no outono, ao contrário dos outros países que estão no hemisfério norte, onde a pascoa é durante a primavera.",
+                "A pascoa é um dos acontecimentos mais importantes do calendário cristão, que marca que Jesus ressuscitou da morte.",
+                "É um tempo de reunir a família. No dia da pascoa, o dia começa com uma grande caça da pascoa para todas as crianças e termina com uma ceia da pascoa que normalmente tem cordeiro assado e legumes assadas.",
+                "Há muitas atividades para as crianças no tempo da pascoa, como por exemplo colorir e pintar ovos de pascoa.",
+                "Uma outra tradição é bolinhos quentes de cruz que você pode comprar antes da pascoa. São bolinhos doces, recheados com especiarias e frutas cristalizadas e decorada com uma cruz branca que representa a cruz de Jesus."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvilken årstid er det i Australia når de feirer påske?",
+            "questionHeading": "Pergunta:",
+            "question": "Em qual estação do ano, Australia celebra a pascoa?",
             "questionOptions": [
-                "Sommer",
-                "Vinter",
-                "Høst",
-                "Vår"
+                "Verão",
+                "Inverno",
+                "Outono",
+                "Primavera"
             ]
         },
         {
             "ID": "RU",
-            "country": "Russland",
+            "country": "Rússia",
             "type": "question",
             "audio": "./audio/pt/russia.mp3",
             "text": [
-                "Påsken er den viktigste høytiden for de kristne etter julen. Det er mange påsketradisjoner og -ritualer. Feiringen foregår fra mars til mai, avhengig av hvilke datoer ferien faller på. Påsken er en familieferie. I påskehelgen drar man til kirken, for bønn og for å bli velsignet. Påsken er også en feiring med god mat og tradisjonelle retter. Som i mange andre land, er det også en tradisjon i Russland å male egg og dekorere dem. Det er forskjellige leker knyttet til dekorerte egg. Det er for eksempel en lek hvor barna tar et egg hver og slår sitt egg mot en annens egg, det egg som sprekker sist vinner.",
-                "Dekorerte egg blir også vanligvis gitt til venner og familie som et symbol på takknemlighet. Til påske baker man en spesiell kake som heter Kulich. Kaken Kulich er et symbol på at Jesus er med oss."
+                "A páscoa é a celebração mais importante para os cristãos depois do Natal. Há muitas tradições da pascoa e rituais. A comemoração acontece de março até maio, dependendo das datas em que cai feriado. A pascoa é férias em família. No final de semana da pascoa vão a igreja, para orar e para ser abençoados. A Pascoa também é uma celebração com boa comida e pratos tradicionais. Assim como em muitos outros países, também é uma tradição na Rússia, pintar ovos e decora-los. Há bastantes brincadeiras relacionadas com decoração dos ovos. Por exemplo há uma brincadeira onde cada criança pega um ovo e o joga contra um outro ovo, o ovo que se quebra por último ganha.",
+                "Os ovos decorados normalmente são entregues para os amigos ou familiares como um símbolo de agradecimento. Para a pascoa preparamos um bolo especial chamado Kulich. O bolo Kulich é um símbolo que Jesus está conosco."
             ],
-            "questionHeading": "Spørsmål",
-            "questions": ["Hva heter den spesielle kaken som man baker i Russland?"]
+            "questionHeading": "Pergunta:",
+            "questions": ["Qual é o nome do bolo especial que preparam na Rússia?"]
         },
         {
             "ID": "IN",
-            "country": "India",
+            "country": "Índia",
             "type": "task",
             "audio": "./audio/pt/india.mp3",
             "text": [
-                "I India feires ikke påske som en nasjonal feiring, men for kristne er det en hellig begivenhet. I BCC Bangalore feires påsken med en fest. Historien om Jesu oppstandelse fortelles, og barna får sjokolade eller marsipanegg. I det siste har vi vært med på de aktivitetene som BCC har organisert, og fulgt med på sendingene for barn."
+                "Na Índia não se celebra a pascoa como um feriado nacional, mas para os cristãos é um acontecimento sagrado. No BCC Bangalore celebram a pascoa com uma festa. É contada a história sobre a ressurreição de Jesus, e as crianças recebem chocolate ou ovos de marzipã. Nos últimos dias temos participado muito das atividades que BCC tem organizado, e acompanhado as transmissões para crianças."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen sjokolade",
-            "taskDescriptionInfo": "Du trenger: hvit, lys eller mørk sjokolade, noe godt du vil ha på din sjokolade f.eks. dryss, sjokoladeegg – eller kanin, godteri mm.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara teu próprio chocolate.",
+            "taskDescriptionInfo": "Você precisa: chocolate branco, ao leite ou preto, algo bom que você deseja colocar no teu chocolate, por exemplo: granulado de cores, ovo de chocolates, ou coelhos, guloseimas.",
+            "taskHowToLabel": "Como o preparamos:",
             "taskItems": [
-                "Få hjelp fra en voksen som kan smelte sjokoladen for deg og legg det på en plate med bakepapir.",
-                "Legg hva du liker på den smeltet sjokoladen.",
-                "Legg den ferdige sjokoladen i fryseren og la den avkjøle."
+                "Tenha ajuda de um adulto que possa derreter o chocolate para você e colocá-lo numa forma com papel manteiga.",
+                "Coloca aquilo que você gosta no chocolate derretido.",
+                "Coloca o chocolate pronto no freezer e deixa-lo esfriar."
             ],
             "taskImages": [
                 "./images/india.png"
@@ -57,15 +57,15 @@
         },
         {
             "ID": "ZA",
-            "country": "Sør-Afrika",
+            "country": "África do Sul",
             "type": "task",
             "audio": "./audio/pt/sa.mp3",
             "text": [
-                "Påsken i Sør-Afrika foregår i vakkert høstvær som ikke er for varmt eller kaldt. Vi har også tradisjonen med å lage påske-egg-jakt, som i mange andre land. Påskeharen gjemmer eggene overalt, både inne i våre hus og ute i hagen. Det mest populære godteriet i påsken er et marshmallow-påskeegg og hot cross-boller. I kristne familier forteller man også historien om påsken og hvordan Jesu ble korsfestet og stod opp igjen for oss.",
-                "Det er mange som tar ferie i påsken og er samlet med hele familien. Om søndagen lager vi en stor, nydelig påskemorgen-frokost med familiene våre. Noen familier leker også noe vi kaller boeresport, det er blant annet «egg på en skje»-løp, sekkeløp etc"
+                "A Páscoa na África do sul acontece num lindo clima de outono que não é nem tão quente nem tão frio. Nós também temos a tradição de fazer um ovo de pascoa, como em muitos outros países. O coelho da pascoa esconde os ovos em todos lugares, tanto no interior da nossa casa e fora no jardim. A guloseima mais popular na pascoa é o ovo de pascoa de mashmallow e bolinho quente de cruz. Nas famílias cristãs também é contado sobre a história da pascoa e como Jesus foi crucificado e ressuscitou novamente por nos.",
+                "Muitos tiram férias na pascoa e estão reunidos com toda a família. No domingo preparamos um grande e adorável café da manhã da pascoa com nossa família. Algumas famílias jogam também algo que chamamos de “boeresport”, quer dizer “ovo na colher”, corridas de saco, etc."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag en stafett hvor du skal løpe med ett egg på en skje"
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Crie um revezamento onde você pode correr com um ovo na colher."
         },
         {
             "ID": "US",
@@ -74,17 +74,17 @@
             "type": "task",
             "image": "./images/usa.png",
             "text": [
-                "I Amerika har vi mange morsomme måter å feire påsken på. Blant annet fyller vi mange fargerike plastegg med alle slags godterier og da er det noen som kler seg ut som den søte påskeharen og gjemmer disse eggene på alle mulige steder, for eksempel i trærne, i gresset, ja overalt. Etter at haren har gjemt eggene går vi på påskeeggjakt for å finne de. Etter at vi har funnet dem, spiser vi alt det deilige godteriet. Vi feirer også påsken med påskekurver, hvor vi fyller en kurv med leker og store sjokoladekaniner, sjokoladekyllinger og sjokoladeegg. Når vi har fylt disse kurvene, møter vi våre venner og gir kurvene til hverandre. Vi bruker også kurvene til alle eggene vi fant på påskeeggjakten. Men det viktigste vi gjør for å feire denne dagen, er å komme sammen og lese påskehistorien om Jesus, og spise sammen. Det er en morsom og festlig høytid."
+                "Na América temos muitos jeitos divertidos de celebrar a pascoa. Entre outras coisas, enchemos muitos ovinhos de plástico com todo tipo de guloseimas e também tem alguns que se fantasiam como um doce coelhinho de pascoa e escondem esses ovos em todos os lugares possíveis, por exemplo nas árvores, na grama, e em todas partes. Depois que o coelho tem escondido os ovos, começamos a caça da pascoa para acha-los. Depois que temos achado eles, comemos todas as gostosas guloseimas. Também celebramos a pascoa com uma cesta de pascoa, onde enchemos uma cesta com brinquedos, e grandes coelhinhos de chocolates, galinhas de chocolate e ovos de chocolate. Quando temos enchido estas cestas, nos encontramos com nossos amigos e intercambiamos. Também usamos as cestas para todos os ovos que achamos na caça da pascoa. Mas o mais importante que fazemos para celebrar esse dia, é que nos reunimos e lemos a história da pascoa sobre Jesus, e comemos juntos. É um tempo divertido e festivo."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen mini-påskeeggkurv.",
-            "taskDescriptionInfo": "Du trenger: toalettpapirruller, maling eller fargerikt papir, saks og lim.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara tua própria mini cesta de ovos de pascoa.",
+            "taskDescriptionInfo": "Você precisa: rolinhos de papel higiênico, tintas ou folhas de cor, tesouras e cola.",
+            "taskHowToLabel": "Como prepara-lo:",
             "taskItems": [
-                "Først fargelegger du papirrullene eller limer litt fargerikt papir på dem.",
-                "Når de er tørre, skjærer du dem i to, eller i et sikksakk-mønster hvis du vil lage en gresskurv som på bildet.",
-                "Klipp en lang papirstrimmel og lim den på innsiden av toalettpapir-rullen slik at den blir en bue. Dette blir et håndtak.",
-                "For å dekorere de små påskeeggkurvene dine, kan du også klippe vinger og et nebb for kyllingene, lange ører for kaninene og blomster til gresset."
+                "Primeiro você pinta os rolinhos de papel higiênico ou cola um pouco de papel colorido neles.",
+                "Quando estejam secos, você os corta ao meio ou em zigue-zague se quiser fazer uma cesta de grama como a foto.",
+                "Corta uma tira longa de papel e cola ela no lado interno do rolo de papel formando um arco. Este será uma alça.",
+                "Para decorar a pequena cesta de pascoa, você também pode cortar aças e um bico para o franguinho, orelhas compridas para o coelhinho e flores para a grama."
             ]
         },
         {
@@ -93,39 +93,38 @@
             "type": "task",
             "audio": "./audio/pt/israel.mp3",
             "text": [
-                "I Israel feirer man ikke påske, men noe som heter Pesach. Jødene feirer at de ble frie fra livet som slaver i Egypt, for mange, -mange hundre år siden. Familiene kommer sammen, spiser god mat, synger og ber. Det er også tradisjon å fortelle historier til barna fra den gangen jødene var slaver.",
-                "En annen tradisjon under Pesach, er at man ikke skal spise brød som er hevet. Denne tradisjonen kommer fra den dagen jødene ble fridd ut, da hadde de ikke tid til å vente på at brødet skulle heve, fordi de måtte skynde seg ut av husene sine og følge Moses.",
-                "Butikkene i Israel slutter å selge brød i hele 8 dager under denne høytiden. Istedenfor brød er det vanlig å spise et slags knekkebrød som heter “Matzah”."
+                "Em Israel não celebram a pascoa, mas algo chamado Pesach. Os judeus celebram que foram livres da vida como escravos no Egito, faz muitos, muitos centos de anos atras. As famílias se reúnem, comem boa comida, cantam e oram. Também é tradição contar histórias para as crianças dessa vez que os judeus eram escravos.",
+                "Uma outra tradição durante o Pesach, é que não comem pão com fermento. Nessa tradição vem dessa vez que os judeus foram libertos, então eles não tinham tempo para esperar que o pão cresça, porque eles tinham que sair das suas casas e seguir Moises.",
+                "As lojas em Israel deixam de vender pão durante os 8 dias desta celebração. No lugar do pão é normal comer um tipo de torradas chamadas “Matzah”."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage 'Matzah' knekkebrød. Det kan være lurt å spørre foreldrene dine om hjelp.",
-            "taskDescriptionInfo": "Dette trenger du for å lage “Matzah”:",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara uma torrada  “Matzah”. Pode ser bom perguntar para teus pais te ajudar.",
+            "taskDescriptionInfo": "Isto você precisa para fazer “Matzah”.",
+            "taskHowToLabel": "Como o preparamos:",
             "taskItems": [
-                "1 dl hvetemel",
-                "1 te skje salt",
-                "2 spiseskjeer med oliven olje",
-                "1",
-                "5 dl varmt vann"
+                "1 dl farinha",
+                "1 colher de chá de sal",
+                "2 colheres com aceite de oliva",
+                "1,5 dl água quente"
             ],
             "extraText": [
-                "Få hjelp av en voksen til å kjevle dem ut og steke dem"
+                "Peça ajuda de um adulto para estendê-los e enforna-los."
             ]
         },
         {
             "ID": "NO",
-            "country": "Norge",
+            "country": "Noruega",
             "type": "question",
             "audio": "./audio/pt/norway.mp3",
             "text": [
-                "Påsken er en høytid som feires av både kristne og jøder i Norge. Jødene minnes at de ble frie etter langvarig fangenskap i Egypt, mens kristne markerer at Jesus døde på korset og stod opp igjen den tredje dag. ",
-                "I norske kirker er det tradisjon for å synge salmen; Påskemorgen slukker sorgen- (skrevet av Nikolai Frederik Grundtvig i 1843), som vi også synger under påskestevnet på Brunstad. I barnehager og skoler feirer en med påskefrokost og påskeverksted, hvor barn maler og dekorerer egg og lager påskepynt med fjær osv. Noen har også opplevd at påskeharen har vært og gjemt påskeegg med godteri i huset eller ute i hagen. Mange norske familier tilbringer påskeferien på hytter i fjellet, hvor en gjerne går på skiturer og spiser kvikklunsj, sjokolade og appelsiner"
+                "A pascoa é uma celebração que celebram tanto os cristãos e judeus na Noruega. Os Judeus lembram que foram libertos depois um longo cativeiro no Egito, enquanto os cristãos relembram que Jesus morreu na cruz e ressuscitou depois no terceiro dia.",
+                "Nas igrejas cristãs é tradição cantar o salmo: “Manhã da Pascoa tira as aflições” (escrito pelo Nikolai Frederik Grundtvig em 1843), assim como nos também cantamos durante a conferência de pascoa em Brunstad. No jardim de infância e na escola celebramos com um café da manhã da pascoa e atividades da pascoa, onde as crianças pintam e fazem decoração da pascoa com penas, etc. Alguns também tem experimentado que o coelho de pascoa tinha vindo e escondido os ovos de pascoa com guloseimas na casa ou fora no jardim. Muitas famílias norueguesas passam as férias da Pascoa em cabanhas na montanha, onde gostam de esquiar e comer lanchinho, chocolate e laranjas."
             ],
-            "questionHeading": "Spørsmål",
+            "questionHeading": "Perguntas:",
             "questions": [
-                "Hvem har skrevet salmen; Påskemorgen slukker sorgen?",
-                "Hva gjør påskeharen?",
-                "Hva pleier nordmenn å ha med som pausemat når de er på skitur i påsken?"
+                "Quem escreveu o salmo: “Manhã da Pascoa tira as aflições”?",
+                "Que faz o coelho da pascoa?",
+                "Que coisa os noruegueses tem com eles como pausa quando eles vão esquiar na pascoa?"
             ]
         },
         {
@@ -134,20 +133,20 @@
             "audio": "./audio/pt/peru.mp3",
             "type": "task",
             "text": [
-                "Peru er delt i 3 store områder, med kyst, fjell og jungel. Allikevel har vi i hele Peru de samme påsketradisjonene. Vi lager i stand en festlig påsketid, spesielt for barna.",
-                "I påsken sender alle TV-kanaler fra Peru kun historier fra Bibelen og om Jesus, både til barna og voksne, alle dager i påsken.",
-                "På markedet kan en finne fisk og sjømat, fordi det er en tradisjon at på «lang-fredag» skal en kun spise fisk og ikke noe annet kjøtt.",
-                "Til dessert er det vanlig å lage forskjellige, gode desserter i mange farger. Barna elsker det! Spesielt «Lilla Mazamorra ,  arroz con leche». Det er en rosa dessert - nam nam !",
-                "I menigheten lager vi alltid påskeeggjakt for barna og barna kler seg ut som små kaniner! Det er veldig koselig!"
+                "Peru está divido em 3 grandes regiões, com costa, serra e selva. Porém em todo o Peru temos as mesmas tradições da pascoa. Preparamos um tempo de pascoa festivo, especial para as crianças.",
+                "Na pascoa todos os canais de TV do Peru passam histórias da Bíblia e sobre Jesus, tanto para as crianças e adultos, todos os dias durante a pascoa.",
+                "Nos mercados encontramos peixes e comida do mar, porque é uma tradição que na sexta feira maior se coma somente peixe e não outro tipo de carne.",
+                "Para a sobremesa é normal preparar diferentes e gostosas sobremesas de várias cores. As crianças o amam! Especialmente “Mazamorra Roxa, Arroz com leite”. É uma sobremesa rosa – nham nham!",
+                "Na igreja sempre fazemos caça da pascoa para as crianças e elas se vestem como coelhinhos! É muito fofinho!"
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage en kaninørehatt",
-            "taskDescriptionInfo": "Du trenger: Hvit og rosa papp, saks, lim og stiftemaskin.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara um chapeu de coelho.",
+            "taskDescriptionInfo": "Você precisa: Papel rosa e branco, tesoura, cola e grampeador.",
+            "taskHowToLabel": "Como prepara-lo:",
             "taskItems": [
-                "Bruk hvit og rosa papp til å kutte ut kaninøreformene: to hvite og to rosa, den rosa skal være litt mindre.",
-                "Lim de rosa ørene på de hvite ørene.",
-                "Lim ørene på en lang, hvit papp-stripe, mål slik at den passer til ditt hode, og stift endene sammen for å danne et hodebånd."
+                "Usa o papel rosa e branco para corta-lo como uma orelha de coelho: dois brancos e dois rosas, o rosa dever ser um pouco mais pequeno.",
+                "Cola a orelha rosa na orelha branca.",
+                "Cola as orelhas em um tira branca longa, mede ela para que encaixe na tua cabeça, e grampeia as pontas juntas para formar uma faixa para a cabeça."
             ],
             "taskImages": [
                 "./images/peru.png"
@@ -159,18 +158,18 @@
             "type": "task",
             "audio": "./audio/pt/china.mp3",
             "text": [
-                "I Hong Kong er det vanlig å gå på påskeeggjakt i påsken. Vi lager panda-egg og gjemmer de i bambus-skogen. Vi leker at vi er veldig gode venner med pandaene i Kina, så vi går på påskeeggjakt sammen med pandaene, som ofte hjelper til med å finne mange egg."
+                "Na pascoa em Hong Kong é comum ir na caça da pascoa. Nós fazemos um ovo de panda e escondemos eles no bosque de bambus. Nos brincamos que somos muito bons amigos com os pandas na China, então vamos junto com os pandas na caça da pascoa, eles sempre ajudam a achar muitos ovos."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Mal eller tegn et panda-egg.",
-            "taskDescriptionInfo": "Du trenger: et kokt, avkjølt egg, svart og hvit tusj eller maling, malerpensel og vann til å rense penselen",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Pinta ou desenha um ovo de panda.",
+            "taskDescriptionInfo": "Você precisa: um ovo cozido e frio, canetão ou tinta preta e branco, pincel para pintar e água para limpar os pinceis.",
+            "taskHowToLabel": "Como fazemos os ovos:",
             "taskImages": [
                 "./images/china.jpg",
                 "./images/china2.jpg",
                 "./images/china3.jpg"
             ],
-            "extratext": "Tegne en panda på egget: se eksempel"
+            "extratext": "Desenha um panda no ovo: veja o exemplo."
         },
         {
             "ID": "PO",
@@ -178,14 +177,14 @@
             "audio": "./audio/pt/poland.mp3",
             "type": "question",
             "text": [
-                "Påskedag i Polen er en skikkelig vanndag og i noen familier, vekker foreldrene barna sine med å sprute vann på dem. Hele dagen leker barna med vann og bruker vanngevær og plast-egg full av vann. Sist på dagen er det en vannkamp, hvor folk sprøyter med vann på hverandre. Kanskje det er bedre å være inne denne dagen"
+                "O dia da páscoa na Polonia é um dia com muita água e em algumas famílias, os pais acordam seus filhos jogando água neles. Durante o dia todo as crianças brincam com água e usam arminhas de água e ovos de plástico com água. No final do dia há uma guerrinha de água, onde o pessoal joga água uns nos outros. Talvez o melhor é estar dentro de casa nesse dia."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvordan vekker foreldrene sine barn på morgenen?",
+            "questionHeading": "Pergunta:",
+            "question": "Como os pais acordam seus filhos pela manhã?",
             "questionOptions": [
-                "Hiver av dem dyna",
-                "Spruter vann på dem",
-                "Med kyss"
+                "Tirando o cobertor",
+                "Jogando água neles",
+                "Com beijinhos"
             ]
         }
     ],
