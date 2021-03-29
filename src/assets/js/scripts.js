@@ -606,7 +606,28 @@ const gameCompleted = {
         }
     }
 }
+const backgroundMusic = {
+    init: function () {
+        const muteIconContainer = document.getElementById('mute-icon');
+        const audio = document.getElementById('background-audio');
+        let muteState = 'unmute';
 
+        audio.volume = 0.2;
+
+        muteIconContainer.addEventListener('click', () => {
+            if (muteState === 'unmute') {
+                audio.muted = true;
+                audio.parentElement.classList.add('muted');
+                muteState = 'mute';
+            } else {
+                audio.muted = false;
+                audio.parentElement.classList.remove('muted');
+                muteState = 'unmute';
+            }
+        });
+
+    }
+}
 // Init
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -627,6 +648,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, false);
 
     firstScreen.init();
+    backgroundMusic.init();
 });
 
 window.addEventListener('load', () => map.init());
