@@ -235,11 +235,13 @@ const task = {
             if (playState === 'play') {
                 audio.play();
                 audioPlayerContainer.classList.add('playing');
+                backgroundMusic.mute();
                 requestAnimationFrame(whilePlaying);
                 playState = 'pause';
             } else {
                 audio.pause();
                 audioPlayerContainer.classList.remove('playing');
+                backgroundMusic.unmute();
                 cancelAnimationFrame(raf);
                 playState = 'play';
             }
@@ -607,27 +609,43 @@ const gameCompleted = {
     }
 }
 const backgroundMusic = {
+    muteIconContainer: document.getElementById('mute-icon'),
+    audioPlayer: document.getElementById('background-audio'),
+    muteState: 'unmute',
+
     init: function () {
-        const muteIconContainer = document.getElementById('mute-icon');
-        const audio = document.getElementById('background-audio');
-        let muteState = 'unmute';
+        let scope = this;
 
-        audio.volume = 0.02;
-        audio.autoplay = true;
-        audio.loop = true;
+        scope.audioPlayer.volume = 0.02;
+        scope.audioPlayer.autoplay = true;
+        scope.audioPlayer.loop = true;
 
-        muteIconContainer.addEventListener('click', () => {
-            if (muteState === 'unmute') {
-                audio.muted = true;
-                audio.parentElement.classList.add('muted');
-                muteState = 'mute';
+        scope.clickEvents();
+    },
+
+    clickEvents: function () {
+        let scope = this;
+        scope.muteIconContainer.addEventListener('click', () => {
+            if (scope.muteState === 'unmute') {
+                scope.mute();
             } else {
-                audio.muted = false;
-                audio.parentElement.classList.remove('muted');
-                muteState = 'unmute';
+                scope.unmute();
             }
         });
+    },
 
+    mute: function () {
+        let scope = this;
+        scope.audioPlayer.muted = true;
+        scope.audioPlayer.parentElement.classList.add('muted');
+        scope.muteState = 'mute';
+    },
+
+    unmute: function () {
+        let scope = this;
+        scope.audioPlayer.muted = false;
+        scope.audioPlayer.parentElement.classList.remove('muted');
+        scope.muteState = 'unmute';
     }
 }
 // Init
