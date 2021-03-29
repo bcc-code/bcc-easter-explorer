@@ -613,6 +613,8 @@ const backgroundMusic = {
         let muteState = 'unmute';
 
         audio.volume = 0.2;
+        audio.autoplay = true;
+        audio.loop = true;
 
         muteIconContainer.addEventListener('click', () => {
             if (muteState === 'unmute') {
