@@ -1,0 +1,197 @@
+{
+    "language": "de",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australien",
+            "type": "question",
+            "audio": "./audio/de/australia.mp3",
+            "text": [
+                "Im Gegensatz zu anderen Ländern auf der Nordhalbkugel, in denen Ostern im Frühling gefeiert wird, feiert man in Australien Ostern im Herbst.",
+                "Ostern ist einer der Höhepunkte im christlichen Kalender, denn es geht dabei um Jesu Auferstehung von den Toten.",
+                "Eine Zeit zu der die Familie zusammen kommt. Am Ostertag beginnt mit einer großen Ostereier-Suche für die Kinder und später gibt es ein spezielles Osteressen, was normalerweise aus gebratenem Lammfleisch und Gemüse besteht. In der Osterzeit finden viele Aktivitäten für die Kinder statt, wie z.B. Eier färben und anmalen.",
+                "Eine weitere Tradition sind die sog. 'Hot Cross buns' (Osterbrötchen), die man schon vor Ostern kaufen kann.",
+                "Es sind süße Brötchen, gefüllt mit Gewürzen und getrockneten Früchten. Außen sind sie verziert mit einem weißen Kreuz - dass soll Jesu Kreuz darstellen."
+            ],
+            "questionHeading": "Frage",
+            "question": "Zu welcher Jahreszeit wird in Australien Ostern gefeiert? ",
+            "questionOptions": [
+                "Sommer",
+                "Winter",
+                "Herbst",
+                "Frühling"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Russland",
+            "type": "question",
+            "audio": "./audio/de/russia.mp3",
+            "text": [
+                "Ostern ist nach Weihnachten der wichtigste Feiertag unter den Christen. Es gibt viele Ostertraditionen und Rituale. Die Feiern finden von März bis Mai statt, je nach dem, auf welches Datum die Ferien fallen. Ostern sind Familien-Ferien. Am Osterwochenende geht man zur Kirche, um zu beten und gesegnet zu werden. Ostern ist auch eine Feier mit gutem Essen und traditionellen Gerichten. Auch wie in anderen Ländern ist es in Russland Tradition, Eier anzumalen und zu dekorieren. Im Zusammenhang mit den dekorierten Eiern gibt es verschiedene Spiele. Es gibt zum Beispiel ein Spiel, wo jedes Kind ein Ei nimmt und sein Ei gegen das eines anderen schlägt. Das Ei, wo die Schale als letztes zerbricht, gewinnt.",
+                "Dekorierte Eier werden normalerweise an Familien und Freunde als Symbol der Dankbarkeit gegeben. Für Ostern backt man einen speziellen Kuchen der Kulich heißt. Der Kuchen Kulich ist ein Symbol, dass Jesus mit uns ist."
+            ],
+            "questionHeading": "Frage",
+            "questions": ["Wie heißt der spezielle Kuchen, den man in Russland bäckt?"]
+        },
+        {
+            "ID": "IN",
+            "country": "Indien",
+            "type": "task",
+            "audio": "./audio/de/india.mp3",
+            "text": [
+                "In Indien wird Ostern nicht als nationales Fest gefeiert, aber für Christen ist es ein heiliges Ereignis. In BCC Bangalore wird Ostern mit einem Fest gefeiert. Die Geschichte der Auferstehung Jesu wird erzählt und die Kinder erhalten Schokoladen- oder Marzipaneier. In letzter Zeit haben wir an den von BCC organisierten Aktivitäten teilgenommen und die Sendungen für Kinder verfolgt. "
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Gieße deine eigene Schokolade:",
+            "taskDescriptionInfo": "Du benötigst: weiße, helle oder dunkle Schokolade, etwas Leckeres, das du in deiner Schokolade haben möchtest, z.B. Streudekor, Schokoladeneier - oder Hasen, Süßigkeiten etc.",
+            "taskHowToLabel": "Wie man es macht: ",
+            "taskItems": [
+                "Hole dir Hilfe von einem Erwachsenen, der die Schokolade für dich schmelzen kann, und gieße diese auf eine Platte mit Backpapier.",
+                "Gebe nun was du möchtest auf die geschmolzene Schokolade.",
+                "Die fertige Schokolade in den Gefrierschrank stellen und abkühlen lassen."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Süd-Afrika",
+            "type": "task",
+            "audio": "./audio/de/sa.mp3",
+            "text": [
+                "Ostern in Süd-Afrika ist meist bei herrlichmn Herbstwetter das weder zu kalt, noch zu warm ist. Wir haben, wie in vielen anderen Ländern auch, die Tradition eine Ostersuche zu veranstalten. Der Osterhase versteckt seine Eier überall, im Haus und im Garten. Die bekannteste Süßigkeit an Ostern ist ein Marshmallow Osterei und heiße Cross Boller (Hefe-Brötchen mit einem Kreuz darauf). In christlichen Familien erzählt man auch die Geschichte von Ostern und wie Jesus für uns gekreuzigt wurde und wieder auferstand.",
+                "Viele nehmen sich an Ostern Urlaub und feiern mit der ganzen Familie. Am Sonntag bereiten wir, mit unseren Familien ein großes, köstliches Ostermorgen-Frühstück vor. Einige Familien spielen auch ein Spiel das wir 'boeresport' (Farmsport) nennen, unter Anderem gibt es dabei 'Eierlauf' und Sackhüpfen."
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Bereitet einen Staffellauf vor, wo du mit einem Ei auf einem Esslöffel balancierend laufen musst."
+        },
+        {
+            "ID": "US",
+            "country": "USA",
+            "audio": "./audio/de/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "In Amerika kann man Oster auf viele schöne Weisen feiern. Unter anderem füllen manche bunte Plastikeier mit allen möglichen Süßigkeiten und dann verkleidet sich jemand als niedlichen Osterhasen und versteckt diese Eier an allen möglichen Stellen, zum Beispiel in den Bäumen, im Gras, überall. Wenn der Hase die Eier versteckt hat, gehen wir auf Ostereier-Suche. Wenn wir sie gefunden haben, essen wir all die leckeren Süßigkeiten auf. Wir feiern Ostern auch mit Osterkörben. Wir füllen einen Korb mit leckeren und großen Schokoladenhasen, Schokoladenküken und Schokoladeneiern. Wenn wir diese Körbe gefüllt haben, verabreden wir uns mit unseren Freunden und schenken sie uns gegenseitig. Wir verwenden diese Körbe auch für alle Eier, die wir auf der Ostereiersuche gefunden haben. Aber das feierlichste ist, dass wir zusammenkommen, die Ostergeschichte von Jesus lesen und zusammen essen. Das ist schön und festlich."
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Mache deinen eigenen Ostereier-Korb.",
+            "taskDescriptionInfo": "Du brauchst: Klopapier-Rollen, Farbe oder buntes Papier, Schere und Kleber.",
+            "taskHowToLabel": "Wie es gemacht wird:",
+            "taskItems": [
+                "Zuerst malst du die Rollen an oder beklebst sie mit buntem Papier.",
+                "Wenn sie trocken sind, schneidest du sie in der Mitte durch, oder in ein Zickzack-Muster, wenn du einen Gras-Korb wie auf dem Bild machen willst.",
+                "Schneide einen langen Papierstreifen ab und klebe ihn innen an die Klopapier-Rolle, damit er einen Bogen spannt.",
+                "Um die kleinen Osterkörbe zu schmücken, kannst du auch Flügel ausschneiden und einen Schnabel für die Hühnchen, lange Ohren für Kaninchen und Blumen für das Gras."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "type": "task",
+            "audio": "./audio/de/israel.mp3",
+            "text": [
+                "In Israel feiert man nicht Ostern, sondern ein Fest, das Pesach heißt. Die Juden feiern, dass sie vor vielen hundert Jahren aus der Sklaverei in Ägyptens befreit wurden. Die Familien kommen zusammen, essen gutes Essen, singen und beten. Es ist auch Tradition den Kindern Geschichten von damals zu erzählen, als die Juden Sklaven waren.",
+                "Eine andere Tradition beim Pesach, ist, dass man kein Brot essen soll, das aufgegangen ist. Diese Tradition kommt von dem Tag als die Juden befreit wurden, da hatten sie keine Zeit, darauf zu warten bis das Brot aufgegangen ist, weil sie schnell aus den Häusern mussten, um Mose zu folgen.",
+                "Die Geschäfte in Israel verkaufen zu diesen Feiertagen 8 ganze Tage lang kein Brot. Statt Brot isst man normalerweise eine Art Knäckebrot, das 'Matzah' genannt wird."
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Mache 'Matzah' Knäckebrot. Es ist schlau, wenn ihr eure Eltern um Hilfe zu bittet.",
+            "taskHowToLabel": "Das benötigst du, um 'Matzah' zu machen:",
+            "taskItems": [
+                "100 ml Weizenmehl",
+                "1 TLSalz",
+                "2 EL Olivenöl",
+                "150 ml warmes Wasser"
+            ],
+            "extraText": [
+                "Lass dir beim Ausrollen und Backen von einem Erwachsenen helfen."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norwegen",
+            "type": "question",
+            "audio": "./audio/de/norway.mp3",
+            "text": [
+                "Ostern ist eine festliche Zeit, die von Christen und Juden in Norwegen gefeiert wird. Die Juden gedenken daran, dass sie nach langer Gefangenschaft in Ägypten frei wurden. Die Christen feiern, dass Jesus am Kreuz starb und nach drei Tagen wieder auferstanden ist.",
+                "In Norwegischen Kirchen ist es Tradition, den Psalmen „Ostermorgen, schluckt die Sorgen“ (verfasst 1843 von Nikolai Frederik Grundtvig) zu singen, den wir auch an der Osterkonferenz auf Brunstad singen. Im Kindergarten und in Schulen feiert man mit einem Osterfrühstück und einer Osterwerkstatt, wo Kinder Eier bemalen und dekorieren und Osterschmuck mit Federn herstellen usw. Manche haben auch erlebt, dass der Osterhase da war und Ostereier und Süßigkeiten im Haus oder draußen im Garten versteckt hat. Viele norwegische Familien verbringen die Osterferien in einer Hütte in den Bergen, wo man Skitouren unternimmt und Kvikklunsj, Schokolade und Apfelsinen isst."
+            ],
+            "questionHeading": "Frage",
+            "questions": [
+                "Wer hat den Psalm „Ostermorgen, schluckt die Sorgen“ geschrieben?",
+                "Was macht der Osterhase?",
+                "Was nehmen Norweger an Ostern als Snack mit auf Skitour?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Ostern in Peru",
+            "audio": "./audio/de/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru kann man in drei Gebiete einteilen, Küste, Gebirge und Urwald. Trotzdem haben wir in ganz Peru dieselben Ostertraditionen. Wir machen besonders für die Kinder Ostern zu einem Fest.",
+                "Zu Ostern senden alle Fernsehkanäle in Peru jeden Tag in ausschließlich Geschichten aus der Bibel und von Jesus, sowohl für Kinder als auch für Erwachsene.",
+                "Auf dem Markt kann man Fisch und Meeresfrüchte kaufen. Es ist Tradition, an Karfreitag nur Fisch und kein anderes Fleisch zu essen.",
+                "Gewöhnlich bereitet man zum Dessert verschiedene gute Nachspeisen in vielen Farben zu. Die Kinder lieben das! Besonders„Lilla Mazamorra, arroz con leche“ (Maispudding, Milchreis). Das ist ein rosanes Dessert – lecker!",
+                "In der Gemeinde machen wir für die Kinder immer eine Ostereiersuche und die Kinder verkleiden sich dabei als kleine Kaninchen! Das ist sehr schön!"
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Mache einen Hasenohrenhut.",
+            "taskDescriptionInfo": "Du brauchst: Weiße und rosa Pappe, Schere, Kleber und Tacker.",
+            "taskHowToLabel": "Wie man es macht: ",
+            "taskItems": [
+                "Nimm die weiße und rosa Pappe und schneide daraus die Hasenohrformen aus: zwei weiße und zwei rosa, wobei die rosa Ohren ein wenig kleiner sein sollen.",
+                "Klebe die rosa Ohren auf die weißen Ohren.",
+                "Klebe die Ohren auf einen langen weißen Pappstreifen, sodass sie zu deinem Kopf passen, und hefte die Enden so zusammen, dass ein Stirnband entsteht."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "China",
+            "type": "task",
+            "audio": "./audio/de/china.mp3",
+            "text": [
+                "In Hong Kong geht man zu Ostern auf Ostereier-Suche. Wir machen Panda-Eier und verstecken sie im Bambus-Wald. Wir spielen, dass wir die besten Freunde der Panda in China sind, deshalb gehen wir zusammen mit den Pandas auf Ostereier-Suche, die uns oft helfen, viele Eier zu finden."
+            ],
+            "taskHeading": "Aufgabe",
+            "taskDescription": "Bemale ein Panda-Ei.",
+            "taskDescriptionInfo": "Du brauchst: ein gekochtes, abgekühltes Ei, schwarze und weiße Farbe, Pinsel und Wasser, um den Pinsel sauber zu machen.",
+            "taskHowToLabel": "Wie man das Ei bemalt:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Male einen Panda auf das Ei: nimm die Bilder als Vorlage"
+        },
+        {
+            "ID": "PO",
+            "country": "Polen",
+            "audio": "./audio/de/poland.mp3",
+            "type": "question",
+            "text": [
+                "In Polen ist der 2. Ostertag ein richtiger Wasser-Tag und in manchen Familien wecken die Eltern ihre Kinder, indem sie sie mit Wasser nassspritzen. Den ganzen Tag lang spielen die Kinder mit Wasser, Wasserpistolen und Plastik-Eiern voller Wasser. Am Ende des Tages gibt es eine Wasser-Schlacht, wo die Leute sich gegenseitig nassspritzen. Vielleicht sollte man an diesem Tag besser drinnen bleiben."
+            ],
+            "questionHeading": "Frage",
+            "question": "Wie wecken die Eltern ihre Kinder morgens?",
+            "questionOptions": [
+                "Sie ziehen die Decke weg.",
+                "Sie spritzen mit Wasser.",
+                "Sie küssen sie ab."
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Wähle deinen Charakter",
+        "startGameBTN": "Spiel beginnen",
+        "complete": "Fertig",
+        "completeHeading": "Spiel abgeschlossen",
+        "completedText": "Gehen Sie zur BrunstadTV-App und laden Sie Ihr Bild hoch"
+    }
+}

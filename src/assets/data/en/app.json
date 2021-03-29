@@ -1,0 +1,199 @@
+{
+    "language": "en",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/en/australia.mp3",
+            "text": [
+                "In Australia, Easter is celebrated in the autumn, unlike other countries in the Northern Hemisphere, where Easter is in the spring.",
+                "Easter is one of the most important commemorations in the Christian calendar, which marks Jesus' resurrection from the dead.",
+                "It's a time to get together with the family. On Easter Sunday, the day begins with a large Easter egg treasure hunt for all the children and ends with an Easter meal usually consisting of roast lamb and vegetables.",
+                "There are many activities for the children during Easter, such as coloring and painting easter eggs.",
+                "Another tradition is hot cross buns that you can buy well before Easter. These are sweet buns, filled with spices and dried fruit and decorated with a white cross representing Jesus' cross."
+            ],
+            "questionHeading": "Question:",
+            "question": "What season is it in Australia when they celebrate Easter?",
+            "questionOptions": [
+                "Summer",
+                "Winter",
+                "Autumn",
+                "Spring"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rusia",
+            "type": "question",
+            "audio": "./audio/en/russia.mp3",
+            "text": [
+                "Easter is the most important festival for Christians after Christmas. There are many Easter traditions and rituals. The celebration takes place from March to May, depending on the dates on which the holiday falls. Easter is a family holiday. Over the Easter weekend, you go to church, for prayer, and to be blessed. Easter is also a celebrated with good food and traditional dishes. As in many other countries, there is also a tradition in Russia to paint eggs and decorate them. There are different games involving the decorated eggs. One game, for example, is where the children take an egg each and hit their egg against another's egg, the egg that cracks last is the winner. ",
+                "Decorated eggs are also usually given to friends and family as a symbol of thankfulness. A special cake called Kulich is also baked at Easter. The cake “Kulich” is a symbol that Jesus is with us."
+            ],
+            "questionHeading": "Question:",
+            "questions": [
+                "What's the name of the special cake that is baked in Russia?"
+            ]
+        },
+        {
+            "ID": "IN",
+            "country": "India",
+            "type": "task",
+            "audio": "./audio/en/india.mp3",
+            "text": [
+                "In India, Easter is not celebrated as a national celebration, but for Christians it is a holy festival. In BCC Bangalore, Easter is celebrated with a feast. The story of Jesus' resurrection is told, and the children receive chocolate or marzipan eggs. Lately we have been involved in the activities that BCC has organized and followed along with the broadcasts for children."
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Make your own chocolate:",
+            "taskDescriptionInfo": "You will need: white, light or dark chocolate, something good you want on your chocolate e.g. sprinkle, chocolate egg – or rabbit, candy etc.",
+            "taskHowToLabel": "How to make it:",
+            "taskItems": [
+                "Get help from an adult who can melt the chocolate for you and place it on a sheet of baking paper.",
+                "Put what you like on the melted chocolate.",
+                "Put the finished chocolate in the freezer and let it cool."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "South Africa",
+            "type": "task",
+            "audio": "./audio/en/sa.mp3",
+            "text": [
+                "Easter in South Africa takes place in beautiful autumn weather that is not too hot or cold. We also have the tradition of making an Easter egg treasure hunt, as in many other countries. The Easter hare hides the eggs everywhere, both inside our houses and out in the garden. The most popular candy at Easter is a marshmallow Easter egg and hot cross buns. In Christian families, we also tell the story of Easter and how Jesus was crucified and stood up again for us.",
+                "There are many who take holidays at Easter and are together with the whole family. On Sunday, we make a big, lovely Easter morning breakfast with our families. Some families also play something we call 'Boer sport', which includes 'the egg and spoon' race, sack races etc."
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Make a relay race where each person has to run with an egg on a spoon."
+        },
+        {
+            "ID": "US",
+            "country": "United States",
+            "audio": "./audio/en/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "In America, we have many fun ways to celebrate Easter. Among other things, we fill many colorful plastic eggs with all kinds of candy and then someone dresses up as the cute Easter hare and hides these eggs in all possible places, for example in the trees, in the grass, yes everywhere. After the hare has hidden the eggs we go on easter egg hunt to find them. After we find them, we eat all the delicious candy. We also celebrate Easter with Easter baskets, where we fill a basket with toys and large chocolate bunnies, chocolate chickens and chocolate eggs. Once we have filled these baskets, we meet our friends and give the baskets to each other. We also use the baskets for all the eggs we found on the Easter egg treasure hunt. But the most important thing we do to celebrate this day is to come together and read the Easter story about Jesus and eat together. It's a fun and festive holiday."
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Create your own mini-Easter egg basket.",
+            "taskDescriptionInfo": "You will need: toilet paper rolls, paint or colorful paper, scissors and glue.",
+            "taskHowToLabel": "How to make them:",
+            "taskItems": [
+                "First, color the paper rolls or glue some colorful paper on them.",
+                "When they are dry, cut them in half, or in a zigzag pattern if you want to make a grass basket like the picture.",
+                "Cut a long paper strip and glue it inside the toilet paper roll so that it becomes an arc. This is going to be a handle.",
+                "To decorate your small Easter egg baskets, you can also cut wings and a beak for the chickens, long ears for the rabbits and flowers for the grass."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "audio": "./audio/en/israel.mp3",
+            "type": "task",
+            "text": [
+                "In Israel, they do not celebrate Easter, but something called Pesach. The Jews celebrate that they were freed from a life of slavery in Egypt, many, many centuries ago. The families come together, eat good food, sing and pray. It is also tradition to tell stories to the children from the time when the Jews were slaves.",
+                "Another tradition during Pesach is that one should not eat bread that rises. This tradition comes from the day the Jews were freed out from Egypt. They did not have time to wait for the bread to rise, because they had to hurry out of their houses and follow Moses.",
+                "The shops in Israel stop selling bread for a full 8 days during this holiday season. Instead of bread, it is common to eat a kind of cracker called 'Matzah'."
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Making 'Matzah' crackers. You may want to ask your parents for help.",
+            "taskHowToLabel": "Here's what you need to make 'Matzah':",
+            "taskItems": [
+                "1 dl plain flour",
+                "1 teaspoon salt",
+                "2 tablespoons of olive oil",
+                "1.5 dl hot water"
+            ],
+            "extraText": [
+                "Get the help of an adult to roll this out and fry it."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norway",
+            "type": "question",
+            "audio": "./audio/en/norway.mp3",
+            "text": [
+                "Easter is a holiday celebrated by both Christians and Jews in Norway. The Jews recall being freed after prolonged captivity in Egypt, while Christians mark the death of Jesus on the cross and how he rose up on the third day.",
+                "In Norwegian churches there is a tradition of singing the hymn; 'Easter morning quenches sorrow'- (written by Nikolai Frederik Grundtvig in 1843), which we also sing at the Easter conference at Brunstad. In kindergartens and schools, we celebrate with an Easter breakfast and Easter workshop, where children paint and decorate eggs and make Easter decorations with feathers etc. Some have also experienced that the Easter hare has been out and about and hidden Easter eggs with candy in the house or out in the garden. Many Norwegian families spend their Easter holidays in cabins in the mountains, where they love to go skiing and eat chocolate cookies, chocolate and oranges."
+            ],
+            "questionHeading": "Questions:",
+            "questions": [
+                "Who has written the hymn; 'Easter morning quenches sorrow'?",
+                "What does the Easter hare do?",
+                "What do Norwegians usually take along to eat on ski trips at Easter?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/en/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru is divided into 3 large areas, with coast, mountains and jungle. Yet all of Peru has the same Easter traditions. We make a festive Easter time, especially for the kids.",
+                "At Easter, all TV channels from Peru only broadcast stories from the Bible and stories about Jesus, both to the children and adults, every day during Easter.",
+                "At the market one can find fish and seafood, because it is a tradition that on 'Good Friday' one should only eat fish and no meat.",
+                "For dessert, it is common to make different, good desserts in many colors. The kids love it! Especially «Lilla Mazamorra, arroz con leche». It's a pink dessert - yum yum!",
+                "In the church we always make an Easter egg treasure hunt for the children and the children dress up as little rabbits! It's very cozy!"
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Make a rabbit ear hat.",
+            "taskDescriptionInfo": "You will need: White and pink cardboard, scissors, glue and a stapler.",
+            "taskHowToLabel": "How to make them:",
+            "taskItems": [
+                "Use white and pink cardboard to cut out the rabbit ear shapes: two white and two pink, the pink should be slightly smaller.",
+                "Glue the pink ears onto the white ears.",
+                "Glue the ears on a long white cardboard strip, measure it so that it fits your head, and staple the ends together to form a headband."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "China",
+            "type": "task",
+            "audio": "./audio/en/china.mp3",
+            "text": [
+                "In Hong Kong, it is common to go on an Easter egg treasure hunt during Easter. We make panda eggs and hide them in the bamboo forest. We play that we are very good friends with the pandas in China, so we go on Easter egg treasure hunts with the pandas, who often help find many eggs."
+            ],
+            "taskHeading": "Task:",
+            "taskDescription": "Paint or draw a panda egg.",
+            "taskDescriptionInfo": "You will need: a boiled, cooled egg, black and white marker or paint, paintbrush and water to clean the brush.",
+            "taskHowToLabel": "How to make the egg:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Draw a panda on the egg: see example."
+        },
+        {
+            "ID": "PO",
+            "country": "Polen",
+            "audio": "./audio/en/poland.mp3",
+            "type": "question",
+            "text": [
+                "The 2nd day of Easter in Poland is a real “water day” and in some families, parents wake up their children by splashing water on them. All day, the children play with water and use water pistols and plastic eggs full of water. At the end of the day there is a water fight, where people spray each other with water. Maybe it's better to stay inside that day."
+            ],
+            "questionHeading": "Question:",
+            "question": "How do parents wake up their children in the morning?",
+            "questionOptions": [
+                "Pull the bed quilt off them",
+                "Spray water on them",
+                "With kisses"
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Choose your character",
+        "startGameBTN": "Start game",
+        "complete": "Complete",
+        "completeHeading": "Game completed",
+        "completedText": "Go to BrunstadTv app and upload your image."
+    }
+}

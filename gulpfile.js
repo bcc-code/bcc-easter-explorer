@@ -13,7 +13,8 @@ const { src, series, parallel, dest, watch } = require('gulp');
 
 const htmlPath = 'src/*.html';
 const jsPath = 'src/assets/js/scripts.js';
-const jsPlugins = 'src/assets/js/gsap/**/*.js';
+const jsHelpers = 'src/assets/js/helpers/*.js';
+const jsPlugins = 'src/assets/js/third-party/**/*.js';
 const cssPath = 'src/assets/scss/**/*.scss';
 
 function copyHtml() {
@@ -24,12 +25,16 @@ function imgTask() {
     return src('src/images/*').pipe(imagemin()).pipe(gulp.dest('dist/images'));
 }
 
+function jsonTask() {
+    return src('src/assets/data/**/*').pipe(gulp.dest('dist/assets/data'));
+}
+
 function audioTask() {
-    return src('src/audio/*').pipe(gulp.dest('dist/audio'));
+    return src('src/audio/**/*').pipe(gulp.dest('dist/audio'));
 }
 
 function jsTask() {
-    return src([jsPlugins, jsPath])
+    return src([jsPlugins, jsHelpers, jsPath])
         .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
         .pipe(terser())
@@ -55,7 +60,6 @@ function scssTask() {
         .pipe(mode.development(browserSync.stream()));
 }
 
-
 function watchTask() {
     browserSync.create();
     browserSync.init({
@@ -65,19 +69,20 @@ function watchTask() {
     });
 
     watch([htmlPath], { interval: 1000 }, copyHtml).on('change', browserSync.reload);
-    watch([cssPath, jsPath], { interval: 1000 }, parallel(scssTask, jsTask));
+    watch([cssPath, jsPath], { interval: 1000 }, parallel(scssTask, jsonTask, jsTask));
 }
 
 exports.copyHtml = copyHtml;
 exports.imgTask = imgTask;
 exports.audioTask = audioTask;
 exports.jsTask = jsTask;
+exports.jsonTask = jsonTask;
 exports.scssTask = scssTask;
 
 var isProduction = mode.production();
 if (isProduction) {
-    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsTask, scssTask));
+    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask));
 }
 else {
-    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsTask, scssTask), watchTask);
+    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask), watchTask);
 }

@@ -1,0 +1,197 @@
+{
+    "language": "tr",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Avustralya",
+            "type": "question",
+            "audio": "./audio/tr/australia.mp3",
+            "text": [
+                "Avustralya'da Paskalya, Paskalya'nın ilkbaharda olduğu Kuzey Yarımküre'deki diğer ülkelerin aksine sonbaharda kutlanır.",
+                "Paskalya, İsa'nın ölümden dirilişini işaret eden Hristiyan takvimindeki en önemli anma törenlerinden biridir.",
+                "Aileyi toplamanın zamanı geldi. Paskalya Pazar günü, gün tüm çocuklar için büyük bir Paskalya yumurtası avı ile başlar ve genellikle kızarmış kuzu ve kızarmış sebzelerden oluşan bir Paskalya yemeği ile sona erer.",
+                "Paskalya boyunca çocuklar için paskalya yumurtaları ve boyama gibi birçok aktivite vardır.",
+                "Başka bir gelenek, Paskalya'dan önce satın alabileceğiniz sıcak çapraz çörekler. Baharatlar ve kuru meyvelerle dolu ve İsa'nın haçlarını temsil eden beyaz bir haçla süslenmiş tatlı çörekler vardır."
+            ],
+            "questionHeading": "Soru:",
+            "question": "Paskalya'yı kutladıklarında Avustralya'da hangi mevsimdir?",
+            "questionOptions": [
+                "Yaz",
+                "Kış",
+                "Sonbahar",
+                "İlkbahar"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rusya",
+            "type": "question",
+            "audio": "./audio/tr/russia.mp3",
+            "text": [
+                "Paskalya, Noel'den sonra Hristiyanlar için en önemli tatil sezonudur. Birçok Paskalya geleneği ve dini törenleri vardır. Kutlama, tatilin denk geldiği tarihlere bağlı olarak Mart-Mayıs ayları arasında gerçekleşir. Paskalya bir aile tatilidir.  Hafta sonu boyunca, dua etmek ve kutsanmak için kiliseye gidersiniz. Paskalya aynı zamanda kaliteli yemekler ve geleneksel yemekler sunan bir kutlamadır. Diğer birçok ülkede olduğu gibi, Rusya'da da yumurta boyama ve süsleme geleneği vardır. Süslenmiş yumurtalarla ilgili farklı oyunlar vardır. Örneğin, çocukların her biri bir yumurta aldıkları ve yumurtalarını diğerinin yumurtasına, son kazananı kıran yumurtaya karşı çevirdiği bir oyundur.",
+                "Süslenmiş yumurtalar da genellikle minnettarlığın bir sembolü olarak arkadaşlarınıza ve aileye verilir. Paskalya için Kulich adında özel bir pasta pişirirsin. Kulich pastası İsa'nın bizimle olduğunun bir sembolüdür."
+            ],
+            "questionHeading": "Soru:",
+            "questions": ["Rusya'da pişirdiğiniz özel pastanın adı nedir?"]
+        },
+        {
+            "ID": "IN",
+            "country": "Hindistan",
+            "type": "task",
+            "audio": "./audio/tr/india.mp3",
+            "text": [
+                "Hindistan'da Paskalya ulusal bir kutlama olarak kutlanmıyor, hristiyanlar için kutsal bir olay. BCC Bangalore'da Paskalya bir parti ile kutlanır. İsa'nın diriliş hikayesi anlatılır ve çocuklar çikolata veya badem ezmesi yumurtası alır. Son zamanlarda BCC'nin çocuklar için düzenlediği yayınları izlediğimiz etkinliklere katıldık."
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "Kendi çikolatanızı yapın.",
+            "taskDescriptionInfo": "İhtiyacınız olacaklar: beyaz, açık veya koyu çikolata, çikolatanızda istediğiniz iyi bir şeyi örneğin serpin, çikolata yumurtası - veya tavşan, şeker vb.",
+            "taskHowToLabel": "Nasıl yapılır:",
+            "taskItems": [
+                "Çikolatayı sizin için eritebilecek ve bir tabak pişirme kağıdına yerleştirebilecek bir yetişkinden yardım alın.",
+                "Erimiş çikolatanın üzerine ne istersen koy.",
+                "Bitmiş çikolatayı dondurucuya koyun ve soğumaya bırakın."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Güney Afrika",
+            "type": "task",
+            "audio": "./audio/tr/sa.mp3",
+            "text": [
+                "Güney Afrika'da Paskalya, çok sıcak veya soğuk olmayan güzel sonbahar havalarında gerçekleşir. Ayrıca diğer birçok ülkede olduğu gibi Paskalya yumurtası avcılığı yapma geleneğine sahibiz. Paskalya tavşanı yumurtaları her yere saklar, hem evlerimizin içinde hem de bahçede. Paskalya'daki en popüler şekerler, marshmallow, Paskalya yumurtası ve sıcak çapraz çöreklerdir. Hristiyan ailelerde, Paskalya'nın hikayesi ve İsa'nın nasıl çarmıha gerildiğini ve bizim için tekrar ayağa kalktığını da anlatır.",
+                "Paskalya'da tatil yapan ve tüm aileyle birlikte toplanan birçok kişi var. Pazar günü, ailelerimizle birlikte büyük, güzel bir Paskalya sabahı kahvaltısı yapıyoruz. Bazı aileler de 'boeresport' dediğimiz bir şey oynar, 'kaşıkta yumurta' yarışı, çuval yarışları vb."
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "Bir kaşıkta bir yumurta ile koşacağınız bir rota belirleyin."
+        },
+        {
+            "ID": "US",
+            "country": "Amerika Birleşik Devletleri",
+            "audio": "./audio/tr/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "Amerika'da Paskalya'yı kutlamanın birçok eğlenceli yolu vardır. Diğer şeylerin yanı sıra, birçok renkli plastik yumurtayı her türlü şekerlemeyle dolduruyoruz ve sonra birisi sevimli Paskalya tavşanı gibi giyiniyor ve bu yumurtaları mümkün olan her yere, örneğin ağaçlarda, çimlerde, evet her yere saklıyor. Tavşan yumurtaları sakladıktan sonra onları bulmak için Paskalya yumurtası avına çıkıyoruz. Onları bulduktan sonra, tüm lezzetli şekerleri yeriz. Ayrıca Paskalya'yı, oyuncaklar ve büyük çikolata tavşanları, çikolata tavukları ve çikolata yumurtaları ile bir sepeti doldurduğumuz Paskalya sepetleriyle kutluyoruz. Bu sepetleri doldurduktan sonra arkadaşlarımızla tanışır ve sepetleri birbirimize veririz. Sepetleri Paskalya yumurtası avında bulduğumuz tüm yumurtalar için de kullanıyoruz. Ama bugünü kutlamak için yaptığımız en önemli şey bir araya gelip İsa'nın Paskalya hikayesini okumak ve birlikte yemek yemek. Eğlenceli ve şenlikli bir bayram."
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "Kendi mini Paskalya yumurta sepetinizi oluşturun.",
+            "taskDescriptionInfo": "İhtiyacınız olacak: tuvalet kağıdı ruloları, boya veya renkli kağıt, makas ve tutkal.",
+            "taskHowToLabel": "Nasıl yapılır:",
+            "taskItems": [
+                "İlk olarak, kağıt rulolarını renklendirin veya üzerlerine renkli bir kağıt yapıştırın.",
+                "Kuru olduklarında, resimdeki gibi bir çim sepeti yapmak istiyorsanız, ikiye bölün veya zikzak bir desende kesin.",
+                "Uzun bir kâğıt şeridi kesin ve bir yay haline gelmesi için tuvalet kâğıdı rulolarının içine yapıştırın. Bu bir küp olacak.",
+                "Küçük Paskalya yumurtası sepetlerinizi süslemek için tavuklar için kanatlar ve gaga, tavşanlar için uzun kulaklar ve çimler, çiçekler de kesebilirsiniz."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "İsrail",
+            "type": "task",
+            "audio": "./audio/tr/israel.mp3",
+            "text": [
+                "İsrail'de Paskalya'yı değil Fısıh diye bir şeyi kutluyorsunuz. Yahudiler, yüzyıllar önce Mısır'da köle olarak hayattan kurtulduklarını kutluyorlar. Aileler bir araya geliyor, güzel yemekler yiyor, şarkı söylüyor ve dua ediyor. Yahudilerin köle olduğu dönemden itibaren çocuklara hikayeler anlatmak da gelenektir.",
+                "Fısıh yönetimindeki bir diğer gelenek de yetiştirilen ekmeği yememek gerektiğidir. Bu gelenek, Yahudilerin özgür bırakıldığı günden geliyor, sonra ekmeklerin kabarmasını bekleyecek zamanları olmadı, çünkü evlerinden acele edip Musa'yı takip etmek zorunda kaldılar.",
+                "İsrail'deki mağazalar bu tatil sezonunda tam 8 gün boyunca ekmek satışını durdurur. Ekmek yerine, 'Matzah' adı verilen bir tür kıtır ekmek yemek yaygındır."
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "'Matzah' kıtır ekmek yapmak. Ailenden yardım isteyebilirsin.",
+            "taskHowToLabel": "İşte 'Matzah' yapmak için ihtiyacınız olan şey:",
+            "taskItems": [
+                "1 dl un",
+                "1 çay kaşığı tuz",
+                "2 yemek kaşığı zeytinyağı",
+                "1,5 dl sıcak su"
+            ],
+            "extraText": [
+                "Onları yuvarlamak ve kızartmak için bir yetişkinden yardım alın."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norveç",
+            "type": "question",
+            "audio": "./audio/tr/norway.mp3",
+            "text": [
+                "Paskalya, Norveç'te hem Hristiyanlar hem de Yahudiler tarafından kutlanan bir bayramdır. Yahudiler Mısır'da uzun süreli esaretten sonra serbest bırakıldıklarını hatırlarken, Hristiyanlar İsa'nın çarmıhtaki ölümünü ve üçüncü gün yeniden doğuşunu hatırlıyor.",
+                "Norveç kiliselerinde ilahi söyleme geleneği vardır; 'Paskalya sabahı üzüntüyü söndürür'- (Nikolai Frederik Grundtvig tarafından 1843'te yazılmıştır), brunstad'daki Paskalya konferansında da ilahi söyledik. Anaokullarında ve okullarda, çocukların yumurta boyayıp süsledikleri ve paskalya süslemelerini tüylerle vb. şeylerle doldururuz. Bazıları ayrıca Paskalya tavşanı olduğunu ve Paskalya yumurtalarını evde veya bahçede şekerle gizlediğini deneyimledi. Birçok Norveçli aile Paskalya tatillerini, kayak yapmaya gitmekten ve kvikklunsj gofreti, çikolata ve portakal yemek için mutlu oldukları dağlardaki kabinlerde geçirirler."
+            ],
+            "questionHeading": "Soru:",
+            "questions": [
+                "Kim 'Paskalya sabahı üzüntüyü söndürür' ilahisini yazdı?",
+                "Paskalya Tavşanı ne yapar?",
+                "Norveçliler Paskalya'da kayak yaparken genellikle mola yemeği olarak ne getirir?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/tr/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru, sahil, dağlar ve orman ile 3 geniş alana ayrılmıştır. Yine de tüm Peru aynı Paskalya geleneklerine sahiptir. Özellikle çocuklar için şenlikli bir Paskalya zamanı yapıyoruz.",
+                "Paskalya'da, Peru'daki tüm TV kanalları, Paskalya'nın her günü hem çocuklara hem de yetişkinlere sadece İncil'den ve İsa hakkında hikayeler yayınlar.",
+                "Piyasada balık ve deniz ürünleri bulunabilir, çünkü 'uzun-Cuma' da sadece balık yemesi ve başka etler yenmesi bir gelenektir.",
+                "Tatlı olarak, birçok renkte farklı, iyi tatlılar yapmak yaygındır. Çocuklar bayılıyor! Özellikle 'Lilla Mazamorra , arroz con leche'. Bu pembe bir tatlı - nam nam!",
+                "Kilisede her zaman çocuklar için Paskalya yumurtası avı yaparız ve çocuklar küçük tavşanlar gibi giyinirler! Çok rahat!"
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "Tavşan kulak şapkası yap.",
+            "taskDescriptionInfo": "İhtiyacınız : Beyaz ve pembe karton, makas, tutkal ve zımba.",
+            "taskHowToLabel": "Nasıl yapılır:",
+            "taskItems": [
+                "Tavşan kulaklarını kesmek için beyaz ve pembe karton kullanın: iki beyaz ve iki pembe, pembe biraz daha küçük olmalıdır.",
+                "Pembe kulakları beyaz kulaklara yapıştırın.",
+                "Kulaklarınızı uzun beyaz bir karton şerit üzerine yapıştırın, kafanıza uyacak şekilde ölçün ve bir kafa bandı oluşturmak için uçlarını birbirine zımbalayın."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "Çin",
+            "type": "task",
+            "audio": "./audio/tr/china.mp3",
+            "text": [
+                "Hong Kong'da, Paskalya sırasında Paskalya yumurtası avına çıkmak yaygındır. Panda yumurtası yapıp bambu ormanına saklıyoruz. Çin'deki pandalarla çok iyi arkadaş olduğumuz için onlarla oynuyoruz, bu yüzden genellikle birçok yumurta bulmaya yardımcı olan pandalarla Paskalya yumurtası avına çıkıyoruz."
+            ],
+            "taskHeading": "Görev:",
+            "taskDescription": "Bir panda yumurtası boyayın veya çizin.",
+            "taskDescriptionInfo": "İhtiyacınız olacaklar: fırçayı temizlemek için haşlanmış, soğutulmuş bir yumurta, siyah beyaz bir işaretleyici veya boya, boya fırçası ve su.",
+            "taskHowToLabel": "Yumurta nasıl yapılır:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Yumurtaya panda çizme: örneğe bakın."
+        },
+        {
+            "ID": "PO",
+            "country": "Polonya",
+            "audio": "./audio/tr/poland.mp3",
+            "type": "question",
+            "text": [
+                "Polonya'da 2. Paskalya Günü gerçek bir su günüdür ve bazı ailelerde ebeveynler çocuklarını üzerlerine su sıçratarak uyandırırlar. Tüm gün çocuklar suyla oynar ve su tabancaları ve su dolu plastik yumurtalar kullanırlar. Günü sonu, insanların birbirlerine su sıktığı bir su savaşı olur. Belki de o gün içerde olmak daha iyidir."
+            ],
+            "questionHeading": "Soru:",
+            "question": "Ebeveynler çocuklarını sabah nasıl uyandırır?",
+            "questionOptions": [
+                "Minderi çekerek",
+                "Üzerlerine su püskürtmek",
+                "Öpücüklerle"
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Karakterini seç",
+        "startGameBTN": "Oyunu başlatmak",
+        "complete": "Bitti",
+        "completeHeading": "Oyun tamamlandı",
+        "completedText": "BrunstadTv uygulamasına gidin ve resminizi yükleyin."
+    }
+}

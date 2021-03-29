@@ -1,0 +1,197 @@
+{
+    "language": "ro",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/ro/australia.mp3",
+            "text": [
+                "În Australia, Paștele este sărbătorit toamna, spre deosebire de alte țări din emisfera nordică, unde Paștele este primăvara.",
+                "Paștele este una dintre cele mai importante sărbători din calendarul creștin, care marchează învierea lui Isus din morți.",
+                "Este un moment în care să strângeți familia. În ziua de Paște, ziua începe cu o vânătoare mare de ouă de Paște pentru toți copiii și se încheie cu o masă de Paște care constă de obicei din miel prăjit și legume prăjite.",
+                "Sunt multe activități pentru copii în timpul sezonului de Paște, cum ar fi colorarea și vopsirea ouălor de Paște.",
+                "O altă tradiție sunt chiflele calde pe care le poți cumpăra cu ceva timp înainte de Paști. Sunt chifle dulci, umplute cu condimente și fructe uscate și decorate cu o cruce alba, reprezentând crucea lui Isus."
+            ],
+            "questionHeading": "Întrebare:",
+            "question": "Ce anotimp este în Australia atunci când sărbătoresc Paștele?",
+            "questionOptions": [
+                "Vara",
+                "Iarna",
+                "Toamna",
+                "Primăvara"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rusia",
+            "type": "question",
+            "audio": "./audio/ro/russia.mp3",
+            "text": [
+                "Paștele este cea mai importantă sărbătoare pentru creștini după Crăciun. Există multe tradiții și ritualuri de Paște. Sărbătoarea are loc din martie până în mai, în funcție de datele în care cade sărbătoarea. Paștele este o sărbătoare de familie. În weekendul Paștelui mergi la biserică, pentru rugăciune și pentru a fi binecuvântat. Paștele este, de asemenea, o sărbătoare cu mâncare bună și mâncăruri tradiționale. La fel ca în multe alte țări, este tradiție și în Rusia să pictezi ouă și să le decorezi. Există diverse jocuri asociate ouălor decorate. Este, de exemplu, un joc în care copiii iau câte un ou și îl ciocnesc de al celuilalt. Câștigă oul care se sparge ultimul.",
+                "Ouăle decorate sunt, de asemenea, date prietenilor și familiei ca simbol al recunoștinței. De Paște, se pregătește o prăjitură specială numită Kulich. Prăjitura Kulich este un simbol al faptului că Isus este cu noi."
+            ],
+            "questionHeading": "Întrebare:",
+            "questions": ["Cum se numește prăjitura specială care se pregătește în Rusia?"]
+        },
+        {
+            "ID": "IN",
+            "country": "India",
+            "type": "task",
+            "audio": "./audio/ro/india.mp3",
+            "text": [
+                "În India, Paștele nu este sărbătorit ca o sărbătoare națională, dar pentru creștini este un eveniment sfânt. În BCC Bangalore, Paștele este sărbătorit cu un festin. Se povestește povestirea învierii lui Isus, iar copiii primesc ciocolată sau ouă de marțipan. În ultimul timp, am participat la activitățile pe care BCC le-a organizat și am urmărit emisiunile pentru copii."
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Fă-ți propria ciocolată:",
+            "taskDescriptionInfo": "Ai nevoie de: ciocolată albă, cu lapte sau neagră, ceva bun ce vrei să ai pe ciocolată, de ex. ornamente, ou de ciocolată - sau iepuraș de ciocolată, dulciuri etc.",
+            "taskHowToLabel": "Cum se realizează:",
+            "taskItems": [
+                "Cu ajutorul unui adult se topește ciocolata și se pune pe o hârtie de copt, în tavă.",
+                "Pune ce îți place pe ciocolata topită.",
+                "Pune ciocolata în congelator și lasă-o să se răcească."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "Africa de Sud",
+            "type": "task",
+            "audio": "./audio/ro/sa.mp3",
+            "text": [
+                "Paștele din Africa de Sud are loc în vremea frumoasă de toamnă, care nu este prea caldă sau prea rece. Avem, de asemenea, tradiția vânătoarei de ouă de Paște, ca în multe alte țări. Iepurașul de Paște ascunde ouăle peste tot, atât în ​​casele noastre, cât și în grădină. Cele mai populare dulciuri de Paște sunt ouăle de Paște din bezea și chiflele calde. În familiile creștine este povestită, de asemenea, povestirea Paștelui și modul în care Isus a fost răstignit și a înviat pentru noi.",
+                "Sunt mulți care își iau vacanță de Paște și se întâlnesc cu toată familia. Duminică pregatim un mic dejun copios, minunat de Paște, împreună cu familiile noastre. Unele familii joacă, de asemenea, un joc numit „boeresport”, este, printre altele, cursa cu „oul pe lingură”, cursa de întrecer cu saci, etc."
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Crează o ștafetă unde vei alerga cu un ou pe o lingură."
+        },
+        {
+            "ID": "US",
+            "country": "America",
+            "audio": "./audio/ro/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "În America, avem multe modalități distractive de a sărbători Paștele. Printre altele, umplem multe ouă de plastic colorate cu tot felul de dulciuri și sunt unii care se îmbracă ca iepurașul dulce de Paște și ascund aceste ouă în tot felul de locuri, de exemplu în copaci, în iarbă, peste tot. După ce iepurele a ascuns ouăle, mergem la vânătoare de ouă de Paște pentru a le găsi. După ce le găsim, mâncăm toate dulciurile delicioase. De asemenea, sărbătorim Paștele cu coșuri de Paște, unde umplem un coș cu jucării și iepuri mari de ciocolată, pui de ciocolată și ouă de ciocolată. Odată ce am umplut aceste coșuri, ne întâlnim cu prietenii și ne dăruim coșurile unii altora. De asemenea, folosim coșurile pentru toate ouăle pe care le-am găsit la vânătoarea ouălor de Paște. Dar cel mai important lucru pe care îl facem pentru a sărbători această zi este să ne întâlnim și să citim povestirea Paștelui despre Isus și să mâncăm împreună. Este o sărbătoare distractivă și festivă."
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Crează-ți propriul mini coș de ouă de Paște.",
+            "taskDescriptionInfo": "Ai nevoie de: role de hârtie igienică, vopsea sau hârtie colorată, foarfece și lipici.",
+            "taskHowToLabel": "Cum le faci:",
+            "taskItems": [
+                "Colorează mai întâi sulurile de hârtie sau lipește niște hârtie colorată pe ele.",
+                "După ce s-au uscat, tăie-le în două sau în zig-zag dacă vrei să faci un coș cu iarbă ca în imagine.",
+                "Tăie o fâșie lungă de hârtie și lipește-o pe interiorul rolei de hârtie igienică, astfel încât să devină un arc. Acesta va fi mânerul.",
+                "Pentru a-ți decora micile coșuri de ou de Paște, poți tăia aripi și cioc pentru găini, urechi lungi pentru iepurași și flori pentru iarbă."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "type": "task",
+            "audio": "./audio/ro/israel.mp3",
+            "text": [
+                "În Israel, nu se sărbătorește Paștele, ci ceva numit Pesach. Evreii sărbătoresc că au fost eliberați de viață ca sclavi din Egipt, acum  multe, multe sute de ani în urmă. Familiile se întâlnesc, mănâncă mâncare bună, cântă și se roagă. De asemenea, este o tradiție să le povestești copiilor întâmplări de pe vremea când evreii erau sclavi.",
+                "O altă tradiție de Pesach este să nu mănânci pâine dospită. Această tradiție vine din ziua în care evreii au fost eliberați. Atunci nu aveau timp să aștepte ca pâinea să crească, pentru că trebuiau să se grăbească din casele lor și să-l urmeze pe Moise.",
+                "Magazinele din Israel încetează să mai vândă pâine timp de 8 zile în timpul acestei sărbători. În loc de pâine, este obișnuit să se mănânce un fel de pâine crocantă numită „Matzah”."
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Fă pâine crocantă „Matzah”. Este recomandat să ceri ajutor părinților.",
+            "taskDescriptionInfo": "Pentru a face „Matzah” ai nevoie de:",
+            "taskItems": [
+                "1 dl făină de grâu",
+                "1 linguriță de sare",
+                "2 linguri de ulei de măsline",
+                "1,5 dl apă fierbinte"
+            ],
+            "extraText": [
+                "Cu ajutorul unui adult amestecă-le și prăjește-le."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Norvegia",
+            "type": "question",
+            "audio": "./audio/ro/norway.mp3",
+            "text": [
+                "Paștele este o sărbătoare care este sărbătorită atât de creștini, cât și de evrei în Norvegia. Evreii își amintesc că au fost eliberați după o lungă captivitate în Egipt, în timp ce creștinii marchează că Isus a murit pe cruce și a înviat din nou în a treia zi.",
+                "În bisericile norvegiene există tradiția de a cânta psalmul; „Dimineața Paștelui alungă durerea” - (scris de Nikolai Frederik Grundtvig în 1843), pe care îl cântăm și în timpul conferinței de Paști de la Brunstad. În grădinițe și școli, se sărbătorește cu micul dejun de Paște și atelierul de Paște, unde copiii vopsesc și decorează ouă și fac decorațiuni de Paște cu pene, etc. Unii au experimentat, de asemenea, că iepurașul de Paște a ascuns ouă de Paște cu dulciuri în casă sau afară în gradină. Multe familii norvegiene petrec vacanța de Paște în cabane la munte, unde le place să meargă la ski și să mănânce kvikklunsj, ciocolată și portocale."
+            ],
+            "questionHeading": "Întrebări:",
+            "questions": [
+                "Cine a scris psalmul; „Dimineața de Paște alungă durerea”?",
+                "Ce face iepurașul de Paște?",
+                "Ce obișnuiesc să aibă norvegienii ca gustare atunci când merg la schi de Paște?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/ro/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru este împărțit în 3 zone mari, cu coastă, munți și junglă. Cu toate acestea, în Peru, avem aceleași tradiții de Paște. Pregătim un timp festiv de Paște, în special pentru copii.",
+                "De Paște, toate canalele TV din Peru difuzează numai întâmplări din Biblie și despre Isus, atât pentru copii, cât și pentru adulți, în fiecare zi de Paște.",
+                "În piață poți găsi pește și fructe de mare, deoarece este o tradiție ca în „vinerea mare” să se mănânce doar pește, nu și alt tip de carne.",
+                "Ca desert, este obișnuit să se facă diferite deserturi  bune, în multe culori. Copiii iubesc asta! În special „Mazamorra roz, budincă de orez ”. Este un desert roz – foarte delicios!",
+                "La adunare, organizăm întotdeauna vânătoare de ouă de Paște pentru copii, iar copiii se îmbracă ca niște iepurași! Este foarte plăcut!"
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Crează o pălărie de iepuraș cu urechi.",
+            "taskDescriptionInfo": "Ai nevoie de: Carton alb și roz, foarfece, lipici și capsator.",
+            "taskHowToLabel": "Cum o faci:",
+            "taskItems": [
+                "Folosește carton alb și roz pentru a tăia formele urechii de iepure: două albe și două roz; cele roz trebuie să fie puțin mai mici.",
+                "Lipește urechile roz pe urechile albe.",
+                "Lipește urechile pe o bandă lungă, albă, de carton, măsoară pentru a se potrivi capului tău și capsează capetele împreună pentru a forma o bandă de susținere."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "China",
+            "type": "task",
+            "audio": "./audio/ro/china.mp3",
+            "text": [
+                "În Hong Kong, este obișnuit să mergi la vânătoare de ouă, de Paște. Facem ouă Panda și le ascundem în pădurea de bambus. Ne jucăm un joc în care suntem prieteni foarte buni cu urșii panda din China, așa că mergem la vânătoare de ouă de Paști cu panda, care adesea ajută la găsirea multor ouă."
+            ],
+            "taskHeading": "Sarcină:",
+            "taskDescription": "Vopsește sau desenează un ou panda.",
+            "taskDescriptionInfo": "Ai nevoie de: un ou fiert, răcit, marker alb sau negru sau vopsea, pensulă și apă pentru a curăța pensula.",
+            "taskHowToLabel": "Cum faci oul:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Desenează un panda pe ou: vezi exemplul."
+        },
+        {
+            "ID": "PO",
+            "country": "Polonia",
+            "audio": "./audio/ro/poland.mp3",
+            "type": "question",
+            "text": [
+                "În a doua zi a Paștelui, în Polonia este o adevărată zi a apei și în unele familii, părinții își trezesc copiii stropindu-i cu apă. Pe tot parcursul zilei, copiii se joacă cu apă și folosesc pistoale cu apă și ouă de plastic pline cu apă. La sfârșitul zilei are loc o luptă cu apă, în care oamenii se udă cu apă unul pe celălalt. Poate că e mai bine să stai  în casă în acea zi."
+            ],
+            "questionHeading": "Întrebăre:",
+            "question": "Cum își trezesc părinții copii dimineața?",
+            "questionOptions": [
+                "Le ia perna",
+                "Îi udă cu apă",
+                "Cu un sărut"
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Alege-ți personajul",
+        "startGameBTN": "incepe jocul",
+        "complete": "Am terminat",
+        "completeHeading": "Ai terminat jocul",
+        "completedText": "Accesați aplicația brunstadTv și încărcați fotografia."
+    }
+}

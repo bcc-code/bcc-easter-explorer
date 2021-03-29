@@ -1,0 +1,198 @@
+{
+    "language": "pt",
+    "countries": [
+        {
+            "ID": "AU",
+            "country": "Australia",
+            "type": "question",
+            "audio": "./audio/pt/australia.mp3",
+            "text": [
+                "Na Australia celebram a páscoa no outono, ao contrário dos outros países que estão no hemisfério norte, onde a pascoa é durante a primavera.",
+                "A pascoa é um dos acontecimentos mais importantes do calendário cristão, que marca que Jesus ressuscitou da morte.",
+                "É um tempo de reunir a família. No dia da pascoa, o dia começa com uma grande caça da pascoa para todas as crianças e termina com uma ceia da pascoa que normalmente tem cordeiro assado e legumes assadas.",
+                "Há muitas atividades para as crianças no tempo da pascoa, como por exemplo colorir e pintar ovos de pascoa.",
+                "Uma outra tradição é bolinhos quentes de cruz que você pode comprar antes da pascoa. São bolinhos doces, recheados com especiarias e frutas cristalizadas e decorada com uma cruz branca que representa a cruz de Jesus."
+            ],
+            "questionHeading": "Pergunta:",
+            "question": "Em qual estação do ano, Australia celebra a pascoa?",
+            "questionOptions": [
+                "Verão",
+                "Inverno",
+                "Outono",
+                "Primavera"
+            ]
+        },
+        {
+            "ID": "RU",
+            "country": "Rússia",
+            "type": "question",
+            "audio": "./audio/pt/russia.mp3",
+            "text": [
+                "A páscoa é a celebração mais importante para os cristãos depois do Natal. Há muitas tradições da pascoa e rituais. A comemoração acontece de março até maio, dependendo das datas em que cai feriado. A pascoa é férias em família. No final de semana da pascoa vão a igreja, para orar e para ser abençoados. A Pascoa também é uma celebração com boa comida e pratos tradicionais. Assim como em muitos outros países, também é uma tradição na Rússia, pintar ovos e decora-los. Há bastantes brincadeiras relacionadas com decoração dos ovos. Por exemplo há uma brincadeira onde cada criança pega um ovo e o joga contra um outro ovo, o ovo que se quebra por último ganha.",
+                "Os ovos decorados normalmente são entregues para os amigos ou familiares como um símbolo de agradecimento. Para a pascoa preparamos um bolo especial chamado Kulich. O bolo Kulich é um símbolo que Jesus está conosco."
+            ],
+            "questionHeading": "Pergunta:",
+            "questions": ["Qual é o nome do bolo especial que preparam na Rússia?"]
+        },
+        {
+            "ID": "IN",
+            "country": "Índia",
+            "type": "task",
+            "audio": "./audio/pt/india.mp3",
+            "text": [
+                "Na Índia não se celebra a pascoa como um feriado nacional, mas para os cristãos é um acontecimento sagrado. No BCC Bangalore celebram a pascoa com uma festa. É contada a história sobre a ressurreição de Jesus, e as crianças recebem chocolate ou ovos de marzipã. Nos últimos dias temos participado muito das atividades que BCC tem organizado, e acompanhado as transmissões para crianças."
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara teu próprio chocolate.",
+            "taskDescriptionInfo": "Você precisa: chocolate branco, ao leite ou preto, algo bom que você deseja colocar no teu chocolate, por exemplo: granulado de cores, ovo de chocolates, ou coelhos, guloseimas.",
+            "taskHowToLabel": "Como o preparamos:",
+            "taskItems": [
+                "Tenha ajuda de um adulto que possa derreter o chocolate para você e colocá-lo numa forma com papel manteiga.",
+                "Coloca aquilo que você gosta no chocolate derretido.",
+                "Coloca o chocolate pronto no freezer e deixa-lo esfriar."
+            ],
+            "taskImages": [
+                "./images/india.png"
+            ]
+        },
+        {
+            "ID": "ZA",
+            "country": "África do Sul",
+            "type": "task",
+            "audio": "./audio/pt/sa.mp3",
+            "text": [
+                "A Páscoa na África do sul acontece num lindo clima de outono que não é nem tão quente nem tão frio. Nós também temos a tradição de fazer um ovo de pascoa, como em muitos outros países. O coelho da pascoa esconde os ovos em todos lugares, tanto no interior da nossa casa e fora no jardim. A guloseima mais popular na pascoa é o ovo de pascoa de mashmallow e bolinho quente de cruz. Nas famílias cristãs também é contado sobre a história da pascoa e como Jesus foi crucificado e ressuscitou novamente por nos.",
+                "Muitos tiram férias na pascoa e estão reunidos com toda a família. No domingo preparamos um grande e adorável café da manhã da pascoa com nossa família. Algumas famílias jogam também algo que chamamos de “boeresport”, quer dizer “ovo na colher”, corridas de saco, etc."
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Crie um revezamento onde você pode correr com um ovo na colher."
+        },
+        {
+            "ID": "US",
+            "country": "USA",
+            "audio": "./audio/pt/usa.mp3",
+            "type": "task",
+            "image": "./images/usa.png",
+            "text": [
+                "Na América temos muitos jeitos divertidos de celebrar a pascoa. Entre outras coisas, enchemos muitos ovinhos de plástico com todo tipo de guloseimas e também tem alguns que se fantasiam como um doce coelhinho de pascoa e escondem esses ovos em todos os lugares possíveis, por exemplo nas árvores, na grama, e em todas partes. Depois que o coelho tem escondido os ovos, começamos a caça da pascoa para acha-los. Depois que temos achado eles, comemos todas as gostosas guloseimas. Também celebramos a pascoa com uma cesta de pascoa, onde enchemos uma cesta com brinquedos, e grandes coelhinhos de chocolates, galinhas de chocolate e ovos de chocolate. Quando temos enchido estas cestas, nos encontramos com nossos amigos e intercambiamos. Também usamos as cestas para todos os ovos que achamos na caça da pascoa. Mas o mais importante que fazemos para celebrar esse dia, é que nos reunimos e lemos a história da pascoa sobre Jesus, e comemos juntos. É um tempo divertido e festivo."
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara tua própria mini cesta de ovos de pascoa.",
+            "taskDescriptionInfo": "Você precisa: rolinhos de papel higiênico, tintas ou folhas de cor, tesouras e cola.",
+            "taskHowToLabel": "Como prepara-lo:",
+            "taskItems": [
+                "Primeiro você pinta os rolinhos de papel higiênico ou cola um pouco de papel colorido neles.",
+                "Quando estejam secos, você os corta ao meio ou em zigue-zague se quiser fazer uma cesta de grama como a foto.",
+                "Corta uma tira longa de papel e cola ela no lado interno do rolo de papel formando um arco. Este será uma alça.",
+                "Para decorar a pequena cesta de pascoa, você também pode cortar aças e um bico para o franguinho, orelhas compridas para o coelhinho e flores para a grama."
+            ]
+        },
+        {
+            "ID": "IS",
+            "country": "Israel",
+            "type": "task",
+            "audio": "./audio/pt/israel.mp3",
+            "text": [
+                "Em Israel não celebram a pascoa, mas algo chamado Pesach. Os judeus celebram que foram livres da vida como escravos no Egito, faz muitos, muitos centos de anos atras. As famílias se reúnem, comem boa comida, cantam e oram. Também é tradição contar histórias para as crianças dessa vez que os judeus eram escravos.",
+                "Uma outra tradição durante o Pesach, é que não comem pão com fermento. Nessa tradição vem dessa vez que os judeus foram libertos, então eles não tinham tempo para esperar que o pão cresça, porque eles tinham que sair das suas casas e seguir Moises.",
+                "As lojas em Israel deixam de vender pão durante os 8 dias desta celebração. No lugar do pão é normal comer um tipo de torradas chamadas “Matzah”."
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara uma torrada  “Matzah”. Pode ser bom perguntar para teus pais te ajudar.",
+            "taskDescriptionInfo": "Isto você precisa para fazer “Matzah”.",
+            "taskHowToLabel": "Como o preparamos:",
+            "taskItems": [
+                "1 dl farinha",
+                "1 colher de chá de sal",
+                "2 colheres com aceite de oliva",
+                "1,5 dl água quente"
+            ],
+            "extraText": [
+                "Peça ajuda de um adulto para estendê-los e enforna-los."
+            ]
+        },
+        {
+            "ID": "NO",
+            "country": "Noruega",
+            "type": "question",
+            "audio": "./audio/pt/norway.mp3",
+            "text": [
+                "A pascoa é uma celebração que celebram tanto os cristãos e judeus na Noruega. Os Judeus lembram que foram libertos depois um longo cativeiro no Egito, enquanto os cristãos relembram que Jesus morreu na cruz e ressuscitou depois no terceiro dia.",
+                "Nas igrejas cristãs é tradição cantar o salmo: “Manhã da Pascoa tira as aflições” (escrito pelo Nikolai Frederik Grundtvig em 1843), assim como nos também cantamos durante a conferência de pascoa em Brunstad. No jardim de infância e na escola celebramos com um café da manhã da pascoa e atividades da pascoa, onde as crianças pintam e fazem decoração da pascoa com penas, etc. Alguns também tem experimentado que o coelho de pascoa tinha vindo e escondido os ovos de pascoa com guloseimas na casa ou fora no jardim. Muitas famílias norueguesas passam as férias da Pascoa em cabanhas na montanha, onde gostam de esquiar e comer lanchinho, chocolate e laranjas."
+            ],
+            "questionHeading": "Perguntas:",
+            "questions": [
+                "Quem escreveu o salmo: “Manhã da Pascoa tira as aflições”?",
+                "Que faz o coelho da pascoa?",
+                "Que coisa os noruegueses tem com eles como pausa quando eles vão esquiar na pascoa?"
+            ]
+        },
+        {
+            "ID": "PE",
+            "country": "Peru",
+            "audio": "./audio/pt/peru.mp3",
+            "type": "task",
+            "text": [
+                "Peru está divido em 3 grandes regiões, com costa, serra e selva. Porém em todo o Peru temos as mesmas tradições da pascoa. Preparamos um tempo de pascoa festivo, especial para as crianças.",
+                "Na pascoa todos os canais de TV do Peru passam histórias da Bíblia e sobre Jesus, tanto para as crianças e adultos, todos os dias durante a pascoa.",
+                "Nos mercados encontramos peixes e comida do mar, porque é uma tradição que na sexta feira maior se coma somente peixe e não outro tipo de carne.",
+                "Para a sobremesa é normal preparar diferentes e gostosas sobremesas de várias cores. As crianças o amam! Especialmente “Mazamorra Roxa, Arroz com leite”. É uma sobremesa rosa – nham nham!",
+                "Na igreja sempre fazemos caça da pascoa para as crianças e elas se vestem como coelhinhos! É muito fofinho!"
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Prepara um chapeu de coelho.",
+            "taskDescriptionInfo": "Você precisa: Papel rosa e branco, tesoura, cola e grampeador.",
+            "taskHowToLabel": "Como prepara-lo:",
+            "taskItems": [
+                "Usa o papel rosa e branco para corta-lo como uma orelha de coelho: dois brancos e dois rosas, o rosa dever ser um pouco mais pequeno.",
+                "Cola a orelha rosa na orelha branca.",
+                "Cola as orelhas em um tira branca longa, mede ela para que encaixe na tua cabeça, e grampeia as pontas juntas para formar uma faixa para a cabeça."
+            ],
+            "taskImages": [
+                "./images/peru.png"
+            ]
+        },
+        {
+            "ID": "CH",
+            "country": "Kina",
+            "type": "task",
+            "audio": "./audio/pt/china.mp3",
+            "text": [
+                "Na pascoa em Hong Kong é comum ir na caça da pascoa. Nós fazemos um ovo de panda e escondemos eles no bosque de bambus. Nos brincamos que somos muito bons amigos com os pandas na China, então vamos junto com os pandas na caça da pascoa, eles sempre ajudam a achar muitos ovos."
+            ],
+            "taskHeading": "Tarefa:",
+            "taskDescription": "Pinta ou desenha um ovo de panda.",
+            "taskDescriptionInfo": "Você precisa: um ovo cozido e frio, canetão ou tinta preta e branco, pincel para pintar e água para limpar os pinceis.",
+            "taskHowToLabel": "Como fazemos os ovos:",
+            "taskImages": [
+                "./images/china.jpg",
+                "./images/china2.jpg",
+                "./images/china3.jpg"
+            ],
+            "extratext": "Desenha um panda no ovo: veja o exemplo."
+        },
+        {
+            "ID": "PO",
+            "country": "Polen",
+            "audio": "./audio/pt/poland.mp3",
+            "type": "question",
+            "text": [
+                "O dia da páscoa na Polonia é um dia com muita água e em algumas famílias, os pais acordam seus filhos jogando água neles. Durante o dia todo as crianças brincam com água e usam arminhas de água e ovos de plástico com água. No final do dia há uma guerrinha de água, onde o pessoal joga água uns nos outros. Talvez o melhor é estar dentro de casa nesse dia."
+            ],
+            "questionHeading": "Pergunta:",
+            "question": "Como os pais acordam seus filhos pela manhã?",
+            "questionOptions": [
+                "Tirando o cobertor",
+                "Jogando água neles",
+                "Com beijinhos"
+            ]
+        }
+    ],
+    "strings": {
+        "characterChoiceHeading": "Escolha seu personagem",
+        "startGameBTN": "Começar o jogo",
+        "complete": "Finalizado",
+        "completeHeading": "Jogo completado",
+        "completedText": "Vá para o aplicativo brunstadTv e carregue sua foto."
+    }
+}
