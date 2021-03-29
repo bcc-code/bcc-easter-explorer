@@ -612,7 +612,7 @@ const backgroundMusic = {
         const audio = document.getElementById('background-audio');
         let muteState = 'unmute';
 
-        audio.volume = 0.2;
+        audio.volume = 0.02;
         audio.autoplay = true;
         audio.loop = true;
 
