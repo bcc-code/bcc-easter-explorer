@@ -633,7 +633,6 @@ const backgroundMusic = {
     init: function () {
         let scope = this;
 
-        scope.audioPlayer.play();
         scope.audioPlayer.volume = 0.02;
         scope.clickEvents();
     },
