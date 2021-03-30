@@ -142,7 +142,6 @@ $australia   : #f8e581;
         display: block;
     }
 
-
     >g:not(#World).completed.cls-2 path:not(.completed) {
         fill: lighten($color: $southafrica, $amount: 10%)
     }

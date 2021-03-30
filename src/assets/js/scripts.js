@@ -43,6 +43,7 @@ const firstScreen = {
             gsap.to('.logo', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.language-picker', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.promo', { y: 0, opacity: 1, duration: 1 });
+            gsap.to('p', { y: 0, opacity: 1, duration: 1 });
 
             _languageSelect.addEventListener('change', () => {
                 getData(_languageSelect.value)
@@ -375,7 +376,6 @@ const map = {
 
     clickEvents: function () {
         const countries = document.querySelectorAll('#map-area > g:not(#World)');
-
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
