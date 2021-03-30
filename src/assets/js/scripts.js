@@ -78,7 +78,6 @@ const firstScreen = {
 }
 const secondScreen = {
     init: function () {
-        gsap.to(_gameResetBTN, { autoAlpha: 1 })
 
         const character = readCookie('character');
 
@@ -86,8 +85,10 @@ const secondScreen = {
             _body.classList.add(character);
             gsap.to(_secondScreen, { autoAlpha: 0 })
             gsap.to(_mapContainer, { autoAlpha: 1 })
+            gsap.to(_gameResetBTN, { autoAlpha: 1 })
         } else {
             gsap.to(_secondScreen, { autoAlpha: 1 })
+            gsap.to(_gameResetBTN, { autoAlpha: 0 })
             gsap.to(_mapContainer, { autoAlpha: 0 })
         }
 

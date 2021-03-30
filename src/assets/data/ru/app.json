@@ -190,6 +190,7 @@
     "strings": {
         "characterChoiceHeading": "Выберите персонажа",
         "startGameBTN": "Игра начинается",
+        "resetGameBTN": "Сбросить игру",
         "complete": "я закончил",
         "completeHeading": "Вы закончили игру",
         "completedText": "Зайдите в приложение brunstadTv и загрузите свою фотографию."

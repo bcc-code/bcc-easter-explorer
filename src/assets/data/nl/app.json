@@ -191,6 +191,7 @@
     "strings": {
         "characterChoiceHeading": "Kies je karakter",
         "startGameBTN": "start het spel",
+        "resetGameBTN": "Spel resetten",
         "complete": "Afgewerkt",
         "completeHeading": "Spel voltooid",
         "completedText": "Ga naar de brunstadTv-app en upload je foto."

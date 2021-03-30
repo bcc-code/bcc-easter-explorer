@@ -191,6 +191,7 @@
     "strings": {
         "characterChoiceHeading": "Escolha seu personagem",
         "startGameBTN": "Começar o jogo",
+        "resetGameBTN": "Reiniciar o jogo",
         "complete": "Finalizado",
         "completeHeading": "Jogo completado",
         "completedText": "Vá para o aplicativo brunstadTv e carregue sua foto."

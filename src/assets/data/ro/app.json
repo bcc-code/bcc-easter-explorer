@@ -190,6 +190,7 @@
     "strings": {
         "characterChoiceHeading": "Alege-ți personajul",
         "startGameBTN": "incepe jocul",
+        "resetGameBTN": "resetează jocul",
         "complete": "Am terminat",
         "completeHeading": "Ai terminat jocul",
         "completedText": "Accesați aplicația brunstadTv și încărcați fotografia."

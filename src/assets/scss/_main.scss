@@ -1,14 +1,15 @@
 @import 'helpers/variables';
 
 .secondScreen {
-    position  : fixed;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-    z-index   : 99;
-    opacity   : 0;
-    visibility: hidden;
+    position   : fixed;
+    top        : 0;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+    z-index    : 99;
+    opacity    : 0;
+    visibility : hidden;
+    padding-top: 100px;
 
     display        : flex;
     flex-direction : column;
@@ -53,7 +54,7 @@
         .card__container {
             width        : 160px;
             padding      : 20px 30px;
-            margin       : 20px;
+            margin       : 10px;
             background   : $light;
             display      : inline-block;
             text-align   : center;

@@ -186,6 +186,7 @@
     "strings": {
         "characterChoiceHeading": "Valitse hahmosi",
         "startGameBTN": "Aloita peli",
+        "resetGameBTN": "Nollaa peli",
         "complete": "Valmis",
         "completeHeading": "Peli valmistunut",
         "completedText": "Siirry brunstadTv-sovellukseen ja lataa kuva."
