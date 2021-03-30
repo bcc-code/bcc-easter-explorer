@@ -21,12 +21,18 @@ const _secondScreenHeading = document.querySelector('.secondScreen h2');
 let taskJSON;
 
 // Fetch data json
-const language = async searchLanguage => {
-    const res = await fetch('assets/data/' + searchLanguage + '/app.json');
-    const data = await res.json();
-
-    taskJSON = data;
-};
+function getData(language) {
+    return new Promise((resolve, reject) => {
+        fetch('assets/data/' + language + '/app.json')
+            .then(res => res.json())
+            .then((data) => {
+                resolve(data)
+            })
+            .catch(err => {
+                reject(err)
+            });
+    })
+}
 
 const firstScreen = {
     init: async function () {
@@ -39,19 +45,21 @@ const firstScreen = {
             gsap.to('.promo', { y: 0, opacity: 1, duration: 1 });
 
             _languageSelect.addEventListener('change', () => {
-                language(_languageSelect.value);
+                getData(_languageSelect.value)
+                    .then(data => {
+                        taskJSON = data;
+                        _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
+                        _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
+                    })
+                    .catch(err => {
+                        console.log('err', err)
+                    })
 
-                setTimeout(function () {
-                    console.log(taskJSON);
-                }, 300);
-
-                _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
             });
 
             document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
                 createCookie('language', taskJSON.language, 1);
                 _body.classList.add(taskJSON.language);
-                _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
                 gsap.to(_firstScreen, { autoAlpha: 0, onComplete: () => secondScreen.init() });
             });
 
