@@ -41,10 +41,8 @@ const firstScreen = {
             _languageSelect.addEventListener('change', () => {
                 language(_languageSelect.value);
 
-                setTimeout(function () {
-                    _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
-                    _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
-                }, 10)
+                _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
+                _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
             });
 
             document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
@@ -279,8 +277,10 @@ const task = {
         }
 
         const displayBufferedAmount = () => {
-            const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
-            audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
+            if (audio.onprogress) {
+                const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
+                audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
+            }
         }
 
         const whilePlaying = () => {
