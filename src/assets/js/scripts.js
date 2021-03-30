@@ -72,7 +72,7 @@ const firstScreen = {
             const data = await results.json();
 
             taskJSON = data;
-            
+
             _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
             gameCompleted.init();
         }
@@ -108,6 +108,7 @@ const secondScreen = {
 
                 gsap.to(_secondScreen, { autoAlpha: 0 })
                 gsap.to(_mapContainer, { autoAlpha: 1 })
+                gsap.to(_gameResetBTN, { autoAlpha: 1 })
             });
         });
 
