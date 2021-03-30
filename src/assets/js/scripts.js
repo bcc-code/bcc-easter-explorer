@@ -226,7 +226,7 @@ const task = {
 
         function audio() {
             return "<div id='audio-container' class='box__audio'>" +
-                "<audio src='" + thisCountry.audio + "' preload=”metadata”>" +
+                "<audio src='" + thisCountry.audio + "' preload='metadata'>" +
                 "Your browser does not support the audio element." +
                 "</audio>" +
                 "<button class='play' id='play-icon'><i></i></button>" +
@@ -633,9 +633,6 @@ const backgroundMusic = {
         let scope = this;
 
         scope.audioPlayer.volume = 0.02;
-        scope.audioPlayer.autoplay = true;
-        scope.audioPlayer.loop = true;
-
         scope.clickEvents();
     },
 
