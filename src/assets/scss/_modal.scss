@@ -220,7 +220,7 @@
         input[type="range"]::before {
             position        : absolute;
             content         : "";
-            top             : 8px;
+            top             : 10px;
             left            : 0;
             width           : var(--seek-before-width);
             height          : 2px;
@@ -396,18 +396,18 @@
 
     .box__label {
         position     : absolute;
-        top          : -.85em;
+        top          : -1.25em;
         left         : 50%;
-        min-width    : 200px;
+        min-width    : 240px;
         transform    : translateX(-50%);
         background   : $default;
         border-radius: 1.5em;
-        padding      : 0 20px;
+        padding      : 0 10px;
         text-align   : center;
 
         span {
             font-family   : $ff-primary;
-            font-size     : 11px;
+            font-size     : 14px;
             font-weight   : 600;
             line-height   : 2em;
             text-transform: uppercase;
@@ -667,8 +667,12 @@
     }
 
     @media (min-width: 1024px) {
+
+        .box__label {
+            top: -1.5em;
+        }
+
         .box__label span {
-            font-size  : 14px;
             line-height: 2.5em;
         }
 

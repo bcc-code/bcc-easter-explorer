@@ -484,7 +484,7 @@ const map = {
 
         // Checkboxes
         document.addEventListener('click', (event) => {
-            if (event.target.tagName.toLowerCase() !== 'input[type=text]') return;
+            if (event.target.tagName.toLowerCase() !== 'input') return;
             const siblings = getSiblings(event.target.closest('li'));
             siblings.map(el => el.querySelector('input').checked = false);
         });
