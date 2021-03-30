@@ -249,13 +249,13 @@ const task = {
             if (playState === 'play') {
                 audio.play();
                 audioPlayerContainer.classList.add('playing');
-                backgroundMusic.mute();
+                backgroundMusic.muteAudio();
                 requestAnimationFrame(whilePlaying);
                 playState = 'pause';
             } else {
                 audio.pause();
                 audioPlayerContainer.classList.remove('playing');
-                backgroundMusic.unmute();
+                backgroundMusic.unmuteAudio();
                 cancelAnimationFrame(raf);
                 playState = 'play';
             }
@@ -632,6 +632,7 @@ const backgroundMusic = {
     init: function () {
         let scope = this;
 
+        scope.audioPlayer.play();
         scope.audioPlayer.volume = 0.02;
         scope.clickEvents();
     },
@@ -640,21 +641,21 @@ const backgroundMusic = {
         let scope = this;
         scope.muteIconContainer.addEventListener('click', () => {
             if (scope.muteState === 'unmute') {
-                scope.mute();
+                scope.muteAudio();
             } else {
-                scope.unmute();
+                scope.unmuteAudio();
             }
         });
     },
 
-    mute: function () {
+    muteAudio: function () {
         let scope = this;
         scope.audioPlayer.muted = true;
         scope.audioPlayer.parentElement.classList.add('muted');
         scope.muteState = 'mute';
     },
 
-    unmute: function () {
+    unmuteAudio: function () {
         let scope = this;
         scope.audioPlayer.muted = false;
         scope.audioPlayer.parentElement.classList.remove('muted');
