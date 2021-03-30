@@ -49,6 +49,7 @@ const firstScreen = {
                     .then(data => {
                         taskJSON = data;
                         _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
+                        _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
                         _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
                     })
                     .catch(err => {
@@ -71,7 +72,8 @@ const firstScreen = {
             const data = await results.json();
 
             taskJSON = data;
-
+            
+            _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
             gameCompleted.init();
         }
     },
