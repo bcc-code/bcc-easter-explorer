@@ -74,6 +74,7 @@ const firstScreen = {
 
             taskJSON = data;
 
+            _body.classList.add(taskJSON.language);
             _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
             gameCompleted.init();
         }

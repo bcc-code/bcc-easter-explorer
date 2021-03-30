@@ -659,6 +659,12 @@
         }
     }
 
+    body.it & {
+        .box__audio {
+            display: none;
+        }
+    }
+
     @media (min-width: 1024px) {
         .box__label span {
             line-height: 2.5em;
