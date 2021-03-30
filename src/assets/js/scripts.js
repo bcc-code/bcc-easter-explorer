@@ -41,13 +41,17 @@ const firstScreen = {
             _languageSelect.addEventListener('change', () => {
                 language(_languageSelect.value);
 
+                setTimeout(function () {
+                    console.log(taskJSON);
+                }, 300);
+
                 _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
-                _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
             });
 
             document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
                 createCookie('language', taskJSON.language, 1);
                 _body.classList.add(taskJSON.language);
+                _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
                 gsap.to(_firstScreen, { autoAlpha: 0, onComplete: () => secondScreen.init() });
             });
 
