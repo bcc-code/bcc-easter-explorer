@@ -252,19 +252,27 @@ const task = {
         const playIconContainer = document.getElementById('play-icon');
         const audioPlayerContainer = document.getElementById('audio-container');
         const seekSlider = document.getElementById('seek-slider');
-        let playState = 'play';
+        const bgAudio = document.getElementById('background-audio');
 
         playIconContainer.addEventListener('click', () => {
-            if (playState === 'play') {
+            if (audio.paused) {
                 audio.play();
+
+                bgAudio.muted = true;
+                bgAudio.parentElement.classList.add('muted');
+
                 audioPlayerContainer.classList.add('playing');
                 requestAnimationFrame(whilePlaying);
-                playState = 'pause';
             } else {
                 audio.pause();
+
+                if (!backgroundMusic.muteState) {
+                    bgAudio.muted = false;
+                    bgAudio.parentElement.classList.remove('muted');
+                }
+
                 audioPlayerContainer.classList.remove('playing');
                 cancelAnimationFrame(raf);
-                playState = 'play';
             }
         });
 
@@ -279,7 +287,7 @@ const task = {
 
         /** Implementation of the functionality of the audio player */
 
-        const audio = document.querySelector('audio');
+        const audio = document.querySelector('.box__audio audio');
         const durationContainer = document.getElementById('duration');
         const currentTimeContainer = document.getElementById('current-time');
         let raf = null;
@@ -607,6 +615,7 @@ const map = {
 const gameCompleted = {
     generateHTML: function (_this) {
         return "<div class='gameCompleted'>" +
+            "<div class='pyro'><div class='before'></div><div class='after'></div></div>" +
             "<div class='gameCompleted__content'>" +
             "<span></span>" +
             "<h2>" + _this.completeHeading + "</h2>" +
@@ -631,31 +640,28 @@ const gameCompleted = {
     }
 }
 const backgroundMusic = {
-    init: function () {
+    muteState: false,
 
+    init: function () {
         const muteIconBTN = document.getElementById('mute-bg-icon');
-        const playIconBTN = document.getElementById('play-bg-icon');
         const audioPlayer = document.getElementById('background-audio');
 
-        audioPlayer.volume = 0.02;
-        // playIconBTN.addEventListener('click', () => );
-
-        let muteState = 'unmute';
-
         muteIconBTN.addEventListener('click', () => {
-            if (muteState === 'unmute') {
-                audioPlayer.muted = true;
-                audioPlayer.parentElement.classList.add('muted');
-                muteState = 'mute';
-            } else {
+            if (audioPlayer.muted) {
                 audioPlayer.muted = false;
                 audioPlayer.parentElement.classList.remove('muted');
-                muteState = 'unmute';
+                backgroundMusic.muteState = false;
+            } else {
+                audioPlayer.muted = true;
+                audioPlayer.parentElement.classList.add('muted');
+                backgroundMusic.muteState = true;
             }
+
         });
 
+        audioPlayer.volume = 0.02;
         audioPlayer.play();
-    },
+    }
 
 }
 // Init
