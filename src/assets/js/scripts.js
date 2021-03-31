@@ -90,6 +90,9 @@ const secondScreen = {
             gsap.to(_secondScreen, { autoAlpha: 0 })
             gsap.to(_mapContainer, { autoAlpha: 1 })
             gsap.to(_gameResetBTN, { autoAlpha: 1 })
+            gsap.to(document.querySelectorAll('.background-audio'), { autoAlpha: 1 })
+
+            backgroundMusic.init();
         } else {
             gsap.to(_secondScreen, { autoAlpha: 1 })
             gsap.to(_gameResetBTN, { autoAlpha: 0 })
@@ -111,6 +114,10 @@ const secondScreen = {
                 gsap.to(_secondScreen, { autoAlpha: 0 })
                 gsap.to(_mapContainer, { autoAlpha: 1 })
                 gsap.to(_gameResetBTN, { autoAlpha: 1 })
+                gsap.to(document.querySelectorAll('.background-audio'), { autoAlpha: 1 })
+
+                backgroundMusic.init();
+
             });
         });
 
@@ -251,13 +258,11 @@ const task = {
             if (playState === 'play') {
                 audio.play();
                 audioPlayerContainer.classList.add('playing');
-                backgroundMusic.muteAudio();
                 requestAnimationFrame(whilePlaying);
                 playState = 'pause';
             } else {
                 audio.pause();
                 audioPlayerContainer.classList.remove('playing');
-                backgroundMusic.unmuteAudio();
                 cancelAnimationFrame(raf);
                 playState = 'play';
             }
@@ -626,41 +631,32 @@ const gameCompleted = {
     }
 }
 const backgroundMusic = {
-    muteIconContainer: document.getElementById('mute-icon'),
-    audioPlayer: document.getElementById('background-audio'),
-    muteState: 'unmute',
-
     init: function () {
-        let scope = this;
 
-        scope.audioPlayer.volume = 0.02;
-        scope.clickEvents();
-    },
+        const muteIconBTN = document.getElementById('mute-bg-icon');
+        const playIconBTN = document.getElementById('play-bg-icon');
+        const audioPlayer = document.getElementById('background-audio');
 
-    clickEvents: function () {
-        let scope = this;
-        scope.muteIconContainer.addEventListener('click', () => {
-            if (scope.muteState === 'unmute') {
-                scope.muteAudio();
+        audioPlayer.volume = 0.02;
+        // playIconBTN.addEventListener('click', () => );
+
+        let muteState = 'unmute';
+
+        muteIconBTN.addEventListener('click', () => {
+            if (muteState === 'unmute') {
+                audioPlayer.muted = true;
+                audioPlayer.parentElement.classList.add('muted');
+                muteState = 'mute';
             } else {
-                scope.unmuteAudio();
+                audioPlayer.muted = false;
+                audioPlayer.parentElement.classList.remove('muted');
+                muteState = 'unmute';
             }
         });
+
+        audioPlayer.play();
     },
 
-    muteAudio: function () {
-        let scope = this;
-        scope.audioPlayer.muted = true;
-        scope.audioPlayer.parentElement.classList.add('muted');
-        scope.muteState = 'mute';
-    },
-
-    unmuteAudio: function () {
-        let scope = this;
-        scope.audioPlayer.muted = false;
-        scope.audioPlayer.parentElement.classList.remove('muted');
-        scope.muteState = 'unmute';
-    }
 }
 // Init
 
@@ -682,7 +678,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, false);
 
     firstScreen.init();
-    backgroundMusic.init();
 });
 
 window.addEventListener('load', () => map.init());
