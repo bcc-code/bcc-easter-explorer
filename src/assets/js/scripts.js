@@ -21,12 +21,18 @@ const _secondScreenHeading = document.querySelector('.secondScreen h2');
 let taskJSON;
 
 // Fetch data json
-const language = async searchLanguage => {
-    const res = await fetch('assets/data/' + searchLanguage + '/app.json');
-    const data = await res.json();
-
-    taskJSON = data;
-};
+function getData(language) {
+    return new Promise((resolve, reject) => {
+        fetch('assets/data/' + language + '/app.json')
+            .then(res => res.json())
+            .then((data) => {
+                resolve(data)
+            })
+            .catch(err => {
+                reject(err)
+            });
+    })
+}
 
 const firstScreen = {
     init: async function () {
@@ -37,14 +43,20 @@ const firstScreen = {
             gsap.to('.logo', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.language-picker', { y: 0, opacity: 1, duration: 1 });
             gsap.to('.promo', { y: 0, opacity: 1, duration: 1 });
+            gsap.to('p', { y: 0, opacity: 1, duration: 1 });
 
             _languageSelect.addEventListener('change', () => {
-                language(_languageSelect.value);
+                getData(_languageSelect.value)
+                    .then(data => {
+                        taskJSON = data;
+                        _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
+                        _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
+                        _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
+                    })
+                    .catch(err => {
+                        console.log('err', err)
+                    })
 
-                setTimeout(function () {
-                    _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
-                    _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
-                }, 10)
             });
 
             document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
@@ -62,13 +74,14 @@ const firstScreen = {
 
             taskJSON = data;
 
+            _body.classList.add(taskJSON.language);
+            _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
             gameCompleted.init();
         }
     },
 }
 const secondScreen = {
     init: function () {
-        gsap.to(_gameResetBTN, { autoAlpha: 1 })
 
         const character = readCookie('character');
 
@@ -76,8 +89,10 @@ const secondScreen = {
             _body.classList.add(character);
             gsap.to(_secondScreen, { autoAlpha: 0 })
             gsap.to(_mapContainer, { autoAlpha: 1 })
+            gsap.to(_gameResetBTN, { autoAlpha: 1 })
         } else {
             gsap.to(_secondScreen, { autoAlpha: 1 })
+            gsap.to(_gameResetBTN, { autoAlpha: 0 })
             gsap.to(_mapContainer, { autoAlpha: 0 })
         }
 
@@ -95,6 +110,7 @@ const secondScreen = {
 
                 gsap.to(_secondScreen, { autoAlpha: 0 })
                 gsap.to(_mapContainer, { autoAlpha: 1 })
+                gsap.to(_gameResetBTN, { autoAlpha: 1 })
             });
         });
 
@@ -212,7 +228,7 @@ const task = {
 
         function audio() {
             return "<div id='audio-container' class='box__audio'>" +
-                "<audio src='" + thisCountry.audio + "' preload=”metadata”>" +
+                "<audio src='" + thisCountry.audio + "' preload='metadata'>" +
                 "Your browser does not support the audio element." +
                 "</audio>" +
                 "<button class='play' id='play-icon'><i></i></button>" +
@@ -235,13 +251,13 @@ const task = {
             if (playState === 'play') {
                 audio.play();
                 audioPlayerContainer.classList.add('playing');
-                backgroundMusic.mute();
+                backgroundMusic.muteAudio();
                 requestAnimationFrame(whilePlaying);
                 playState = 'pause';
             } else {
                 audio.pause();
                 audioPlayerContainer.classList.remove('playing');
-                backgroundMusic.unmute();
+                backgroundMusic.unmuteAudio();
                 cancelAnimationFrame(raf);
                 playState = 'play';
             }
@@ -279,8 +295,10 @@ const task = {
         }
 
         const displayBufferedAmount = () => {
-            const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
-            audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
+            if (audio.onprogress) {
+                const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
+                audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
+            }
         }
 
         const whilePlaying = () => {
@@ -359,7 +377,6 @@ const map = {
 
     clickEvents: function () {
         const countries = document.querySelectorAll('#map-area > g:not(#World)');
-
 
         let completedTasks = JSON.parse(readCookie('tasks_completed'));
         if (!completedTasks) completedTasks = new Array();
@@ -467,7 +484,7 @@ const map = {
 
         // Checkboxes
         document.addEventListener('click', (event) => {
-            if (event.target.tagName.toLowerCase() !== 'input[type=text]') return;
+            if (event.target.tagName.toLowerCase() !== 'input') return;
             const siblings = getSiblings(event.target.closest('li'));
             siblings.map(el => el.querySelector('input').checked = false);
         });
@@ -617,9 +634,6 @@ const backgroundMusic = {
         let scope = this;
 
         scope.audioPlayer.volume = 0.02;
-        scope.audioPlayer.autoplay = true;
-        scope.audioPlayer.loop = true;
-
         scope.clickEvents();
     },
 
@@ -627,21 +641,21 @@ const backgroundMusic = {
         let scope = this;
         scope.muteIconContainer.addEventListener('click', () => {
             if (scope.muteState === 'unmute') {
-                scope.mute();
+                scope.muteAudio();
             } else {
-                scope.unmute();
+                scope.unmuteAudio();
             }
         });
     },
 
-    mute: function () {
+    muteAudio: function () {
         let scope = this;
         scope.audioPlayer.muted = true;
         scope.audioPlayer.parentElement.classList.add('muted');
         scope.muteState = 'mute';
     },
 
-    unmute: function () {
+    unmuteAudio: function () {
         let scope = this;
         scope.audioPlayer.muted = false;
         scope.audioPlayer.parentElement.classList.remove('muted');

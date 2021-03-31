@@ -191,6 +191,7 @@
     "strings": {
         "characterChoiceHeading": "Válassza ki a karakterét",
         "startGameBTN": "játék kezdése",
+        "resetGameBTN": "A játék visszaállítása",
         "complete": "Befejezett",
         "completeHeading": "A játék befejeződött",
         "completedText": "Menj a brunstadTv alkalmazásba, és töltsd fel a képet."

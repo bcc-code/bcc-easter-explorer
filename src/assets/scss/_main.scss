@@ -1,14 +1,15 @@
 @import 'helpers/variables';
 
 .secondScreen {
-    position  : fixed;
-    top       : 0;
-    bottom    : 0;
-    left      : 0;
-    right     : 0;
-    z-index   : 99;
-    opacity   : 0;
-    visibility: hidden;
+    position   : fixed;
+    top        : 0;
+    bottom     : 0;
+    left       : 0;
+    right      : 0;
+    z-index    : 99;
+    opacity    : 0;
+    visibility : hidden;
+    padding-top: 100px;
 
     display        : flex;
     flex-direction : column;
@@ -53,7 +54,7 @@
         .card__container {
             width        : 160px;
             padding      : 20px 30px;
-            margin       : 20px;
+            margin       : 10px;
             background   : $light;
             display      : inline-block;
             text-align   : center;
@@ -125,6 +126,20 @@
     justify-content: center;
     flex-direction : column;
 
+    p {
+        font-family: $ff-primary;
+        font-size  : 16px;
+        font-weight: bold;
+        color      : $text;
+        opacity    : 0;
+        transform  : translateY(40px);
+
+        a {
+            color          : #00AAD6;
+            text-decoration: underline;
+        }
+    }
+
     .logo {
         width    : 240px;
         opacity  : 0;
@@ -147,6 +162,7 @@
         position      : fixed;
         width         : 60px;
         pointer-events: none;
+        z-index       : 101;
 
         &::before {
             content       : '';
@@ -207,7 +223,7 @@
     height  : 40px;
     z-index : 101;
 
-    audio {
+    iframe {
         display: none;
     }
 

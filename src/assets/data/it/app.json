@@ -5,7 +5,7 @@
             "ID": "AU",
             "country": "Australia",
             "type": "question",
-            "audio": "./audio/it/australia.mp3",
+            "audio": "./audio/en/australia.mp3",
             "text": [
                 "In Australia, la Pasqua viene celebrata in autunno, a differenza degli altri paesi dell'emisfero settentrionale, dove la Pasqua è in primavera.",
                 "La Pasqua è una delle commemorazioni più importanti del calendario cristiano, che ricorda la risurrezione di Gesù dai morti.",
@@ -26,7 +26,7 @@
             "ID": "RU",
             "country": "Russia",
             "type": "question",
-            "audio": "./audio/it/russia.mp3",
+            "audio": "./audio/en/russia.mp3",
             "text": [
                 "La Pasqua è la stagione delle vacanze più importante per i cristiani dopo Natale. Ci sono molte tradizioni e rituali pasquali. La celebrazione si svolge da marzo a maggio, a seconda delle date in cui cade la vacanza. Pasqua è una vacanza in famiglia. Durante il fine settimana di Pasqua, si va in chiesa, per la preghiera, e per essere benedetti. La Pasqua è anche una festa con cucina raffinata e piatti tradizionali. Come in molti altri paesi, anche in Russia c’è la tradizione di dipingere le uova e decorarle. Ci sono diversi giochi con le uova decorate. Per esempio, un gioco prevede che i bambini prendano un uovo ciascuno e lo sbattono l’uno contro l’altro, l'uovo che si spacca per ultimo vince.",
                 "Le uova decorate sono anche solitamente date ad amici e familiari come simbolo di gratitudine. Per Pasqua, si prepara una torta speciale chiamata Kulich. La torta Kulich è un simbolo che Gesù è con noi."
@@ -38,7 +38,7 @@
             "ID": "IN",
             "country": "India",
             "type": "task",
-            "audio": "./audio/it/india.mp3",
+            "audio": "./audio/en/india.mp3",
             "text": [
                 "In India, la Pasqua non è celebrata come una celebrazione nazionale, ma è un evento sacro solo per i cristiani. Nel BCC Bangalore, la Pasqua viene celebrata con una festa. Viene raccontata la storia della risurrezione di Gesù e i bambini ricevono uova di cioccolato o marzapane. Ultimamente siamo stati coinvolti nelle attività che il BCC ha organizzato e monitorato le trasmissioni per bambini."
             ],
@@ -59,7 +59,7 @@
             "ID": "ZA",
             "country": "Sud Africa",
             "type": "task",
-            "audio": "./audio/it/sa.mp3",
+            "audio": "./audio/en/sa.mp3",
             "text": [
                 "La Pasqua in Sudafrica si svolge con un bel clima autunnale, nè troppo caldo nè freddo. Abbiamo anche la tradizione di fare la caccia alle uova di Pasqua, come in molti altri paesi. Il coniglietto pasquale nasconde le uova ovunque, sia all'interno delle nostre case che in giardino. La caramella più popolare a Pasqua è un uovo di Pasqua marshmallow e panini caldi con una croce. Nelle famiglie cristiane, si racconta anche la storia della Pasqua e di come Gesù fu crocifisso e risuscitò per noi.",
                 "Ci sono molti che fanno le vacanze a Pasqua e sono riuniti con tutta la famiglia. La domenica, facciamo una colazione mattutina di Pasqua deliziosa e abbondante con le nostre famiglie. Alcune famiglie fanno dei giochi che chiamiamo 'boeresport', che comprendono tra l’altro la gara 'uova su un cucchiaio', le gare di sacco ecc. "
@@ -70,7 +70,7 @@
         {
             "ID": "US",
             "country": "Stati Uniti",
-            "audio": "./audio/it/usa.mp3",
+            "audio": "./audio/en/usa.mp3",
             "type": "task",
             "image": "./images/usa.png",
             "text": [
@@ -91,7 +91,7 @@
             "ID": "IS",
             "country": "Israele",
             "type": "task",
-            "audio": "./audio/it/israel.mp3",
+            "audio": "./audio/en/israel.mp3",
             "text": [
                 "In Israele, non si celebra la Pasqua, ma qualcosa chiamato Pesach. Gli ebrei celebrano il fatto di essere stati liberati dalla vita di schiavi in Egitto, molti, molti secoli fa. Le famiglie si riuniscono, mangiano buon cibo, cantano e pregano. È anche tradizione raccontare storie ai bambini di quando gli ebrei erano schiavi.",
                 "Un'altra tradizione sotto Pesach è che non si dovrebbe mangiare pane lievitato. Questa tradizione viene dal giorno in cui gli ebrei sono stati liberati, e non avevano tempo di aspettare che il pane lievitasse, perché dovevano affrettarsi fuori dalle loro case e seguire Mosè.",
@@ -114,7 +114,7 @@
             "ID": "NO",
             "country": "Norvegia",
             "type": "question",
-            "audio": "./audio/it/norway.mp3",
+            "audio": "./audio/en/norway.mp3",
             "text": [
                 "La Pasqua è una festa celebrata sia dai cristiani che dagli ebrei in Norvegia. Gli ebrei ricordano di essere stati liberati dopo una prolungata prigionia in Egitto, mentre i cristiani ricordano la morte di Gesù sulla croce e la risurrezione del terzo giorno.",
                 "Nelle chiese norvegesi c'è una tradizione del canto dell'inno; 'La mattina di Pasqua spegne il dolore'- (scritto da Nikolai Frederik Grundtvig nel 1843), che cantiamo anche alla conferenza di Pasqua a Brunstad. Negli asili e nelle scuole si celebra il giorno con la colazione di Pasqua e il laboratorio pasquale, dove i bambini dipingono e decorano le uova e fanno decorazioni pasquali con piume ecc. Alcuni hanno anche sperimentato che il coniglietto pasquale è stato e nascosto uova di Pasqua con caramelle in casa o in giardino. Molte famiglie norvegesi trascorrono le loro vacanze di Pasqua in baite in montagna, dove sono felici di andare a sciare e mangiare un pranzo veloce, cioccolato e arance."
@@ -129,7 +129,7 @@
         {
             "ID": "PE",
             "country": "Perù",
-            "audio": "./audio/it/peru.mp3",
+            "audio": "./audio/en/peru.mp3",
             "type": "task",
             "text": [
                 "Il Perù è diviso in 3 grandi aree, la costa, le montagne e la giungla. Eppure tutto il Perù ha le stesse tradizioni pasquali. Stiamo facendo un periodo pasquale festivo, specialmente per i bambini.",
@@ -155,7 +155,7 @@
             "ID": "CH",
             "country": "Cina",
             "type": "task",
-            "audio": "./audio/it/china.mp3",
+            "audio": "./audio/en/china.mp3",
             "text": [
                 "A Hong Kong, è comune andare a caccia di uova di Pasqua durante la Pasqua. Facciamo uova di panda e le nascondiamo nella foresta di bambù. Immagginiamo di essere ottimi amici con i panda in Cina, quindi andiamo a caccia di uova di Pasqua con i panda, che spesso aiutano a trovare molte uova."
             ],
@@ -173,7 +173,7 @@
         {
             "ID": "PO",
             "country": "Polonia",
-            "audio": "./audio/it/poland.mp3",
+            "audio": "./audio/en/poland.mp3",
             "type": "question",
             "text": [
                 "asquetta in Polonia è una vera giornata d'acqua e in alcune famiglie, i genitori svegliano i loro figli spruzzando acqua su di loro. Tutto il giorno, i bambini giocano con l'acqua e usano pistole ad acqua e uova di plastica piene d'acqua. L'ultimo giorno c'è una lotta d'acqua, in cui le persone spruzzano l'una sull'altra con acqua. Forse è meglio stare dentro in quel giorno."
@@ -190,6 +190,7 @@
     "strings": {
         "characterChoiceHeading": "Scegli il tuo personaggio",
         "startGameBTN": "inizia il gioco",
+        "resetGameBTN": "Ripristina il gioco",
         "complete": "Finito",
         "completeHeading": "Gioco completato",
         "completedText": "Vai all'app brunstadTv e carica la tua foto."

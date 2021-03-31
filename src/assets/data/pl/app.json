@@ -190,6 +190,7 @@
     "strings": {
         "characterChoiceHeading": "Wybierz swoją postać",
         "startGameBTN": "uruchomić grę",
+        "resetGameBTN": "Zresetuj grę",
         "complete": "Skończone",
         "completeHeading": "Gra zakończona",
         "completedText": "Przejdź do aplikacji brunstadTv i prześlij swoje zdjęcie."

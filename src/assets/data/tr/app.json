@@ -190,6 +190,7 @@
     "strings": {
         "characterChoiceHeading": "Karakterini seç",
         "startGameBTN": "Oyunu başlatmak",
+        "resetGameBTN": "Oyunu sıfırla",
         "complete": "Bitti",
         "completeHeading": "Oyun tamamlandı",
         "completedText": "BrunstadTv uygulamasına gidin ve resminizi yükleyin."

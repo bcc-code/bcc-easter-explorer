@@ -191,6 +191,7 @@
     "strings": {
         "characterChoiceHeading": "Velg karakteren din",
         "startGameBTN": "start spill",
+        "resetGameBTN": "Tilbakestill spillet",
         "complete": "Ferdig",
         "completeHeading": "Spillet fullført",
         "completedText": "Gå til brunstadTv-appen og last opp bildet ditt"
