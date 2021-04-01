@@ -194,6 +194,7 @@
         "resetGameBTN": "Tilbakestill spillet",
         "complete": "Ferdig",
         "completeHeading": "Spillet fullført",
-        "completedText": "Gå til brunstadTv-appen og last opp bildet ditt"
+        "completedText": "Gå til brunstadTv-appen og last opp bildet ditt",
+        "infoText": "<a href='https://event.bcc.no/wp-content/uploads/2021/03/Veiledning-til-Barnas-P%C3%A5ske-Ekspedisjon.pdf'>Her</a> finner du informasjon om oppgavene, slik at foreldrene har god tid til å skaffe alt som trenges. Og <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>her</a> finner du svararket som du kan prente ut. <a href='https://brunstad.tv/series/1428' target='_blank'>Video</a>"
     }
 }

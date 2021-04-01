@@ -81,8 +81,8 @@ exports.scssTask = scssTask;
 
 var isProduction = mode.production();
 if (isProduction) {
-    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask));
+    exports.default = series(parallel(copyHtml, jsonTask, jsTask, scssTask));
 }
 else {
-    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask), watchTask);
+    exports.default = series(parallel(copyHtml, jsonTask, jsTask, scssTask), watchTask);
 }

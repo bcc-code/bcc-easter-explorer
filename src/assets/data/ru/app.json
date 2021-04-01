@@ -195,6 +195,7 @@
         "resetGameBTN": "Сбросить игру",
         "complete": "я закончил",
         "completeHeading": "Вы закончили игру",
-        "completedText": "Зайдите в приложение brunstadTv и загрузите свою фотографию."
+        "completedText": "Зайдите в приложение brunstadTv и загрузите свою фотографию.",
+        "infoText": "<a href='https://event.bcc.no/wp-content/uploads/2021/03/ENG_Veiledning.pdf'>Здесь</a> вы найдете информацию о задачах, чтобы у родителей было достаточно времени, чтобы разобраться со всем, что вам нужно. А <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>здесь</a> вы можете найти лист для ответов, который можно распечатать. <a href='https://brunstad.tv/series/1428' target='_blank'>видео</a>"
     }
 }

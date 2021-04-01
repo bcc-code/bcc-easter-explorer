@@ -32,7 +32,9 @@
                 "Süslenmiş yumurtalar da genellikle minnettarlığın bir sembolü olarak arkadaşlarınıza ve aileye verilir. Paskalya için Kulich adında özel bir pasta pişirirsin. Kulich pastası İsa'nın bizimle olduğunun bir sembolüdür."
             ],
             "questionHeading": "Soru:",
-            "questions": ["Rusya'da pişirdiğiniz özel pastanın adı nedir?"]
+            "questions": [
+                "Rusya'da pişirdiğiniz özel pastanın adı nedir?"
+            ]
         },
         {
             "ID": "IN",
@@ -193,6 +195,7 @@
         "resetGameBTN": "Oyunu sıfırla",
         "complete": "Bitti",
         "completeHeading": "Oyun tamamlandı",
-        "completedText": "BrunstadTv uygulamasına gidin ve resminizi yükleyin."
+        "completedText": "BrunstadTv uygulamasına gidin ve resminizi yükleyin.",
+        "infoText": "<a href='https://event.bcc.no/wp-content/uploads/2021/04/TR_Veiledning.pdf'>Burada </a> görevler hakkında bilgi bulacaksınız, böylece ebeveynler ihtiyacınız olan her şeyi elde etmek için bolca zamana sahip olurlar. Ve <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>burada</a> yazdırabileceğiniz cevap kağıdını bulabilirsiniz. <a href='https://brunstad.tv/series/1428' target='_blank'>Video</a>"
     }
 }

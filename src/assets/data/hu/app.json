@@ -194,6 +194,7 @@
         "resetGameBTN": "A játék visszaállítása",
         "complete": "Befejezett",
         "completeHeading": "A játék befejeződött",
-        "completedText": "Menj a brunstadTv alkalmazásba, és töltsd fel a képet."
+        "completedText": "Menj a brunstadTv alkalmazásba, és töltsd fel a képet.",
+        "infoText": "<a href='https://event.bcc.no/wp-content/uploads/2021/03/ENG_Veiledning.pdf'>Itt</a> információkat talál a feladatokról, hogy a szülőknek bőven legyen idejük mindent megszerezni, amire szükségük van. És <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>itt</a> megtalálja a válaszlapot, amelyet kinyomtathat. <a href='https://brunstad.tv/series/1428' target='_blank'>Videó</a>"
     }
 }

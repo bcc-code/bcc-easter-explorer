@@ -17,6 +17,7 @@ const _languageSelect = document.getElementById('language-picker-select');
 const _gameResetBTN = document.querySelector('.reset');
 const _startGameBTN = document.querySelector('.language-picker-confirm');
 const _secondScreenHeading = document.querySelector('.secondScreen h2');
+const _firstScreenContent = document.querySelector('.firstScreen-content p');
 
 let taskJSON;
 
@@ -49,9 +50,16 @@ const firstScreen = {
                 getData(_languageSelect.value)
                     .then(data => {
                         taskJSON = data;
+                        _firstScreenContent.innerHTML = taskJSON.strings.infoText;
                         _startGameBTN.innerHTML = taskJSON.strings.startGameBTN;
                         _gameResetBTN.innerHTML = taskJSON.strings.resetGameBTN;
                         _secondScreenHeading.innerHTML = taskJSON.strings.characterChoiceHeading;
+
+                        document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
+                            createCookie('language', taskJSON.language, 1);
+                            _body.classList.add(taskJSON.language);
+                            gsap.to(_firstScreen, { autoAlpha: 0, onComplete: () => secondScreen.init() });
+                        });
                     })
                     .catch(err => {
                         console.log('err', err)
@@ -59,11 +67,6 @@ const firstScreen = {
 
             });
 
-            document.querySelector('.language-picker-confirm').addEventListener('click', (event) => {
-                createCookie('language', taskJSON.language, 1);
-                _body.classList.add(taskJSON.language);
-                gsap.to(_firstScreen, { autoAlpha: 0, onComplete: () => secondScreen.init() });
-            });
 
         } else {
 

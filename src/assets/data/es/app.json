@@ -32,7 +32,9 @@
                 "Los huevos decorados también suelen regalarse a los amigos y familia como un símbolo de agradecimiento. En pascua se hornea un pastel especial llamado Kulich y es un símbolo de que Jesús está con nosotros."
             ],
             "questionHeading": "Pregunta",
-            "questions": ["¿Cómo se llama el pastel tradicional que se hornea en Rusia?"]
+            "questions": [
+                "¿Cómo se llama el pastel tradicional que se hornea en Rusia?"
+            ]
         },
         {
             "ID": "IN",
@@ -193,6 +195,7 @@
         "resetGameBTN": "reiniciar el juego",
         "complete": "Completa",
         "completeHeading": "Juego completado",
-        "completedText": "Vaya a la aplicación BrunstadTv y cargue su imagen."
+        "completedText": "Vaya a la aplicación BrunstadTv y cargue su imagen.",
+        "infoText": "<a href='https://event.bcc.no/wp-content/uploads/2021/03/ES_Veiledning.pdf'>Aquí</a> encuentras información acerca de las tareas, para que los papás tengan suficiente tiempo de procurar todo lo que se necesita. Y <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>aquí</a> puedes encontrar la hoja de respuestas que puedes imprimir. <a href='https://brunstad.tv/series/1428' target='_blank'>Video</a>"
     }
 }
