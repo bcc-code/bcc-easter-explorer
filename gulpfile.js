@@ -16,6 +16,7 @@ const jsPath = 'src/assets/js/scripts.js';
 const jsHelpers = 'src/assets/js/helpers/*.js';
 const jsPlugins = 'src/assets/js/third-party/**/*.js';
 const cssPath = 'src/assets/scss/**/*.scss';
+const jsonPath = 'src/assets/data/**/*.json';
 
 function copyHtml() {
     return src('src/*.html').pipe(gulp.dest('dist'));
@@ -69,7 +70,7 @@ function watchTask() {
     });
 
     watch([htmlPath], { interval: 1000 }, copyHtml).on('change', browserSync.reload);
-    watch([cssPath, jsPath], { interval: 1000 }, parallel(scssTask, jsonTask, jsTask));
+    watch([cssPath, jsPath, jsonPath], { interval: 1000 }, parallel(scssTask, jsonTask, jsTask));
 }
 
 exports.copyHtml = copyHtml;
@@ -84,5 +85,5 @@ if (isProduction) {
     exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask));
 }
 else {
-    exports.default = series(parallel(copyHtml, imgTask, audioTask, jsonTask, jsTask, scssTask), watchTask);
+    exports.default = series(parallel(copyHtml, jsonTask, jsTask, scssTask), watchTask);
 }

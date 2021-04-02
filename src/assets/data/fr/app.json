@@ -3,53 +3,55 @@
     "countries": [
         {
             "ID": "AU",
-            "country": "Australia",
+            "country": "Australie",
             "type": "question",
             "audio": "./audio/fr/australia.mp3",
             "text": [
-                "I Australia feires påsken om høsten, i motsetning til andre land på den nordlige halvkule, hvor påsken er om våren.",
-                "Påsken er en av de viktigste markeringene i den kristne kalender, som markerer Jesu oppstandelse fra de døde.",
-                "Det er en tid for å samle familien. På påskedag begynner dagen med en stor påskeeggjakt for alle barna og avsluttes med et påskemåltid som vanligvis består av stekt lam og stekte grønnsaker.",
-                "Det er mange aktiviteter for barna i påsketiden, som for eksempel fargelegging og maling av påskeegg.",
-                "En annen tradisjon er hot cross boller som du kan kjøpe i god tid før påske. Det er søte boller, fylt med krydder og tørket frukt og dekorert med et hvitt kors som representerer Jesu kors."
+                "En Australie, Pâques est célébré en automne, à la différence des pays de l’hémisphère nord, où on fête Pâques au printemps.",
+                "Pâques est une des fêtes les plus importantes du calendrier chrétien et il marque la résurection de Jésus d’entre les morts.",
+                "C’est un temps où on se rassemble en famille. Le jour de Pâques, la journée commence par une grande chasse aux oeufs pour tous les enfants et se termine par un repas de Pâques fait de gigot d’agneau et des légumes grillés.",
+                "Il y a de nombreuses activités pour les enfants durant Pâques, comme par exemple les coloriages et les peintures sur oeufs.",
+                "Une autre tradition ce sont les Hot Cross Buns qu’ont peut acheter à l’avance. Ce sont des petits pains épicés aux raisons secs et décorés d’une croix blanche qui représenet la croix de Jésus."
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvilken årstid er det i Australia når de feirer påske?",
+            "questionHeading": "Question:",
+            "question": "A quelle époque de l’année fête t-on Pâques en Australie ?",
             "questionOptions": [
-                "Sommer",
-                "Vinter",
-                "Høst",
-                "Vår"
+                "Eté",
+                "Hiver",
+                "Automne",
+                "Printemps"
             ]
         },
         {
             "ID": "RU",
-            "country": "Russland",
+            "country": "Russie",
             "type": "question",
             "audio": "./audio/fr/russia.mp3",
             "text": [
-                "Påsken er den viktigste høytiden for de kristne etter julen. Det er mange påsketradisjoner og -ritualer. Feiringen foregår fra mars til mai, avhengig av hvilke datoer ferien faller på. Påsken er en familieferie. I påskehelgen drar man til kirken, for bønn og for å bli velsignet. Påsken er også en feiring med god mat og tradisjonelle retter. Som i mange andre land, er det også en tradisjon i Russland å male egg og dekorere dem. Det er forskjellige leker knyttet til dekorerte egg. Det er for eksempel en lek hvor barna tar et egg hver og slår sitt egg mot en annens egg, det egg som sprekker sist vinner.",
-                "Dekorerte egg blir også vanligvis gitt til venner og familie som et symbol på takknemlighet. Til påske baker man en spesiell kake som heter Kulich. Kaken Kulich er et symbol på at Jesus er med oss."
+                "Pâques est la fête la plus importante pour les chrétiens après Noël. Il y a beaucoup de traditions et de rituels de Pâques. Les festivités vont de mars à mai, tout dépend des dates des vacances. Le week-end de Pâques, on va à l’église, pour prier et être béni. Pâques c’est aussi une fête où on mange des mets traditionnels. Comme dans beaucoup d’autres pays, c’est aussi la traditonj de peindre et décorer des oeufs de Pâques. On y rajoute quelques jeux comme par exemple un jeu où les enfants prennent chacuns un oeuf et le casse contre un autre oeuf. L’oeuf qui casse en dernier a gagné.",
+                "On offre aussi souvent des eoufs décorés aux amis et à la famille, qui sont un symbole de gratitude. On confectionne aussi un gâteau spécial qui s’appelle le Kulich. Le Kulich est le symbole que Jésus est avec nous. "
             ],
-            "questionHeading": "Spørsmål",
-            "questions": ["Hva heter den spesielle kaken som man baker i Russland?"]
+            "questionHeading": "Question:",
+            "questions": [
+                "Comment appell t-on le gâteau spécial qu’on confectionne en Russie?"
+            ]
         },
         {
             "ID": "IN",
-            "country": "India",
+            "country": "Indie",
             "type": "task",
             "audio": "./audio/fr/india.mp3",
             "text": [
-                "I India feires ikke påske som en nasjonal feiring, men for kristne er det en hellig begivenhet. I BCC Bangalore feires påsken med en fest. Historien om Jesu oppstandelse fortelles, og barna får sjokolade eller marsipanegg. I det siste har vi vært med på de aktivitetene som BCC har organisert, og fulgt med på sendingene for barn."
+                "En Inde, Pâques est célébré comme une fête nationale, mais pour les chrétiens c’est un évènement saint. A BCC Bangalore, on fait une fête pour Pâques. On raconte l’histoire de la résurection de Jésus et les enfants reçoivent des chocolats ou des oeufs en massepain. Ces dernières années nous avons participés aux différentes activités organisées par BCC et on a suivi les émissions pour les enfants."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen sjokolade",
-            "taskDescriptionInfo": "Du trenger: hvit, lys eller mørk sjokolade, noe godt du vil ha på din sjokolade f.eks. dryss, sjokoladeegg – eller kanin, godteri mm.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Activité:",
+            "taskDescription": "Fait ton propre chocolat:",
+            "taskDescriptionInfo": "Tu a s besoin de : Chocolat blanc, au lait ou noir, des friandises pour décorer ton oeuf comme, du vermicelle en chocolat, des petits lapins, des bonbons.",
+            "taskHowToLabel": "Comment faire ?:",
             "taskItems": [
-                "Få hjelp fra en voksen som kan smelte sjokoladen for deg og legg det på en plate med bakepapir.",
-                "Legg hva du liker på den smeltet sjokoladen.",
-                "Legg den ferdige sjokoladen i fryseren og la den avkjøle."
+                "Demande à un adulte de t’aider à faire fondre le chocolat et dépose le ensuite sur une plaque recouverte de papier sulfurisé.",
+                "Décore le chocolat fondu avec les friandises de ton choix.",
+                "Mets la plaque au congélateur et laisse refroidir."
             ],
             "taskImages": [
                 "./images/india.png"
@@ -57,15 +59,15 @@
         },
         {
             "ID": "ZA",
-            "country": "Sør-Afrika",
+            "country": "Afrique du sud",
             "type": "task",
             "audio": "./audio/fr/sa.mp3",
             "text": [
-                "Påsken i Sør-Afrika foregår i vakkert høstvær som ikke er for varmt eller kaldt. Vi har også tradisjonen med å lage påske-egg-jakt, som i mange andre land. Påskeharen gjemmer eggene overalt, både inne i våre hus og ute i hagen. Det mest populære godteriet i påsken er et marshmallow-påskeegg og hot cross-boller. I kristne familier forteller man også historien om påsken og hvordan Jesu ble korsfestet og stod opp igjen for oss.",
-                "Det er mange som tar ferie i påsken og er samlet med hele familien. Om søndagen lager vi en stor, nydelig påskemorgen-frokost med familiene våre. Noen familier leker også noe vi kaller boeresport, det er blant annet «egg på en skje»-løp, sekkeløp etc"
+                "Pâques en Afrique du Sud tombe en plein automne avec un temps magnifique, ni trop froid ni trop chaud. On a aussi l’habitude de faire une chasse aux oeufs, comme dans beaucoup d’autres pays. Le lapin de Pâques cache les oeufs un peu partout, à l’interieur et à l’extérieur de nos maisons et au jardin. La friandise de Pâques la plus connue est un marshmallow de Pâques et les Hot Bross Buns. Dans les familles chrétiennes, on lit aussi l’histoire de Pâques et comment Jésus a été crucifié et est ressuscité pour nous.",
+                "Il y en a beaucoup qui prennent des vacances durant cette période et passe du temps en famille. Le matin de Pâques nous faisons un délicieux petit déjeuner de Pâques dans nos familles. Certaines familles jouent à un jeu qui est appelé de «Boerersport», comme courir avec un oeuf sur une cuillère, les courses des sacs, etc."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag en stafett hvor du skal løpe med ett egg på en skje"
+            "taskHeading": "Activité:",
+            "taskDescription": "Fais un jeu de relais où tu dois courir avec un oeuf sur une cuillère."
         },
         {
             "ID": "US",
@@ -74,17 +76,17 @@
             "type": "task",
             "image": "./images/usa.png",
             "text": [
-                "I Amerika har vi mange morsomme måter å feire påsken på. Blant annet fyller vi mange fargerike plastegg med alle slags godterier og da er det noen som kler seg ut som den søte påskeharen og gjemmer disse eggene på alle mulige steder, for eksempel i trærne, i gresset, ja overalt. Etter at haren har gjemt eggene går vi på påskeeggjakt for å finne de. Etter at vi har funnet dem, spiser vi alt det deilige godteriet. Vi feirer også påsken med påskekurver, hvor vi fyller en kurv med leker og store sjokoladekaniner, sjokoladekyllinger og sjokoladeegg. Når vi har fylt disse kurvene, møter vi våre venner og gir kurvene til hverandre. Vi bruker også kurvene til alle eggene vi fant på påskeeggjakten. Men det viktigste vi gjør for å feire denne dagen, er å komme sammen og lese påskehistorien om Jesus, og spise sammen. Det er en morsom og festlig høytid."
+                "En Amérique, on fête Pâques de plusieurs façons amusantes. Entre autres, on rempli des sachets d’oeufs de Pâques en plastique qui sont eux même remplis de friandises et une personne se déguise en mignon lapin de Pâques et va cacher les friandises un peu partout, comme dans les arbres, dans l’herbe etc.. Quand le lapin a terminé de cacher, on fait une grande chasse aux oeufs et on se régale en les mangeant. D’autres font la même chose mais avec des petits paniers de Pâques qu’on rempli de petits jouets, de friandises et de chocolat de toutes sortes et qu’on échange avec nos amis. On utilise aussi ce panier pour récolter nos oeufs de la chasse aux oeufs. Mais le plus important durant cette journée, c’est de se retrouver ensemble et lire l’histoire de Pâques et de partager le repas ensemble. C’est un moment fort, festif et convivial."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lag din egen mini-påskeeggkurv.",
-            "taskDescriptionInfo": "Du trenger: toalettpapirruller, maling eller fargerikt papir, saks og lim.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Activité:",
+            "taskDescription": "Fabrique ton propre panier de Pâques.",
+            "taskDescriptionInfo": "Tu as besoin de : rouleau vide papier toilettes, peinture ou papiers de couleurs, ciseau et colle.",
+            "taskHowToLabel": "Comment faire ?:",
             "taskItems": [
-                "Først fargelegger du papirrullene eller limer litt fargerikt papir på dem.",
-                "Når de er tørre, skjærer du dem i to, eller i et sikksakk-mønster hvis du vil lage en gresskurv som på bildet.",
-                "Klipp en lang papirstrimmel og lim den på innsiden av toalettpapir-rullen slik at den blir en bue. Dette blir et håndtak.",
-                "For å dekorere de små påskeeggkurvene dine, kan du også klippe vinger og et nebb for kyllingene, lange ører for kaninene og blomster til gresset."
+                "Tu commences par colorier ou peindre les rouleau de papier toilette ou coller des papiers de couleurs.",
+                "Lorsqu’ils sont secs, tu les coupes en deux ou en zigzag comme sur le modèle si tu veux faire un panier en herbe.",
+                "Coupe une bande de papier et colle la à l’interieur du rouleau en formant une petite poignée.",
+                "Pour décorer les petits paniers de Pâques, tu peux aussi découper des ailes et des becs pour les poussins, de grandes oreilles pour les lapins et de fleurs pour mettre dans l’herbe."
             ]
         },
         {
@@ -93,60 +95,59 @@
             "type": "task",
             "audio": "./audio/fr/israel.mp3",
             "text": [
-                "I Israel feirer man ikke påske, men noe som heter Pesach. Jødene feirer at de ble frie fra livet som slaver i Egypt, for mange, -mange hundre år siden. Familiene kommer sammen, spiser god mat, synger og ber. Det er også tradisjon å fortelle historier til barna fra den gangen jødene var slaver.",
-                "En annen tradisjon under Pesach, er at man ikke skal spise brød som er hevet. Denne tradisjonen kommer fra den dagen jødene ble fridd ut, da hadde de ikke tid til å vente på at brødet skulle heve, fordi de måtte skynde seg ut av husene sine og følge Moses.",
-                "Butikkene i Israel slutter å selge brød i hele 8 dager under denne høytiden. Istedenfor brød er det vanlig å spise et slags knekkebrød som heter “Matzah”."
+                "En Israel, on ne fête pas Pâques, mais nous avons une fête qui s’appelle Pessah. Les juifs font mémoire de la libération de l’escalavage en Egypte il y a des centaines d’années. La famille se rassemble, mange un bon repas, chante et prie. C’est aussi la tradition de raconter des histoires aux enfants sur la période où les juifs étaient des esclaves.",
+                "Une autre tradition durant Pessah, c’est que l’on ne doit pas manger de pain au levain. Cette tradition remonte au temps quand les juifs étaient libérés et qu’ils n’avaient pas eu le temps d’attendre que le pain se lève parce qu’ils devaient se dépêcher de sortir de leurs maisons et suivre Moïse.",
+                "Les magasins arrêtent de vendre du pain sur une période de 8 jours pendant cette évènement. Pour remplacer le pain, ils mangent une sorte de biscotte apellé «Matzah»."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage 'Matzah' knekkebrød. Det kan være lurt å spørre foreldrene dine om hjelp.",
-            "taskDescriptionInfo": "Dette trenger du for å lage “Matzah”:",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Activité:",
+            "taskDescription": "Faire du pain «Matzah». C’est mieux si tu demandes à un de tes parents de t’aider pour la fabrication.",
+            "taskHowToLabel": "Comment faire ?:",
             "taskItems": [
-                "1 dl hvetemel",
-                "1 te skje salt",
-                "2 spiseskjeer med oliven olje",
-                "1,5 dl varmt vann"
+                "1dl de farine",
+                "1 cc de sel",
+                "2 cs d’huile d’olive",
+                "1,5 dl d’eau chaude"
             ],
             "extraText": [
-                "Få hjelp av en voksen til å kjevle dem ut og steke dem"
+                "Demande de l’aide d’une grande personne pour t’aider à étaler la pâte et cuire les biscottes."
             ]
         },
         {
             "ID": "NO",
-            "country": "Norge",
+            "country": "Norvege",
             "type": "question",
             "audio": "./audio/fr/norway.mp3",
             "text": [
-                "Påsken er en høytid som feires av både kristne og jøder i Norge. Jødene minnes at de ble frie etter langvarig fangenskap i Egypt, mens kristne markerer at Jesus døde på korset og stod opp igjen den tredje dag. ",
-                "I norske kirker er det tradisjon for å synge salmen; Påskemorgen slukker sorgen- (skrevet av Nikolai Frederik Grundtvig i 1843), som vi også synger under påskestevnet på Brunstad. I barnehager og skoler feirer en med påskefrokost og påskeverksted, hvor barn maler og dekorerer egg og lager påskepynt med fjær osv. Noen har også opplevd at påskeharen har vært og gjemt påskeegg med godteri i huset eller ute i hagen. Mange norske familier tilbringer påskeferien på hytter i fjellet, hvor en gjerne går på skiturer og spiser kvikklunsj, sjokolade og appelsiner"
+                "Pâques est un évènement solennelle qui est fêté aussi bien par les chrétiens que par les juifs. Les Juifs commémorent leur longue ^période d’esclavage en Egypte, alors que les chrétiens marquent le fait que Jésus est mort sur la croix et s’est relevé le troisième jour.",
+                "Dans les églises en Norvège c’est la tradtition de chanter le psaume de Pâques (écrit par Nikolai Frederik Grundtvig en 1843), nous le chantons également pendant la conférence de Pâques à Brunstad. Dans les crèches et les écoles, ont marquent l’évènement avec un brunch de Pâques et des ateliers de Pâques, où les enfants décorent des oeufs et fabriquent de décorations avec des plumes etc. Certains peuvent même avoir la surpise que le lapin de Pâques soit passé déposer des friandises dans la maison ou dans le jardin. Beaucoup de familles norvégiennes partent dans leurs chalets à la montagne pendant les vacances de Pâques, en faisant du ski et en emportant des chocolats «Kvikklunsj» et des oranges."
             ],
-            "questionHeading": "Spørsmål",
+            "questionHeading": "Question:",
             "questions": [
-                "Hvem har skrevet salmen; Påskemorgen slukker sorgen?",
-                "Hva gjør påskeharen?",
-                "Hva pleier nordmenn å ha med som pausemat når de er på skitur i påsken?"
+                "Qui a écrit le Psaume de Pâques ?",
+                "Que fait le lapin de Pâques ?",
+                "Qu’emporte les norvégiens comme goûter pour leurs balades à ski ?"
             ]
         },
         {
             "ID": "PE",
-            "country": "Peru",
+            "country": "Perou",
             "audio": "./audio/fr/peru.mp3",
             "type": "task",
             "text": [
-                "Peru er delt i 3 store områder, med kyst, fjell og jungel. Allikevel har vi i hele Peru de samme påsketradisjonene. Vi lager i stand en festlig påsketid, spesielt for barna.",
-                "I påsken sender alle TV-kanaler fra Peru kun historier fra Bibelen og om Jesus, både til barna og voksne, alle dager i påsken.",
-                "På markedet kan en finne fisk og sjømat, fordi det er en tradisjon at på «lang-fredag» skal en kun spise fisk og ikke noe annet kjøtt.",
-                "Til dessert er det vanlig å lage forskjellige, gode desserter i mange farger. Barna elsker det! Spesielt «Lilla Mazamorra ,  arroz con leche». Det er en rosa dessert - nam nam !",
-                "I menigheten lager vi alltid påskeeggjakt for barna og barna kler seg ut som små kaniner! Det er veldig koselig!"
+                "Le Pérou est divisé en 3 régions distinctes, la côte, la montagne et la jungle. Mais malgré tout, nous avons les mêmes traditions de Pâques pour tout le pays. On prépare toujours quelque chose de convivial pendant ces fêtes de Pâques surtout en pensant aux enfants.",
+                "Toutes les chaînes de télévisions péruviennes ne programment que des émissions pour les enfants et pour les adultes avec des histoires de la Bible et sur Jésus, pendant toute la période de Pâques.",
+                "Au marché, on y trouve du poisson et des produits de la mer, car c’est une tradition de ne manger que du poisson durant le Vendredi Saint et s’abstenir de manger de la viande.",
+                "Les desserts sont souvent très bons et pleins de couleurs. Les enfants aiment beaucoup ! Spécialement celui qui s’appelle «Lilla Mazamorra, arroz con leche». C’est un dessert tou rose, miam, miam !",
+                "Dans l’assemblée, on organise toujours une chasse aux oeufs pour les enfants qui se déguisent en lapin de Pâques ! C’est très sympa !"
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Lage en kaninørehatt",
-            "taskDescriptionInfo": "Du trenger: Hvit og rosa papp, saks, lim og stiftemaskin.",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Activité:",
+            "taskDescription": "Fabrique un chapeau en oreilles de lapin.",
+            "taskDescriptionInfo": "Tu as besoin de papier rose et blanc, ciseau, colle et agrapheuse.",
+            "taskHowToLabel": "Voici comment faire ?:",
             "taskItems": [
-                "Bruk hvit og rosa papp til å kutte ut kaninøreformene: to hvite og to rosa, den rosa skal være litt mindre.",
-                "Lim de rosa ørene på de hvite ørene.",
-                "Lim ørene på en lang, hvit papp-stripe, mål slik at den passer til ditt hode, og stift endene sammen for å danne et hodebånd."
+                "Utilise les papiers pour y découper les oreilles. 2 blanches et 2 roses qui seront plus petites.",
+                "Colel les oreilles roses sur les blanches.",
+                "Colle les oreilles sur une grande bande blanche à la dimension de ton tour de tête, et agraphe les deux extrémités ensemble comme pour faire une couronne."
             ],
             "taskImages": [
                 "./images/peru.png"
@@ -154,37 +155,37 @@
         },
         {
             "ID": "CH",
-            "country": "Kina",
+            "country": "Chine",
             "type": "task",
             "audio": "./audio/fr/china.mp3",
             "text": [
-                "I Hong Kong er det vanlig å gå på påskeeggjakt i påsken. Vi lager panda-egg og gjemmer de i bambus-skogen. Vi leker at vi er veldig gode venner med pandaene i Kina, så vi går på påskeeggjakt sammen med pandaene, som ofte hjelper til med å finne mange egg."
+                "A Hong-Kong, il est habituel de faire une chasse aux oeufs de Pâques. On fabrique des oeufs de panda et on les cache dans les forêts de bambou. Nous jouons à être très bons amis avec les pandas et ils nous aident à trouver beaucoup d’oeufs de Pâques."
             ],
-            "taskHeading": "Oppgave",
-            "taskDescription": "Mal eller tegn et panda-egg.",
-            "taskDescriptionInfo": "Du trenger: et kokt, avkjølt egg, svart og hvit tusj eller maling, malerpensel og vann til å rense penselen",
-            "taskHowToLabel": "Hvordan lage de",
+            "taskHeading": "Activité:",
+            "taskDescription": "Dessine ou peinds un oeuf-panda.",
+            "taskDescriptionInfo": "Tu as besoin : un oeuf dur, un oeuf tiède, un feutre noir et un blanc ou de la peinture, des oinceaux et de l’eau pour rincer les pinceaux.",
+            "taskHowToLabel": "Comment faire ?:",
             "taskImages": [
                 "./images/china.jpg",
                 "./images/china2.jpg",
                 "./images/china3.jpg"
             ],
-            "extratext": "Tegne en panda på egget: se eksempel"
+            "extratext": "Dessiner le panda (voir l’exemple)"
         },
         {
             "ID": "PO",
-            "country": "Polen",
+            "country": "Pologne",
             "audio": "./audio/fr/poland.mp3",
             "type": "question",
             "text": [
-                "Påskedag i Polen er en skikkelig vanndag og i noen familier, vekker foreldrene barna sine med å sprute vann på dem. Hele dagen leker barna med vann og bruker vanngevær og plast-egg full av vann. Sist på dagen er det en vannkamp, hvor folk sprøyter med vann på hverandre. Kanskje det er bedre å være inne denne dagen"
+                "En Pologne, le deuxième jour de Pâques est un jour mouillé et dans certaines familles, les parents réveillent les enfants en les arrosant avec de l’eau. Toute la journée les enfants  s’amusent avec de l’eau en utilisant des pistolets à eau et des oeufs en plastique remplis d’eau. Le dernier jour, il y a une grand bataille d’eau ou tout le monde s’arrose. Peut-être vaut-il mieux rester à l’interieur ce jour là?"
             ],
-            "questionHeading": "Spørsmål",
-            "question": "Hvordan vekker foreldrene sine barn på morgenen?",
+            "questionHeading": "Question:",
+            "question": "Comment est ce que les parents réveillent les enfants le matin de Pâques?",
             "questionOptions": [
-                "Hiver av dem dyna",
-                "Spruter vann på dem",
-                "Med kyss"
+                "En arrachant la couverture.",
+                "En les arrosant.",
+                "Avec un bisou."
             ]
         }
     ],
@@ -195,6 +196,6 @@
         "complete": "Fini",
         "completeHeading": "Jeu terminé",
         "completedText": "Accédez à l'application brunstadTv et téléchargez votre photo.",
-        "infoText": "Tu trouveras <a href='https://event.bcc.no/wp-content/uploads/2021/03/Veiledning-til-Barnas-P%C3%A5ske-Ekspedisjon.pdf'>ici</a> les informations sur ces tâches, pour que les parents aient le temps de se procurer le matériel nécessaire. Et <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf'>ici</a> vous trouverez la feuille de réponse que vous pouvez imprimer. <a href='https://brunstad.tv/series/1428' target='_blank'>Video</a>"
+        "infoText": "Vous trouverez <a href='https://event.bcc.no/wp-content/uploads/2021/03/EN_Veiledning.pdf' target='_blank'>ici</a> des informations sur les tâches. <br/> Vous trouverez <a href='https://event.bcc.no/wp-content/uploads/2021/03/P%C3%A5skeEkspedisjon_Svarark-til-barn.pdf' target='_blank'>ici</a> la feuille de réponses que vous pouvez imprimer. <br/>Regardez le film promotionnel <a href='https://brunstad.tv/series/1428' target='_blank'>ici</a>"
     }
 }
